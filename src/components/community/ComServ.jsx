@@ -4,7 +4,7 @@ import ComServCard from "./ComServCard";
 const comServEntry = [
   {
     id: "cs0",
-    image: "/src/assets/images/comserv/sem3/1.png",
+    image: "./src/assets/images/comserv/sem3/1.png",
     subject: "CB Agama",
     title: "Bersama-sama Menuju Toleransi dan Keadilan Dalam Beragama",
     date: "September 2023 - December 2023",
@@ -17,7 +17,7 @@ const comServEntry = [
   },
   {
     id: "cs1",
-    image: "/src/assets/images/comserv/sem2/1.jpg",
+    image: "./src/assets/images/comserv/sem2/1.jpg",
     subject: "CB Kewarganegaraan",
     title:
       "Edukasi Terkait Kebudayaan-Kebudayaan di Indonesia Khususnya Dalam Permainan Daerah",
@@ -31,7 +31,7 @@ const comServEntry = [
   },
   {
     id: "cs2",
-    image: "/src/assets/images/comserv/sem1/1.DNG",
+    image: "./src/assets/images/comserv/sem1/1.DNG",
     subject: "CB Pancasila",
     title: "Kegiatan Sosialisasi Anti Bullying",
     date: "September 2022 - December 2022",

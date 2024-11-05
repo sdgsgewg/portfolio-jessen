@@ -26,7 +26,7 @@ export default function Hero() {
           <div className="w-full self-end px-4 lg:w-1/2">
             <div className="relative mt-10 lg:mt-0 lg:right-0">
               <img
-                src="../../src/assets/images/jessen.png"
+                src="../assets/images/jessen.png"
                 alt="Jessen"
                 className="max-w-full mx-auto"
               />

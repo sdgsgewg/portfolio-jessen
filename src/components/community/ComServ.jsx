@@ -4,7 +4,7 @@ import ComServCard from "./ComServCard";
 const comServEntry = [
   {
     id: "cs0",
-    image: "./src/assets/images/comserv/sem3/1.png",
+    image: "../src/assets/images/comserv/sem3/1.png",
     subject: "CB Agama",
     title: "Bersama-sama Menuju Toleransi dan Keadilan Dalam Beragama",
     date: "September 2023 - December 2023",

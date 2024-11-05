@@ -1,10 +1,10 @@
 import { useState } from "react";
 import PortfolioCard from "./PortfolioCard";
-import pfImage1 from "../assets/images/Portfolio/NITIP-DONK/1.png";
-import pfImage2 from "../assets/images/Portfolio/CodeReEng/1.png";
-import pfImage3 from "../assets/images/Portfolio/HI-TOYZ/1.png";
-import pfImage4 from "../assets/images/Portfolio/DOG-CARE/1.png";
-import pfImage5 from "../assets/images/Portfolio/YOLOv3/1.png";
+import pfImage1 from "../../assets/images/Portfolio/NITIP-DONK/1.png";
+import pfImage2 from "../../assets/images/Portfolio/CodeReEng/1.png";
+import pfImage3 from "../../assets/images/Portfolio/HI-TOYZ/1.png";
+import pfImage4 from "../../assets/images/Portfolio/DOG-CARE/1.png";
+import pfImage5 from "../../assets/images/Portfolio/YOLOv3/1.png";
 
 const portfolioEntry = [
   {

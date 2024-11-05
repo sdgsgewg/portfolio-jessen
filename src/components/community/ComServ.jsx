@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ComServCard from "./ComServCard";
-import csImage1 from "../assets/images/comserv/sem3/1.png";
-import csImage2 from "../assets/images/comserv/sem2/1.jpg";
-import csImage3 from "../assets/images/comserv/sem1/1.DNG";
+import csImage1 from "../../assets/images/comserv/sem3/1.png";
+import csImage2 from "../../assets/images/comserv/sem2/1.jpg";
+import csImage3 from "../../assets/images/comserv/sem1/1.DNG";
 
 const comServEntry = [
   {

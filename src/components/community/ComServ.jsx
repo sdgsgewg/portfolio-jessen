@@ -1,13 +1,10 @@
 import { useState } from "react";
 import ComServCard from "./ComServCard";
-import csImage1 from "../../assets/images/comserv/sem3/1.png";
-import csImage2 from "../../assets/images/comserv/sem2/1.jpg";
-import csImage3 from "../../assets/images/comserv/sem1/1.jpg";
 
 const comServEntry = [
   {
     id: "cs0",
-    image: { csImage1 },
+    image: "/assets/img/comserv/sem3/1.png",
     subject: "CB Agama",
     title: "Bersama-sama Menuju Toleransi dan Keadilan Dalam Beragama",
     date: "September 2023 - December 2023",
@@ -20,7 +17,7 @@ const comServEntry = [
   },
   {
     id: "cs1",
-    image: { csImage2 },
+    image: "/assets/img/comserv/sem2/1.jpg",
     subject: "CB Kewarganegaraan",
     title:
       "Edukasi Terkait Kebudayaan-Kebudayaan di Indonesia Khususnya Dalam Permainan Daerah",
@@ -34,7 +31,7 @@ const comServEntry = [
   },
   {
     id: "cs2",
-    image: { csImage3 },
+    image: "/assets/img/comserv/sem1/1.jpg",
     subject: "CB Pancasila",
     title: "Kegiatan Sosialisasi Anti Bullying",
     date: "September 2022 - December 2022",

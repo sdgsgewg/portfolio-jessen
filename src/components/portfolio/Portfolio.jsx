@@ -1,15 +1,15 @@
 import { useState } from "react";
 import PortfolioCard from "./PortfolioCard";
-import pfImage1 from "../../../src/assets/images/Portfolio/NITIP-DONK/1.png";
-import pfImage2 from "../src/assets/images/Portfolio/CodeReEng/1.png";
-import pfImage3 from "../src/assets/images/Portfolio/HI-TOYZ/1.png";
-import pfImage4 from "../src/assets/images/Portfolio/DOG-CARE/1.png";
-import pfImage5 from "../src/assets/images/Portfolio/YOLOv3/1.png";
+// import pfImage1 from "";
+// import pfImage2 from "assets/images/Portfolio/CodeReEng/1.png";
+// import pfImage3 from "assets/images/Portfolio/HI-TOYZ/1.png";
+// import pfImage4 from "assets/images/Portfolio/DOG-CARE/1.png";
+// import pfImage5 from "assets/images/Portfolio/YOLOv3/1.png";
 
 const portfolioEntry = [
   {
     id: "p0",
-    image: { pfImage1 },
+    image: "/assets/img/portfolio/NITIP-DONK/1.png",
     name: "NITIP DONK",
     slug: "nitip-donk",
     date: "March 2024 - June 2024",
@@ -24,7 +24,7 @@ const portfolioEntry = [
   },
   {
     id: "p1",
-    image: { pfImage2 },
+    image: "/assets/img/portfolio/CodeReEng/1.png",
     name: "Code Reengineering",
     slug: "code-reengineering",
     date: "15 April 2024 - 25 April 2024",
@@ -39,7 +39,7 @@ const portfolioEntry = [
   },
   {
     id: "p2",
-    image: { pfImage3 },
+    image: "/assets/img/portfolio/HI-TOYZ/1.png",
     name: "HI-Toyz",
     slug: "hi-toyz",
     date: "28 May 2023 - 13 June 2023",
@@ -53,7 +53,7 @@ const portfolioEntry = [
   },
   {
     id: "p3",
-    image: { pfImage4 },
+    image: "/assets/img/portfolio/DOG-CARE/1.png",
     name: "DOG CARE",
     slug: "dog-care",
     date: "March 2023 - June 2023",
@@ -68,7 +68,7 @@ const portfolioEntry = [
   },
   {
     id: "p4",
-    image: { pfImage5 },
+    image: "/assets/img/portfolio/YOLOv3/1.png",
     name: "Passengers Monitoring Models at Bus Stop",
     slug: "yolov3",
     date: "1 April 2024 - 20 August 2024",

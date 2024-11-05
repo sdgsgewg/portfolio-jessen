@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PortfolioCard from "./PortfolioCard";
-import pfImage1 from "../src/assets/images/Portfolio/NITIP-DONK/1.png";
+import pfImage1 from "../../../src/assets/images/Portfolio/NITIP-DONK/1.png";
 import pfImage2 from "../src/assets/images/Portfolio/CodeReEng/1.png";
 import pfImage3 from "../src/assets/images/Portfolio/HI-TOYZ/1.png";
 import pfImage4 from "../src/assets/images/Portfolio/DOG-CARE/1.png";

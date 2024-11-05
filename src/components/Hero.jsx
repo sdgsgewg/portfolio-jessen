@@ -1,3 +1,5 @@
+import jessenImage from '../assets/images/jessen.png';
+
 export default function Hero() {
   return (
     <section id="home" className="pt-36">
@@ -26,7 +28,7 @@ export default function Hero() {
           <div className="w-full self-end px-4 lg:w-1/2">
             <div className="relative mt-10 lg:mt-0 lg:right-0">
               <img
-                src="../assets/images/jessen.png"
+                src={jessenImage}
                 alt="Jessen"
                 className="max-w-full mx-auto"
               />

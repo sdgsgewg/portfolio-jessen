@@ -1,3 +1,6 @@
+import TechnicalSkills from "./skills/TechnicalSkills";
+import SoftSkills from "./skills/SoftSkills";
+
 export default function Skills() {
   return (
     <section id="skills" className="pt-36 pb-32 bg-slate-800">
@@ -16,32 +19,9 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="flex flex-wrap">
-          <div className="slide-left w-full px-4 mb-10 lg:w-1/2">
-            <h2 className="font-bold text-white text-3xl mb-5 max-w-md lg:text-4xl">
-              Technical Skills
-            </h2>
-            <p className="font-medium text-base text-slate-400 max-w-xl lg:text-lg">
-              Proficient in a wide range of web development technologies and
-              tools, including HTML, CSS, JavaScript, Java, PHP, C, C#, Python,
-              Typescript, and SQL. Experienced with frameworks and tools like
-              Laravel, React, MySQL, GitHub, and Figma. Skilled in Version
-              Control, Responsive Design, API Integration, CRUD Operations, and
-              Problem-Solving.
-            </p>
-          </div>
-          <div className="slide-right w-full px-4 lg:w-1/2">
-            <h3 className="font-semibold text-white text-2xl mb-4 lg:text-3xl">
-              Soft Skills
-            </h3>
-            <p className="font-medium text-base text-slate-400 mb-6 lg:text-lg">
-              A strong collaborator with excellent Communication skills, capable
-              of managing projects effectively through Time Management and
-              meticulous Attention to Detail. Recognized for my ability to work
-              well in teams and adapt to new challenges in fast-paced
-              environments.
-            </p>
-          </div>
+        <div className="w-full flex flex-wrap">
+          <TechnicalSkills />
+          <SoftSkills />
         </div>
       </div>
     </section>

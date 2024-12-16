@@ -36,23 +36,23 @@
 /* Slide to left */
 /* Start at the original position */
 /* Move to the left by half the content's width */
-/* @keyframes infiniteScroll {
+@keyframes infiniteScroll {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
   }
-} */
+}
 
 /* Slide to right */
 /* Start with the second set of icons hidden to the left */
 /* Scroll back to the original position */
-@keyframes infiniteScroll {
+/* @keyframes infiniteScroll {
   0% {
-    transform: translateX(-170%);
+    transform: translateX(-140%);
   }
   100% {
     transform: translateX(0);
   }
-}
+} */

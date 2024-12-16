@@ -13,127 +13,149 @@ import { BsBootstrap } from "react-icons/bs";
 import FaCSharp from "/assets/img/c-sharp.png";
 import FaTailwindCSS from "/assets/img/tailwind-css.png";
 import FaFigma from "/assets/img/figma.png";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function TechIcons() {
-  const size = 35;
+  const [iconSize, setIconSize] = useState(40);
+
+  const baseClasses =
+    "grayscale hover:transition duration-300 ease-in-out hover:grayscale-0";
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setIconSize(35); // Small Screens
+      } else if (window.innerWidth < 1024) {
+        setIconSize(40); // Medium Screens
+      } else {
+        setIconSize(40); // Large Screens
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
       {/* Programming Language */}
       <div>
         <SiHtml5
-          size={size}
+          size={iconSize}
           title="HTML5"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#E34F26]"
+          className={`${baseClasses} hover:text-[#E34F26]`}
         />
       </div>
       <div>
         <SiCss3
-          size={size}
+          size={iconSize}
           title="CSS3"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#1572B6]"
+          className={`${baseClasses} hover:text-[#1572B6]`}
         />
       </div>
       <div>
         <FaJsSquare
-          size={size}
+          size={iconSize}
           title="JavaScript"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#F7DF1E]"
+          className={`${baseClasses} hover:text-[#F7DF1E]`}
         />
       </div>
       <div>
         <SiTypescript
-          size={size}
+          size={iconSize}
           title="TypeScript"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#3178C6]"
+          className={`${baseClasses} hover:text-[#3178C6]`}
         />
       </div>
       <div>
         <FaPhp
-          size={size}
+          size={iconSize}
           title="PHP"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#777BB4]"
+          className={`${baseClasses} hover:text-[#777BB4]`}
         />
       </div>
       <div>
         <FaJava
-          size={size}
+          size={iconSize}
           title="Java"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#007396]"
+          className={`${baseClasses} hover:text-[#007396]`}
         />
       </div>
       <img
         src={FaCSharp}
-        width={size}
-        height={size}
+        width={iconSize}
+        height={iconSize}
         alt="C#"
-        className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0"
+        className={`${baseClasses}`}
       />
       <div>
         <FaC
-          size={size}
+          size={iconSize}
           title="C"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#A8B9CC]"
+          className={`${baseClasses} hover:text-[#A8B9CC]`}
         />
       </div>
       <div>
         <FaPython
-          size={size}
+          size={iconSize}
           title="Python"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#306998]"
+          className={`${baseClasses} hover:text-[#306998]`}
         />
       </div>
 
       {/* Libraries or Frameworks */}
       <div>
         <FaReact
-          size={size}
+          size={iconSize}
           title="React"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#61DAFB]"
+          className={`${baseClasses} hover:text-[#61DAFB]`}
         />
       </div>
       <div>
         <FaLaravel
-          size={size}
+          size={iconSize}
           title="Laravel"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#FF2D20]"
+          className={`${baseClasses} hover:text-[#FF2D20]`}
         />
       </div>
       <div>
         <BsBootstrap
-          size={size}
+          size={iconSize}
           title="Bootstrap"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#563D7C]"
+          className={`${baseClasses} hover:text-[#563D7C]`}
         />
       </div>
       <img
         src={FaTailwindCSS}
-        width={size}
-        height={size}
+        width={iconSize}
+        height={iconSize}
         alt="Tailwind CSS"
-        className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0"
+        className={`${baseClasses}`}
       />
 
       {/* Tools */}
       <div>
         <FaDatabase
-          size={size}
+          size={iconSize}
           title="MySQL"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#00618A]"
+          className={`${baseClasses} hover:text-[#00618A]`}
         />
       </div>
       <img
         src={FaFigma}
-        width={size}
-        height={size}
+        width={iconSize}
+        height={iconSize}
         alt="Figma"
-        className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0"
+        className={`${baseClasses}`}
       />
       <div>
         <FaGithub
-          size={size}
+          size={iconSize}
           title="GitHub"
-          className="grayscale hover:transition duration-300 ease-in-out hover:grayscale-0 hover:text-[#b9b2b2]"
+          className={`${baseClasses} hover:text-[#b9b2b2]`}
         />
       </div>
     </>

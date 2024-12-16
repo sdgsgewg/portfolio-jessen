@@ -7,7 +7,7 @@ export default function PortfolioCard({ p }) {
   const toggleText = useReadMoreToggle();
 
   return (
-    <div className={`${p.slide} mb-12 p-4 md:w-1/2`}>
+    <div className={`${p.slide} flex flex-col mb-12 p-4 md:w-1/2`}>
       <div
         className="rounded-md shadow-md flex justify-center overflow-hidden"
         style={{ width: "100%", height: "260px" }}
@@ -66,17 +66,17 @@ export default function PortfolioCard({ p }) {
       </p>
       <button
         onClick={() => toggleText(p.id)}
-        className="toggleButton text-blue-500 font-semibold mt-2 mb-6"
+        className="toggleButton text-blue-500 font-semibold text-start mt-2 mb-6"
         data-id={p.id}
       >
         Read More
       </button>
-      <div className="flex gap-3">
+      <div className="flex flex-wrap lg:justify-start mt-auto gap-3">
         {!p.isDeployed ? (
           <a
             href={p.ghLink}
             target="_blank"
-            className="flex items-center gap-2 text-base font-semibold text-white bg-slate-900 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+            className="w-full lg:w-auto flex items-center justify-center gap-2 text-base font-semibold text-white bg-slate-900 py-3 px-10 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
           >
             <FaGithub />
             View Github
@@ -86,7 +86,7 @@ export default function PortfolioCard({ p }) {
             <a
               href={p.type === "ai-model" ? p.paperLink : p.ghLink}
               target="_blank"
-              className="flex items-center gap-2 text-base font-semibold text-white bg-slate-900 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              className="w-full lg:w-auto flex items-center justify-center gap-2 text-base font-semibold text-white bg-slate-900 py-3 px-10 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
             >
               {p.type === "ai-model" ? <FaFileAlt /> : <FaGithub />}
               View {p.type === "ai-model" ? "Paper" : "Github"}
@@ -94,7 +94,7 @@ export default function PortfolioCard({ p }) {
             <a
               href={p.type === "ai-model" ? p.modelLink : p.webLink}
               target="_blank"
-              className="flex items-center gap-2 text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              className="w-full lg:w-auto flex items-center justify-center gap-2 text-base font-semibold text-white bg-primary py-3 px-10 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
             >
               {p.type === "ai-model" ? (
                 <GiArtificialIntelligence />

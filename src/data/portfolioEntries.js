@@ -46,9 +46,10 @@ const portfolioEntries = [
     moreText:
       "that are still in great condition. This marketplace supports normal transactions and trades, which is the key feature of this website. Users can trade books with each other as long as both books have prices within a 10% price range. We use Laravel as the framework and Bootstrap as the styling tools to develop this website.",
     ghLink: "https://github.com/sdgsgewg/PustakaBekas",
+    webLink: "https://pustaka-bekas.vercel.app/",
     slide: "slide-left",
     type: "website",
-    isDeployed: false,
+    isDeployed: true,
   },
   {
     id: uuidv4(),
@@ -61,10 +62,11 @@ const portfolioEntries = [
       "This project is a website that serves as a marketplace for packaging, banner, and sticker designs. We developed this project to help enhance the ",
     moreText:
       "value of UMKM stores. By using our designs, we aim to help their stores achieve better visual appeal. We used Laravel as the framework and Bootstrap as the styling tool to develop this website.",
-    ghLink: "https://github.com/sdgsgewg/InspiraUMKM",
+    ghLink: "https://github.com/sdgsgewg/new-inspira-umkm",
+    webLink: "https://new-inspira-umkm.vercel.app/",
     slide: "slide-right",
     type: "website",
-    isDeployed: false,
+    isDeployed: true,
   },
   {
     id: uuidv4(),

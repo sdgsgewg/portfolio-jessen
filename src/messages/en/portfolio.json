@@ -1,0 +1,107 @@
+{
+  "title": "Portfolio",
+  "subtitle": "My Projects",
+  "description": "Here are some of my projects that showcase my skills and dedication to web development and other computer science fields. Click on each project to learn more about the process, technologies used, and challenges overcome.",
+  "cta": {
+    "label": "View All Portfolio"
+  },
+  "projects": {
+    "my-react-app": {
+      "name": "My React App",
+      "description": {
+        "excerpt": "This project serves as a learning source for me to enhance my skill in using React to develop a website. This is an all in one productivity app where user",
+        "moreText": "can manage their to-do lists, shopping cart, and track their expense. I use React JS and Tailwind CSS to develop this website."
+      },
+      "features": ["Task management", "Expense tracker", "Shopping cart system"]
+    },
+    "spotify-clone-app": {
+      "name": "Spotify Clone App",
+      "description": {
+        "excerpt": "This project is a clone spotify app where we can control track in our spotify website. This website use spotify API to achieve this functionality.",
+        "moreText": "In this website we can view our spotify account's playlists and tracks. We also can choose which track can be played, handle skip to previous or next track, handle pause or play track, and handle the track volumes. I use React JS and TailwindCSS to develop this website."
+      },
+      "features": [
+        "View real-time playlist",
+        "Audio control (play, pause, volume)"
+      ]
+    },
+    "inspira-umkm": {
+      "name": "InspiraUMKM",
+      "description": {
+        "excerpt": "This project is a website that serves as a marketplace for packaging, banner, and sticker designs. We developed this project to help enhance the",
+        "moreText": "value of UMKM stores. By using our designs, we aim to help their stores achieve better visual appeal. We used Laravel as the framework and Bootstrap as the styling tool to develop this website."
+      },
+      "features": [
+        "View products (all roles)",
+        "Product transaction using Midtrans (buyer & seller)",
+        "Provide ratings for products that have been purchased (buyer)",
+        "Manage catalog (admin)"
+      ]
+    },
+    "pustaka-bekas": {
+      "name": "PustakaBekas",
+      "description": {
+        "excerpt": "This project is a website that serves as a marketplace for secondhand books. We developed this project as an effort to raise awareness about reusing secondhand products",
+        "moreText": "that are still in great condition. This marketplace supports normal transactions and trades, which is the key feature of this website. Users can trade books with each other as long as both books have prices within a 10% price range. We use Laravel as the framework and Bootstrap as the styling tools to develop this website."
+      },
+      "features": [
+        "View products (all roles)",
+        "Product transaction using Midtrans (buyer & seller)",
+        "Provide ratings for products that have been purchased (buyer)",
+        "Manage catalog (admin)"
+      ]
+    },
+    "passenger-monitoring-models-at-bus-stop": {
+      "name": "Passengers Monitoring Models at Bus Stop",
+      "description": {
+        "excerpt": "This project serves to monitor the number of people at Transjakarta bus stop, precisely at S.Parman Transjakarta bus stop. This project  was developed using Python and",
+        "moreText": "we utilize a computer vision algorithm called the YOLOv3 algorithm to build the entire model. This project mainly focuses on examining  or analyzing which time and day have the highest amount of  people,number which may provide essential data regarding the density pattern in Jakarta bus stops."
+      }
+    },
+    "nitip-donk": {
+      "name": "NITIP DONK",
+      "description": {
+        "excerpt": "NITIP DONK is a food pickup website that serves to help people order food or drinks from anytime and anywhere. This website was developed using React Vite, Typescript, and",
+        "moreText": "Vanilla CSS for styling. This project utilized scrum as the development life cycle. I contribute as the development team, precisely as the frontend developer."
+      },
+      "features": [
+        "View foods (all roles)",
+        "Food order transaction (buyer & seller)",
+        "View order status (buyer)",
+        "Manage food catalog (seller)"
+      ]
+    },
+    "code-reengineering": {
+      "name": "Code Reengineering",
+      "description": {
+        "excerpt": "This website serve to provide materials regarding code smells, such as change preventer and the dispensables. This project was developed using",
+        "moreText": "HTML, Vanilla CSS, and JS."
+      }
+    },
+    "hi-toyz": {
+      "name": "HI-Toyz",
+      "description": {
+        "excerpt": "HI-Toyz is a website that serves to sell toys and provide information regarding the store’s detailed information. This website",
+        "moreText": "was developed using HTML, Vanilla CSS, and JS."
+      },
+      "features": [
+        "View products",
+        "Product transaction",
+        "View testimonies",
+        "View event"
+      ]
+    },
+    "dog-care": {
+      "name": "DOG CARE",
+      "description": {
+        "excerpt": "DOG CARE is a website that serves to provide information about various dog breeds and provide consultation with a vet. This website was developed using HTML, Vanilla CSS, and JS.",
+        "moreText": "I contribute as the UI/UX designer on this project. I faced many problems during this project since this is the first project that I am working on, but I could overcome this problem by watching tutorials on the internet and asking for my friends help."
+      },
+      "features": [
+        "View information about various dog breeds",
+        "View available dog breeds",
+        "Consultation with a vet"
+      ]
+    }
+  }
+}

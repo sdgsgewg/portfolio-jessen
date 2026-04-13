@@ -1,0 +1,11 @@
+{
+  "card": {
+    "readMore": "Baca Selengkapnya",
+    "readLess": "Baca Lebih Sedikit"
+  },
+
+  "cta": {
+    "viewDetails": "Lihat Detail",
+    "back": "Kembali"
+  }
+}

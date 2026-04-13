@@ -1,0 +1,99 @@
+{
+  "title": "Karir",
+  "subtitle": "Karir Saya",
+  "description": "Berikut adalah perjalanan karir saya",
+  "entries": {
+    "accelist-lentera-indonesia": {
+      "company": {
+        "name": "PT. Accelist Lentera Indonesia",
+        "description": "Accelist adalah perusahaan IT consulting di Indonesia yang berspesialisasi dalam pengembangan perangkat lunak khusus, integrasi sistem, dan transformasi digital di berbagai industri."
+      },
+      "responsibilities": [
+        "Mengembangkan fitur fullstack pada sistem web & mobile menggunakan C# ASP.NET, React.js/Next.js, dan React Native, yang mendukung berbagai sistem enterprise-grade.",
+        "Memperbaiki bug kritis pada proyek internal dan eksternal yang meningkatkan keandalan sistem, mengurangi inkonsistensi pelaporan, dan mengurangi kesalahan edge-case.",
+        "Mengembangkan komponen frontend yang scalable dan integrasi API, meningkatkan UX untuk beberapa sistem seperti sistem inbox, sistem manajemen cuti, sistem pemantauan proyek, dll.",
+        "Berkolaborasi dalam tim SDLC (Scrum) (developer, BA, PM) untuk memberikan rilis iteratif, berkontribusi pada keberhasilan pengiriman sprint dan kesiapan UAT melalui analisis kebutuhan aktif, debugging, dan refactoring."
+      ],
+      "projects": {
+        "project-i": {
+          "name": "Project I",
+          "focus": "Mengelola laporan Dealer Finance",
+          "period": "1 - 11 September 2025",
+          "role": "FE & BE Developer",
+          "description": "Sistem untuk mengelola laporan Dealer Finance yang digunakan untuk memproses data plafon dan laporan collection dealer",
+          "contributions": [
+            "Perbaikan bug pada berbagai report (Waiting Outstanding, Outstanding Loan, Dealer Payment, Payment Report)",
+            "Pengolahan data berdasarkan Invoice Number",
+            "Perbaikan filter tanggal, validasi data, dan hasil export Excel",
+            "Penyesuaian perhitungan Aging Day sesuai logic bisnis"
+          ]
+        },
+        "project-c": {
+          "name": "Project C",
+          "focus": "Menampilkan riwayat pekerjaan dari karyawan di suatu perusahaan",
+          "period": "15 September - 14 Oktober 2025",
+          "role": "FE & BE Developer",
+          "description": "Website untuk menampilkan riwayat pekerjaan karyawan dan digunakan untuk monitoring dan dokumentasi aktivitas kerja",
+          "contributions": [
+            "Pengembangan component Reply Message",
+            "Pengembangan UI halaman Inbox Admin",
+            "Integrasi API untuk fitur reply & approval",
+            "Penyesuaian desain UI berdasarkan kebutuhan admin"
+          ]
+        },
+        "project-a5": {
+          "name": "Project A5",
+          "focus": "Mengelola pengajuan, penggunaan, dan pencatatan cuti karyawan",
+          "period": "16 September - 17 Desember 2025",
+          "role": "FE & BE Developer",
+          "description": "Sistem cuti berbasis journaling (debit / credit) dan memiliki multi-role yaitu Employee & Human Capital",
+          "contributions": [
+            "Pengembangan halaman Leave quota mutation",
+            "Backgrounder auto-approve cuti",
+            "Integrasi API & perbaikan UI",
+            "Penyesuaian logic bisnis kuota cuti"
+          ]
+        },
+        "project-h": {
+          "name": "Project H",
+          "focus": "Mengawasi atau track progress dari sebuah project yang dikerjakan",
+          "period": "29 September - 31 Desember 2025",
+          "role": "FE & BE Developer",
+          "description": "Sistem untuk memantau progress proyek mencakup fase requirement, development, hingga monitoring",
+          "contributions": [
+            "Perbaikan dan penyesuaian UI sesuai Figma",
+            "Bug fixing pada fitur Role Management & PICA Management",
+            "Refactor code untuk meningkatkan maintainability",
+            "Implementasi pengecekan role access (CRUD)"
+          ]
+        },
+        "project-j": {
+          "name": "Project J",
+          "focus": "Website edukasi yang berfungsi sebagai wadah untuk mendidik dan mengembangkan talenta muda di seluruh Indonesia",
+          "period": "31 Oktober - 23 Desember 2025",
+          "role": "FE Developer & Pembuatan Konten",
+          "description": "Website edukasi yang berfungsi sebagai wadah bagi perusahaan untuk mendidik dan mengembangkan talenta muda di seluruh Indonesia",
+          "contributions": [
+            "Pengembangan UI halaman website",
+            "Perbaikan konten Navbar & Footer",
+            "Penambahan section Gallery & Prize",
+            "Pembuatan sertifikat course (Moodle)",
+            "Penyusunan soal Python Competition (SMP & SMA)"
+          ]
+        }
+      }
+    }
+  },
+  "detail": {
+    "responsibilities": "Tanggung Jawab",
+    "projects": "Daftar Proyek",
+    "table": {
+      "name": "Nama",
+      "focus": "Fokus",
+      "role": "Peran",
+      "period": "Periode",
+      "description": "Deskripsi",
+      "contributions": "Kontribusi"
+    }
+  }
+}

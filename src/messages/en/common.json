@@ -1,0 +1,11 @@
+{
+  "card": {
+    "readMore": "Read More",
+    "readLess": "Read Less"
+  },
+
+  "cta": {
+    "viewDetails": "View Details",
+    "back": "Back"
+  }
+}

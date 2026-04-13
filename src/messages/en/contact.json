@@ -1,0 +1,11 @@
+{
+  "title": "Contact",
+  "subtitle": "Contact Me",
+  "description": "Have a question or want to collaborate? I’m just a message away! Let’s connect and explore opportunities together.",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  }
+}

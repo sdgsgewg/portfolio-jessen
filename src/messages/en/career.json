@@ -1,0 +1,99 @@
+{
+  "title": "Career",
+  "subtitle": "My Career",
+  "description": "Here is my career path",
+  "entries": {
+    "accelist-lentera-indonesia": {
+      "company": {
+        "name": "PT. Accelist Lentera Indonesia",
+        "description": "Accelist is Indonesia’s IT consulting company that specializes in custom software development, system integration, and digital transformation across multiple industries."
+      },
+      "responsibilities": [
+        "Delivered fullstack features across web & mobile systems using C# ASP.NET, React.js/Next.js, and React Native, which support multiple enterprise-grade systems.",
+        "Resolved critical bugs across internal and external projects that improved system reliability, reduced reporting inconsistencies, and reduced edge-case errors.",
+        "Developed scalable frontend components and API integrations, enhancing UX for several systems such as inbox systems, leave management systems, project monitoring systems, etc.",
+        "Collaborated in an SDLC (Scrum) team (developers, BA, PM) to deliver iterative releases, contributing to successful sprint deliveries and UAT readiness through active requirement analysis, debugging, and refactoring."
+      ],
+      "projects": {
+        "project-i": {
+          "name": "Project I",
+          "focus": "Managing Dealer Finance reports",
+          "period": "1 - 11 September 2025",
+          "role": "FE & BE Developer",
+          "description": "A system for managing Dealer Finance reports used to process ceiling data and dealer collection reports",
+          "contributions": [
+            "Bug fixes on various reports (Waiting Outstanding, Outstanding Loan, Dealer Payment, Payment Report)",
+            "Data processing based on Invoice Number",
+            "Fixes for date filters, data validation, and Excel export results",
+            "Adjustment of Aging Day calculations according to business logic"
+          ]
+        },
+        "project-c": {
+          "name": "Project C",
+          "focus": "Displaying employee work history in a company",
+          "period": "15 September - 14 Oktober 2025",
+          "role": "FE & BE Developer",
+          "description": "A website to display employee work history used for monitoring and documenting work activities",
+          "contributions": [
+            "Development of Reply Message component",
+            "Development of Admin Inbox page UI",
+            "API integration for reply & approval features",
+            "UI design adjustments based on admin needs"
+          ]
+        },
+        "project-a5": {
+          "name": "Project A5",
+          "focus": "Managing employee leave applications, usage, and records",
+          "period": "16 September - 17 Desember 2025",
+          "role": "FE & BE Developer",
+          "description": "A leave system based on journaling (debit / credit) with multi-roles: Employee & Human Capital",
+          "contributions": [
+            "Development of Leave quota mutation page",
+            "Backgrounder for automatic leave approval",
+            "API integration & UI improvements",
+            "Adjustment of leave quota business logic"
+          ]
+        },
+        "project-h": {
+          "name": "Project H",
+          "focus": "Monitoring project progress",
+          "period": "29 September - 31 Desember 2025",
+          "role": "FE & BE Developer",
+          "description": "A system for monitoring project progress covering requirement, development, and monitoring phases",
+          "contributions": [
+            "UI fixes and adjustments according to Figma",
+            "Bug fixing on Role Management & PICA Management features",
+            "Code refactoring to improve maintainability",
+            "Implementation of role access checking (CRUD)"
+          ]
+        },
+        "project-j": {
+          "name": "Project J",
+          "focus": "Educational website that serves as a platform to educate and develop young talent across Indonesia",
+          "period": "31 Oktober - 23 Desember 2025",
+          "role": "FE Developer & Content Creation",
+          "description": "Educational website that serves as a platform for companies to educate and develop young talent across Indonesia",
+          "contributions": [
+            "Development of website page UI",
+            "Content fixes for Navbar & Footer",
+            "Addition of Gallery & Prize sections",
+            "Creation of course certificates (Moodle)",
+            "Preparation of Python Competition questions (Junior High & High School)"
+          ]
+        }
+      }
+    }
+  },
+  "detail": {
+    "responsibilities": "Responsibilities",
+    "projects": "Projects",
+    "table": {
+      "name": "Name",
+      "focus": "Focus",
+      "role": "Role",
+      "period": "Period",
+      "description": "Description",
+      "contributions": "Contributions"
+    }
+  }
+}

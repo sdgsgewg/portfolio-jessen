@@ -1,0 +1,11 @@
+{
+  "title": "Kontak",
+  "subtitle": "Hubungi Saya",
+  "description": "Punya pertanyaan atau ingin berkolaborasi? Saya hanya selangkah lagi! Mari terhubung dan menjelajahi peluang bersama.",
+  "form": {
+    "name": "Nama",
+    "email": "Email",
+    "message": "Pesan",
+    "send": "Kirim"
+  }
+}

@@ -1,4 +1,3 @@
-import { ComServ } from "@/lib/community-data";
 import { useSafeSectionContext } from "@/hooks/useSafeSectionContext";
 import { getPrimaryColor, getSecondaryColor } from "@/lib/utils/getTextColor";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
@@ -6,6 +5,7 @@ import ImageWrapper from "../shared/ImageWrapper";
 import { ROUTES } from "@/constants/routes";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
+import { ComServ } from "@/types/community";
 
 interface ComServCardProps {
   comserv: ComServ;

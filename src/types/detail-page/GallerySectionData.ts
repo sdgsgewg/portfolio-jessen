@@ -1,4 +1,4 @@
-import { PortfolioGallery } from "@/lib/portfolio-data";
+import { PortfolioGallery } from "../portfolio";
 
 type GalleryType = string[] | PortfolioGallery;
 

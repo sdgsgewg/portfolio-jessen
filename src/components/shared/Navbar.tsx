@@ -14,7 +14,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navigation from "./Navigation";
-import { ROUTES } from "@/app/constants/routes";
+import { ROUTES } from "@/constants/routes";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -50,7 +50,7 @@ export function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-4 lg:space-x-6 mx-6">
+            <div className="hidden lg:flex items-center space-x-4 lg:space-x-6 mx-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
@@ -120,13 +120,13 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="flex items-center space-x-2 md:space-x-4">
+          <div className="flex items-center space-x-2 lg:space-x-4">
             <LanguageSwitcher />
             <ModeToggle />
 
             {/* Mobile Menu Toggle */}
             <button
-              className="md:hidden p-2 text-foreground hover:bg-muted rounded-md focus:outline-none"
+              className="lg:hidden p-2 text-foreground hover:bg-muted rounded-md focus:outline-none"
               onClick={() => setMobileMenuOpen(true)}
               aria-label="Open Mobile Menu"
             >

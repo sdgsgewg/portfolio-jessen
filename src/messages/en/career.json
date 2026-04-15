@@ -31,7 +31,7 @@
         "project-c": {
           "name": "Project C",
           "focus": "Displaying employee work history in a company",
-          "period": "15 September - 14 Oktober 2025",
+          "period": "15 September - 14 October 2025",
           "role": "FE & BE Developer",
           "description": "A website to display employee work history used for monitoring and documenting work activities",
           "contributions": [
@@ -44,8 +44,8 @@
         "project-a5": {
           "name": "Project A5",
           "focus": "Managing employee leave applications, usage, and records",
-          "period": "16 September - 17 Desember 2025",
-          "role": "FE & BE Developer",
+          "period": "16 September - 17 December 2025",
+          "role": "Mobile & BE Developer",
           "description": "A leave system based on journaling (debit / credit) with multi-roles: Employee & Human Capital",
           "contributions": [
             "Development of Leave quota mutation page",
@@ -57,7 +57,7 @@
         "project-h": {
           "name": "Project H",
           "focus": "Monitoring project progress",
-          "period": "29 September - 31 Desember 2025",
+          "period": "29 September - 31 December 2025",
           "role": "FE & BE Developer",
           "description": "A system for monitoring project progress covering requirement, development, and monitoring phases",
           "contributions": [
@@ -70,7 +70,7 @@
         "project-j": {
           "name": "Project J",
           "focus": "Educational website that serves as a platform to educate and develop young talent across Indonesia",
-          "period": "31 Oktober - 23 Desember 2025",
+          "period": "31 October - 23 December 2025",
           "role": "FE Developer & Content Creation",
           "description": "Educational website that serves as a platform for companies to educate and develop young talent across Indonesia",
           "contributions": [
@@ -85,12 +85,15 @@
     }
   },
   "detail": {
-    "responsibilities": "Responsibilities",
-    "projects": "Projects",
+    "sections": {
+      "responsibilities": "Responsibilities",
+      "projects": "Projects"
+    },
     "table": {
       "name": "Name",
       "focus": "Focus",
       "role": "Role",
+      "techStack": "Tech Stack",
       "period": "Period",
       "description": "Description",
       "contributions": "Contributions"

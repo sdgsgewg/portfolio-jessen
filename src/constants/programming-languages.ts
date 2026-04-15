@@ -5,4 +5,5 @@ export const PROGRAMMING_LANGUAGES = {
   HTML: "HTML",
   CSS: "CSS",
   C_SHARP: "C#",
+  PHP: "PHP",
 };

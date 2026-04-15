@@ -1,7 +1,7 @@
 import { Education } from "@/lib/education-data";
 import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
-import { useSafeSectionContext } from "@/app/hooks/useSafeSectionContext";
+import { useSafeSectionContext } from "@/hooks/useSafeSectionContext";
 import { getPrimaryColor, getSecondaryColor } from "@/lib/utils/getTextColor";
 
 interface EduCardProps {

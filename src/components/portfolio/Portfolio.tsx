@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import PortfolioCard from "./PortfolioCard";
 import SectionWrapper from "../section/SectionWrapper";
 import { FaStar } from "react-icons/fa";
-import { ROUTES } from "@/app/constants/routes";
+import { ROUTES } from "@/constants/routes";
 
 const Portfolio = () => {
   const t = useTranslations("portfolio");

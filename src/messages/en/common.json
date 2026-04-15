@@ -7,5 +7,12 @@
   "cta": {
     "viewDetails": "View Details",
     "back": "Back"
+  },
+
+  "detail": {
+    "sections": {
+      "description": "Description",
+      "gallery": "Gallery"
+    }
   }
 }

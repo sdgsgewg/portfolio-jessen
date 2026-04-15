@@ -1,16 +1,18 @@
 "use client";
 
-import { Portfolio } from "@/lib/portfolio-data";
 import Image from "next/image";
 import { FaGithub, FaFileAlt } from "react-icons/fa";
 import { MdPublic } from "react-icons/md";
 import { GiArtificialIntelligence } from "react-icons/gi";
-import { useSafeSectionContext } from "@/app/hooks/useSafeSectionContext";
+import { useSafeSectionContext } from "@/hooks/useSafeSectionContext";
 import { getPrimaryColor, getSecondaryColor } from "@/lib/utils/getTextColor";
 import TechBadge from "../shared/TechBadge";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
-import { ROUTES } from "@/app/constants/routes";
+import { ROUTES } from "@/constants/routes";
+import ImageWrapper from "../shared/ImageWrapper";
+import { Portfolio } from "@/types/portfolio";
+import { filterTechByCategory } from "@/lib/filter-tech-stack";
 
 interface PortfolioCardProps {
   portfolio: Portfolio;
@@ -26,12 +28,22 @@ const PortfolioCard = ({
 
   const { isOdd } = useSafeSectionContext();
 
-  const description = portfolio.description
-    ? `${portfolio.description.excerpt} ${portfolio.description.moreText}`
+  const { slug, description, links } = portfolio;
+
+  const modifiedTechStack = filterTechByCategory(portfolio.techStack, [
+    "language",
+    "framework",
+    "library",
+  ]);
+
+  const modifiedDescription = description
+    ? `${description.excerpt} ${description.moreText}`
     : "";
 
+  const deployedLink = links.web || links.model;
+
   const handleClick = () => {
-    router.push(`/${locale}/${ROUTES.PORTFOLIO}/${portfolio.slug}`);
+    router.push(`/${locale}/${ROUTES.PORTFOLIO}/${slug}`);
   };
 
   if (variant === "featured") {
@@ -41,14 +53,13 @@ const PortfolioCard = ({
         onClick={handleClick}
       >
         {/* IMAGE */}
-        <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden">
-          <Image
-            src={portfolio.image}
-            alt={portfolio.slug}
-            fill
-            className="object-cover group-hover:scale-105 transition duration-500"
-          />
-        </div>
+        <ImageWrapper
+          src={portfolio.image}
+          alt={portfolio.slug}
+          className={{
+            container: "h-64 md:h-80 rounded-2xl",
+          }}
+        />
 
         {/* CONTENT */}
         <div>
@@ -61,7 +72,7 @@ const PortfolioCard = ({
 
           {/* Tech */}
           <div className="flex flex-wrap gap-2 mb-4">
-            {portfolio.techStack.map((tech) => (
+            {modifiedTechStack.map((tech) => (
               <TechBadge key={tech} tech={tech} />
             ))}
           </div>
@@ -71,7 +82,7 @@ const PortfolioCard = ({
             <p
               className={`line-clamp-3 text-base ${getSecondaryColor(isOdd)} mb-4`}
             >
-              {description}
+              {modifiedDescription}
             </p>
           )}
 
@@ -85,9 +96,9 @@ const PortfolioCard = ({
               <FaGithub /> Github
             </a>
 
-            {portfolio.isDeployed && (
+            {deployedLink && (
               <a
-                href={portfolio.links.web}
+                href={deployedLink}
                 target="_blank"
                 className="px-5 py-2 bg-primary text-white rounded-full flex items-center gap-2"
               >
@@ -131,13 +142,9 @@ const PortfolioCard = ({
             {portfolio.type === "ai-model" ? <FaFileAlt /> : <FaGithub />}
           </a>
 
-          {portfolio.isDeployed && (
+          {deployedLink && (
             <a
-              href={
-                portfolio.type === "ai-model"
-                  ? portfolio.links.model
-                  : portfolio.links.web
-              }
+              href={deployedLink}
               target="_blank"
               className="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold"
             >
@@ -160,7 +167,7 @@ const PortfolioCard = ({
 
         {/* Tech */}
         <div className="flex flex-wrap gap-2 mb-3">
-          {portfolio.techStack.map((tech) => (
+          {modifiedTechStack.map((tech) => (
             <TechBadge key={tech} tech={tech} />
           ))}
         </div>
@@ -170,7 +177,7 @@ const PortfolioCard = ({
           <p
             className={`line-clamp-3 text-base ${getSecondaryColor(isOdd)} mb-4`}
           >
-            {description}
+            {modifiedDescription}
           </p>
         )}
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { SectionType } from "@/app/constants/sections";
+import { SectionType } from "@/constants/sections";
 import React, { createContext, useContext } from "react";
 
 interface SectionContextValue {

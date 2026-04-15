@@ -6,6 +6,34 @@
     "label": "Lihat Semua Portfolio"
   },
   "projects": {
+    "gamification-website": {
+      "name": "Website Gamifikasi",
+      "description": {
+        "excerpt": "Sebuah situs web pembelajaran berbasis gamifikasi untuk meningkatkan motivasi, keterlibatan, dan hasil belajar siswa dalam lingkungan pembelajaran digital yang selaras dengan kurikulum nasional Indonesia. Platform ini berhasil mengintegrasikan elemen-elemen gamifikasi utama,",
+        "moreText": "seperti poin, pengalaman (XP), level, tantangan, dan papan peringkat, yang memenuhi kebutuhan siswa dan guru. Selain itu, sistem ini mencakup dasbor analitik yang membantu guru memantau kemajuan siswa dan membuat keputusan berdasarkan data. Kami menggunakan Next.js sebagai kerangka kerja frontend, Nest.js sebagai kerangka kerja backend, Tailwind CSS sebagai alat penataan gaya, dan Supabase sebagai manajemen basis data sumber terbuka untuk mengembangkan situs web ini."
+      },
+      "features": [
+        "Halaman Utama: Aktivitas, papan peringkat, riwayat aktivitas, dan profil pengguna",
+        "Dasbor Siswa: Lihat tugas yang tertunda, aktivitas terbaru, kelas siswa, kemajuan tugas, kemajuan pengumpulan, analitik tugas, dan peringkat papan peringkat",
+        "Dasbor Guru: Lihat pengumpulan terbaru, aktivitas terbaru, manajemen kelas, manajemen tugas, tinjauan pengumpulan tugas kelas, analitik tugas, dan peringkat papan peringkat",
+        "Dasbor Admin: Pemantauan platform, papan peringkat popularitas tugas, bagan siswa per kelas, aktivitas terbaru, manajemen tugas, dan konfigurasi sistem untuk mata pelajaran, materi, tugas, dan jenis tugas"
+      ],
+      "gallery": {
+        "guest": "Tamu",
+        "auth": "Autentikasi",
+        "home": "Beranda",
+        "subjects": "Halaman Mata Pelajaran",
+        "activities": "Halaman Aktivitas",
+        "history": "Halaman Riwayat",
+        "leaderboard": "Halaman Papan Peringkat",
+        "profile": "Halaman Profil",
+        "attempt-activity-process": "Proses Pengerjaan Aktivitas",
+        "student-dashboard": "Dasbor Siswa",
+        "teacher-dashboard": "Dasbor Guru",
+        "admin-dashboard": "Dasbor Admin",
+        "dashboard-leaderboard": "Papan Pernigkat Dasbor"
+      }
+    },
     "my-react-app": {
       "name": "My React App",
       "description": {
@@ -16,7 +44,10 @@
         "Manajemen tugas",
         "Pelacak pengeluaran",
         "Sistem keranjang belanja"
-      ]
+      ],
+      "gallery": {
+        "home": "Beranda"
+      }
     },
     "spotify-clone-app": {
       "name": "Spotify Clone App",
@@ -27,7 +58,10 @@
       "features": [
         "Lihat daftar putar secara real-time",
         "Kontrol audio (putar, jeda, volume)"
-      ]
+      ],
+      "gallery": {
+        "home": "Beranda"
+      }
     },
     "inspira-umkm": {
       "name": "InspiraUMKM",
@@ -40,7 +74,15 @@
         "Transaksi produk menggunakan Midtrans (pembeli & penjual)",
         "Memberikan rating untuk produk yang telah dibeli (pembeli)",
         "Kelola katalog (admin)"
-      ]
+      ],
+      "gallery": {
+        "guest": "Tamu",
+        "authentication": "Autentikasi",
+        "home": "Beranda",
+        "about": "Tentang",
+        "transaction-process": "Proses Transaksi",
+        "send-feedback-process": "Proses Mengirimkan Umpan Balik"
+      }
     },
     "pustaka-bekas": {
       "name": "PustakaBekas",
@@ -53,13 +95,29 @@
         "Transaksi produk menggunakan Midtrans (pembeli & penjual)",
         "Memberikan rating untuk produk yang telah dibeli (pembeli)",
         "Kelola katalog (admin)"
-      ]
+      ],
+      "gallery": {
+        "guest": "Tamu",
+        "authentication": "Autentikasi",
+        "home": "Beranda",
+        "about": "Tentang",
+        "book-page": "Halaman Buku",
+        "category-page": "Halaman Kategori",
+        "seller-page": "Halaman Penjual",
+        "cart-page": "Halaman Keranjang",
+        "transaction-process": "Proses Transaksi",
+        "send-feedback-process": "Proses Kirim Umpan Balik"
+      }
     },
     "passenger-monitoring-models-at-bus-stop": {
       "name": "Passengers Monitoring Models at Bus Stop",
       "description": {
         "excerpt": "Proyek ini bertujuan untuk memantau jumlah orang di halte bus Transjakarta, tepatnya di halte bus S.Parman Transjakarta. Proyek ini dikembangkan menggunakan Python dan",
         "moreText": "kami memanfaatkan algoritma computer vision yang disebut algoritma YOLOv3 untuk membangun keseluruhan model. Proyek ini terutama berfokus pada pemeriksaan atau analisis waktu dan hari mana yang memiliki jumlah orang terbanyak, yang dapat memberikan data penting mengenai pola kepadatan di halte bus Jakarta."
+      },
+      "gallery": {
+        "experiment": "Eksperimen",
+        "result": "Hasil"
       }
     },
     "nitip-donk": {
@@ -73,13 +131,19 @@
         "Transaksi makanan (pembeli & penjual)",
         "Lihat status pesanan (pembeli)",
         "Kelola katalog makanan (penjual)"
-      ]
+      ],
+      "gallery": {
+        "home": "Beranda"
+      }
     },
     "code-reengineering": {
       "name": "Code Reengineering",
       "description": {
         "excerpt": "Situs web ini bertujuan untuk menyediakan materi mengenai code smell, seperti change preventer dan dispensables. Proyek ini dikembangkan menggunakan",
         "moreText": "HTML, Vanilla CSS, dan JS."
+      },
+      "gallery": {
+        "home": "Beranda"
       }
     },
     "hi-toyz": {
@@ -93,7 +157,14 @@
         "Transaksi produk",
         "Lihat testimoni",
         "Lihat acara"
-      ]
+      ],
+      "gallery": {
+        "authentication": "Autentikasi",
+        "home": "Beranda",
+        "gallery": "Galeri",
+        "product": "Produk",
+        "event": "Event"
+      }
     },
     "dog-care": {
       "name": "DOG CARE",
@@ -106,7 +177,25 @@
         "Transaksi produk",
         "Lihat testimoni",
         "Lihat acara"
-      ]
+      ],
+      "gallery": {
+        "guest": "Tamu",
+        "authentication": "Autentikasi",
+        "home": "Beranda",
+        "about": "Tentang",
+        "dog-page": "Halaman Anjing",
+        "consultation": "Konsultasi"
+      }
+    }
+  },
+  "detail": {
+    "sections": {
+      "projectInfo": "Info Proyek",
+      "techStack": "Tech Stack",
+      "features": "Fitur Utama"
+    },
+    "badges": {
+      "featured": "Unggulan"
     }
   }
 }

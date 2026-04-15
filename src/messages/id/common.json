@@ -7,5 +7,12 @@
   "cta": {
     "viewDetails": "Lihat Detail",
     "back": "Kembali"
+  },
+
+  "detail": {
+    "sections": {
+      "description": "Deskripsi",
+      "gallery": "Galeri"
+    }
   }
 }

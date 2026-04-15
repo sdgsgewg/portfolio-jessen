@@ -13,7 +13,7 @@ import { BsBootstrap } from "react-icons/bs";
 import { useState } from "react";
 import { useEffect } from "react";
 import Image from "next/image";
-import { IMAGES } from "@/app/constants/images";
+import { IMAGES } from "@/constants/images";
 
 export default function TechIcons() {
   const [iconSize, setIconSize] = useState(40);

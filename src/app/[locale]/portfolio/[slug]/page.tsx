@@ -2,36 +2,24 @@
 
 import { PORTFOLIO_ENTRIES } from "@/lib/portfolio-data";
 import { notFound, useParams } from "next/navigation";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
-import TechBadge from "@/components/shared/TechBadge";
-import { FaGithub, FaFileAlt, FaCheckCircle } from "react-icons/fa";
-import { MdPublic } from "react-icons/md";
-import { GiArtificialIntelligence } from "react-icons/gi";
-import BackSection from "@/components/shared/BackSection";
-
-const CtaButton = ({
-  link,
-  icon,
-  text,
-  btnType,
-}: {
-  link: string;
-  icon: React.ReactNode;
-  text: string;
-  btnType: "btn-dark" | "btn-primary";
-}) => {
-  return (
-    <a
-      className={`${btnType} min-w-[120px] flex flex-col items-center justify-center gap-1`}
-      href={link}
-      target="_blank"
-    >
-      <div className="text-xl">{icon}</div>
-      <span className="text-sm">{text}</span>
-    </a>
-  );
-};
+import { HeroSectionData } from "@/types/detail-page/HeroSectionData";
+import { HeaderSectionData } from "@/types/detail-page/HeaderSectionData";
+import { CtaSectionData } from "@/types/detail-page/CtaSectionData";
+import { GallerySectionData } from "@/types/detail-page/GallerySectionData";
+import { TechStackSectionData } from "@/types/detail-page/TechStackSectionData";
+import { Portfolio } from "@/types/portfolio";
+import DetailPageWrapper from "@/components/detail-page/DetailPageWrapper";
+import HeroSection from "@/components/detail-page/HeroSection";
+import HeaderSection from "@/components/detail-page/HeaderSection";
+import MetaSection from "@/components/detail-page/MetaSection";
+import TechStackSection from "@/components/detail-page/TechStackSection";
+import CTASection from "@/components/detail-page/CTASection";
+import DescriptionSection from "@/components/detail-page/DescriptionSection";
+import { DescriptionSectionData } from "@/types/detail-page/DescriptionSectionData";
+import FeatureSection from "@/components/detail-page/FeatureSection";
+import GallerySection from "@/components/detail-page/GallerySection";
+import { FeatureSectionData } from "@/types/detail-page/FeatureSectionData";
 
 export default function PortfolioDetailPage() {
   const tProjects = useTranslations("portfolio.projects");
@@ -41,130 +29,70 @@ export default function PortfolioDetailPage() {
 
   if (!project) return notFound();
 
+  const { image, links, type } = project;
   const content = tProjects.raw(project.slug);
 
+  const hero: HeroSectionData = {
+    image,
+    slug: slug as string,
+  };
+
+  const header: HeaderSectionData = {
+    text: content.name,
+  };
+
+  const meta: Portfolio["meta"] = project.meta;
+
+  const techStack: TechStackSectionData = {
+    data: project.techStack,
+  };
+
+  const cta: CtaSectionData = {
+    links,
+    type,
+  };
+
+  const description: DescriptionSectionData = {
+    data: content.description,
+    showTitle: true,
+  };
+
+  const features: FeatureSectionData = {
+    data: content.features,
+  };
+
+  const gallery: GallerySectionData = {
+    data: project.gallery ?? [],
+    slug: project.slug,
+  };
+
   return (
-    <div className="container py-16">
-      <div className="max-w-4xl mx-auto">
-        <BackSection />
+    <DetailPageWrapper>
+      {/* HERO */}
+      <HeroSection {...hero} />
 
-        {/* HERO */}
-        <div className="relative w-full h-[400px] rounded-2xl overflow-hidden mb-10">
-          <Image
-            src={project.image}
-            alt={project.slug}
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
-        </div>
-
+      <div className="flex flex-col gap-4">
         {/* HEADER */}
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">{content.name}</h1>
+        <HeaderSection {...header} />
+
+        {/* META */}
+        {meta && <MetaSection meta={meta} />}
 
         {/* Tech Stack */}
-        <div className="flex flex-wrap gap-2 mb-6">
-          {project.techStack.map((tech) => (
-            <TechBadge key={tech} tech={tech} />
-          ))}
-        </div>
-
-        {/* CTA buttons */}
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 w-full px-4 z-50">
-          <div className="max-w-4xl mx-auto bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-lg rounded-full px-4 py-3 flex flex-wrap justify-center gap-3 border border-white/20">
-            {project.links.github && (
-              <CtaButton
-                link={project.links.github}
-                icon={<FaGithub />}
-                text="Github"
-                btnType="btn-dark"
-              />
-            )}
-
-            {project.type === "ai-model" && project.links.paper && (
-              <CtaButton
-                link={project.links.paper}
-                icon={<FaFileAlt />}
-                text="Paper"
-                btnType="btn-dark"
-              />
-            )}
-
-            {project.type === "ai-model" && project.links.model && (
-              <CtaButton
-                link={project.links.model}
-                icon={<GiArtificialIntelligence />}
-                text="Model"
-                btnType="btn-primary"
-              />
-            )}
-
-            {project.type === "website" && project.links.web && (
-              <CtaButton
-                link={project.links.web}
-                icon={<MdPublic />}
-                text="Live Website"
-                btnType="btn-primary"
-              />
-            )}
-          </div>
-        </div>
-
-        {/* DESCRIPTION */}
-        <div className="mt-8 space-y-4 text-lg text-secondary dark:text-gray-300 leading-relaxed">
-          <p>{content.description.excerpt}</p>
-          <p>{content.description.moreText}</p>
-        </div>
-
-        {/* FEATURES */}
-        {content.features && (
-          <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-4 text-primary">
-              Key Features
-            </h2>
-
-            <ul className="grid sm:grid-cols-2 gap-3">
-              {content.features.map((feature: string, index: number) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-2 bg-primary/5 border border-primary/10 rounded-lg p-3"
-                >
-                  <FaCheckCircle className="text-primary mt-1" />
-                  <span className="text-sm text-secondary dark:text-gray-300">
-                    {feature}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {/* GALLERY */}
-        {project.gallery && (
-          <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-4 text-primary">Gallery</h2>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {project.gallery.map((img: string, index: number) => (
-                <div
-                  key={index}
-                  className="relative w-full h-48 rounded-xl overflow-hidden group"
-                >
-                  <Image
-                    src={img}
-                    alt={`gallery-${index}`}
-                    fill
-                    className="object-cover group-hover:scale-105 transition duration-300"
-                  />
-
-                  {/* overlay hover */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition" />
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        {techStack && <TechStackSection {...techStack} />}
       </div>
-    </div>
+
+      {/* CTA buttons */}
+      {cta && <CTASection {...cta} />}
+
+      {/* DESCRIPTION */}
+      <DescriptionSection {...description} />
+
+      {/* FEATURES */}
+      {features && <FeatureSection {...features} />}
+
+      {/* GALLERY */}
+      {gallery && <GallerySection {...gallery} />}
+    </DetailPageWrapper>
   );
 }

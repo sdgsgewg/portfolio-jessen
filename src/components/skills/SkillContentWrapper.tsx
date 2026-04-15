@@ -1,4 +1,4 @@
-import { useSafeSectionContext } from "@/app/hooks/useSafeSectionContext";
+import { useSafeSectionContext } from "@/hooks/useSafeSectionContext";
 import { getPrimaryColor, getSecondaryColor } from "@/lib/utils/getTextColor";
 import { SlideType } from "@/types/SlideType";
 import React from "react";

@@ -1,6 +1,6 @@
-import { LIBRARY } from "@/app/constants/library";
-import { FRAMEWORK } from "@/app/constants/framework";
-import { PROGRAMMING_LANGUAGES } from "@/app/constants/programming-languages";
+import { LIBRARY } from "@/constants/library";
+import { FRAMEWORK } from "@/constants/framework";
+import { PROGRAMMING_LANGUAGES } from "@/constants/programming-languages";
 
 export const TECH_BADGE_MAP: Record<string, string> = {
   // Library

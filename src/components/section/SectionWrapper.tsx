@@ -1,5 +1,5 @@
-import { SECTION_NAME } from "@/app/constants/section-names";
-import { useSafeSectionContext } from "@/app/hooks/useSafeSectionContext";
+import { SECTION_NAME } from "@/constants/section-names";
+import { useSafeSectionContext } from "@/hooks/useSafeSectionContext";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { IoLinkOutline } from "react-icons/io5";

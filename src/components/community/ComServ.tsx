@@ -1,15 +1,13 @@
 import { COMSERV_ENTRIES } from "@/lib/community-data";
 import { useLocale, useTranslations } from "next-intl";
-import React from "react";
 import ComServCard from "./ComServCard";
 import SectionWrapper from "../section/SectionWrapper";
 
 const ComServ = () => {
   const t = useTranslations("community");
+  const tCommunities = useTranslations("community.communities");
   const locale = useLocale();
-  const comServs =
-    COMSERV_ENTRIES[locale as keyof typeof COMSERV_ENTRIES] ||
-    COMSERV_ENTRIES.en;
+  const comServs = COMSERV_ENTRIES;
 
   return (
     <SectionWrapper
@@ -19,9 +17,22 @@ const ComServ = () => {
     >
       {/* <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"> */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-6 xl:w-10/12 xl:mx-auto">
-        {comServs.map((comserv) => (
-          <ComServCard key={`${locale}-${comserv.id}`} comserv={comserv} />
-        ))}
+        {comServs.map((comserv, index) => {
+          const content = tCommunities.raw(comserv.slug);
+
+          return (
+            <ComServCard
+              key={`${locale}-${comserv.slug}`}
+              comserv={{
+                ...comserv,
+                title: content.title,
+                date: content.date,
+                description: content.description,
+              }}
+              slide={index % 2 === 0 ? "slide-left" : "slide-right"}
+            />
+          );
+        })}
       </div>
     </SectionWrapper>
   );

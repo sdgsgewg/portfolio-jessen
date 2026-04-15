@@ -1,9 +1,10 @@
-import { Career } from "@/lib/career-data";
 import React from "react";
 import TechBadge from "../shared/TechBadge";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
+import { Career } from "@/types/career";
+import { filterTechByCategory } from "@/lib/filter-tech-stack";
 
 interface CareerCardProps {
   career: Career;
@@ -13,6 +14,12 @@ const CareerCard = ({ career }: CareerCardProps) => {
   const router = useRouter();
   const locale = useLocale();
   const t = useTranslations("common.cta");
+
+  const modifiedTechStack = filterTechByCategory(career.techStack, [
+    "language",
+    "framework",
+    "library",
+  ]);
 
   const handleClick = () => {
     router.push(`/${locale}/careers/${career.slug}`);
@@ -40,7 +47,7 @@ const CareerCard = ({ career }: CareerCardProps) => {
 
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 mb-4">
-          {career.techStack.map((tech, index) => (
+          {modifiedTechStack.map((tech, index) => (
             <TechBadge key={index} tech={tech} />
           ))}
         </div>

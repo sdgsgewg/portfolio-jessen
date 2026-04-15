@@ -85,12 +85,15 @@
     }
   },
   "detail": {
-    "responsibilities": "Tanggung Jawab",
-    "projects": "Daftar Proyek",
+    "sections": {
+      "responsibilities": "Tanggung Jawab",
+      "projects": "Daftar Proyek"
+    },
     "table": {
       "name": "Nama",
       "focus": "Fokus",
       "role": "Peran",
+      "techStack": "Tech Stack",
       "period": "Periode",
       "description": "Deskripsi",
       "contributions": "Kontribusi"

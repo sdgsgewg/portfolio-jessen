@@ -6,13 +6,48 @@
     "label": "View All Portfolio"
   },
   "projects": {
+    "gamification-website": {
+      "name": "Gamification Website",
+      "description": {
+        "excerpt": "A gamification-based learning website to improve student motivation, engagement, and learning outcomes in a digital learning environment aligned with the Indonesian national curriculum. The platform successfully integrated key gamification elements,",
+        "moreText": "such as points, experience (XP), levels, challenges, and leaderboards, which meet the needs of both students and teachers. Furthermore, the system includes an analytics dashboard that helps teachers monitor student progress and make data-driven decisions. We used Next.js as the frontend framework, Nest.js as the backend framework, Tailwind CSS as the styling tool, and Supabase as the open-source database management to develop this website."
+      },
+      "features": [
+        "Main Page: Activities, leaderboards, activity history, and a user profile",
+        "Student Dashboard: View pending tasks, recent activities, student classes, task progress, submission progress, task analytics, and leaderboard ranking",
+        "Teacher Dashboard: View recent submissions, recent activities, class management, task management, review of class task submissions, task analytics, and leaderboard ranking",
+        "Admin Dashboard: Platform monitoring, a task popularity leaderboard, a chart of students per class, recent activities, task management, and system configuration for subject, material, task, and task type"
+      ],
+      "gallery": {
+        "guest": "Guest",
+        "auth": "Authentication",
+        "home": "Home",
+        "subjects": "Subject Page",
+        "activities": "Activity Page",
+        "history": "History Page",
+        "leaderboard": "Leaderboard Page",
+        "profile": "Profile Page",
+        "attempt-activity-process": "Attempt Activity Process",
+        "student-dashboard": "Student Dashboard",
+        "teacher-dashboard": "Teacher Dashboard",
+        "admin-dashboard": "Admin Dashboard",
+        "dashboard-leaderboard": "Dashboard Leaderboard"
+      }
+    },
     "my-react-app": {
       "name": "My React App",
       "description": {
         "excerpt": "This project serves as a learning source for me to enhance my skill in using React to develop a website. This is an all in one productivity app where user",
         "moreText": "can manage their to-do lists, shopping cart, and track their expense. I use React JS and Tailwind CSS to develop this website."
       },
-      "features": ["Task management", "Expense tracker", "Shopping cart system"]
+      "features": [
+        "Task management",
+        "Expense tracker",
+        "Shopping cart system"
+      ],
+      "gallery": {
+        "home": "Home"
+      }
     },
     "spotify-clone-app": {
       "name": "Spotify Clone App",
@@ -23,7 +58,10 @@
       "features": [
         "View real-time playlist",
         "Audio control (play, pause, volume)"
-      ]
+      ],
+      "gallery": {
+        "home": "Home"
+      }
     },
     "inspira-umkm": {
       "name": "InspiraUMKM",
@@ -36,7 +74,15 @@
         "Product transaction using Midtrans (buyer & seller)",
         "Provide ratings for products that have been purchased (buyer)",
         "Manage catalog (admin)"
-      ]
+      ],
+      "gallery": {
+        "guest": "Guest",
+        "authentication": "Authentication",
+        "home": "Home",
+        "about": "About",
+        "transaction-process": "Transaction Process",
+        "send-feedback-process": "Send Feedback Process"
+      }
     },
     "pustaka-bekas": {
       "name": "PustakaBekas",
@@ -49,13 +95,29 @@
         "Product transaction using Midtrans (buyer & seller)",
         "Provide ratings for products that have been purchased (buyer)",
         "Manage catalog (admin)"
-      ]
+      ],
+      "gallery": {
+        "guest": "Guest",
+        "authentication": "Authentication",
+        "home": "Home",
+        "about": "About",
+        "book-page": "Book Page",
+        "category-page": "Category Page",
+        "seller-page": "Seller Page",
+        "cart-page": "Cart Page",
+        "transaction-process": "Transaction Process",
+        "send-feedback-process": "Send Feedback Process"
+      }
     },
     "passenger-monitoring-models-at-bus-stop": {
       "name": "Passengers Monitoring Models at Bus Stop",
       "description": {
         "excerpt": "This project serves to monitor the number of people at Transjakarta bus stop, precisely at S.Parman Transjakarta bus stop. This project  was developed using Python and",
         "moreText": "we utilize a computer vision algorithm called the YOLOv3 algorithm to build the entire model. This project mainly focuses on examining  or analyzing which time and day have the highest amount of  people,number which may provide essential data regarding the density pattern in Jakarta bus stops."
+      },
+      "gallery": {
+        "experiment": "Experiment",
+        "result": "Result"
       }
     },
     "nitip-donk": {
@@ -69,13 +131,19 @@
         "Food order transaction (buyer & seller)",
         "View order status (buyer)",
         "Manage food catalog (seller)"
-      ]
+      ],
+      "gallery": {
+        "home": "Home"
+      }
     },
     "code-reengineering": {
       "name": "Code Reengineering",
       "description": {
         "excerpt": "This website serve to provide materials regarding code smells, such as change preventer and the dispensables. This project was developed using",
         "moreText": "HTML, Vanilla CSS, and JS."
+      },
+      "gallery": {
+        "home": "Home"
       }
     },
     "hi-toyz": {
@@ -89,7 +157,14 @@
         "Product transaction",
         "View testimonies",
         "View event"
-      ]
+      ],
+      "gallery": {
+        "authentication": "Authentication",
+        "home": "Home",
+        "gallery": "Gallery",
+        "product": "Product",
+        "event": "Event"
+      }
     },
     "dog-care": {
       "name": "DOG CARE",
@@ -101,7 +176,25 @@
         "View information about various dog breeds",
         "View available dog breeds",
         "Consultation with a vet"
-      ]
+      ],
+      "gallery": {
+        "guest": "Guest",
+        "authentication": "Authentication",
+        "home": "Home",
+        "about": "About",
+        "dog-page": "Dog Page",
+        "consultation": "Consultation"
+      }
+    }
+  },
+  "detail": {
+    "sections": {
+      "projectInfo": "Project Info",
+      "techStack": "Tech Stack",
+      "features": "Key Features"
+    },
+    "badges": {
+      "featured": "Featured"
     }
   }
 }

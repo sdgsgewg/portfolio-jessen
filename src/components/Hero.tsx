@@ -1,4 +1,4 @@
-import { IMAGES } from "@/app/constants/images";
+import { IMAGES } from "@/constants/images";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";

@@ -1,13 +1,4 @@
-import { v4 as uuidv4 } from "uuid";
-
-export type Education = {
-  id: string;
-  institutionName: string;
-  degreeObtained: string;
-  yearsAttended: string;
-  description: string;
-  gpa?: number;
-};
+import { Education } from "@/types/education";
 
 export const EDUCATION_ENTRIES: Record<"en" | "id", Education[]> = {
   en: [

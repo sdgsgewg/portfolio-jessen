@@ -1,5 +1,31 @@
 {
   "title": "Pengabdian Masyarakat",
   "subtitle": "Kegiatan Terbaru",
-  "description": "Berikut adalah beberapa proyek pengabdian masyarakat terbaru saya yang menyoroti komitmen saya untuk memberikan dampak positif. Klik pada setiap proyek untuk menjelajahi inisiatif yang saya ikuti, tujuan yang ingin kami capai, dan keterampilan yang saya kembangkan saat bekerja sama dengan berbagai kelompok."
+  "description": "Berikut adalah beberapa proyek pengabdian masyarakat terbaru saya yang menyoroti komitmen saya untuk memberikan dampak positif. Klik pada setiap proyek untuk menjelajahi inisiatif yang saya ikuti, tujuan yang ingin kami capai, dan keterampilan yang saya kembangkan saat bekerja sama dengan berbagai kelompok.",
+  "communities": {
+    "together-towards-tolerance-and-justice-in-religion": {
+      "title": "Bersama-sama Menuju Toleransi dan Keadilan Dalam Beragama",
+      "date": "September 2023 - Desember 2023",
+      "description": {
+        "excerpt": "Saya berpartisipasi sebagai sukarelawan bersama kelompok yang terdiri dari enam orang untuk mengedukasi masyarakat tentang toleransi antaragama dan pentingnya hal tersebut dalam mewujudkan keadilan di masyarakat.",
+        "moreText": "Dengan menyelenggarakan kampanye ini, saya berkontribusi dalam meningkatkan kesadaran akan pentingnya menghormati perbedaan agama dan menumbuhkan rasa saling menghormati antar agama di Indonesia, khususnya di wilayah DKI Jakarta. Selain itu, saya bertujuan untuk menanamkan nilai-nilai agama agar masyarakat dapat lebih memahami isu-isu multikultural dan menghindari konflik yang didasarkan pada perbedaan agama."
+      }
+    },
+    "education-related-to-Indonesian-cultures-especially-regional-games": {
+      "title": "Edukasi Terkait Kebudayaan-Kebudayaan di Indonesia Khususnya Dalam Permainan Daerah",
+      "date": "Maret 2023 - Juni 2023",
+      "description": {
+        "excerpt": "Saya berpartisipasi sebagai sukarelawan bersama kelompok beranggotakan tujuh orang dalam kegiatan pengenalan dan pendidikan tentang budaya Indonesia. Saya merasa beruntung memiliki kesempatan untuk menjelaskan",
+        "moreText": "permainan tradisional dan nilai-nilai budaya yang terkandung di dalamnya. Saya juga menyadari bahwa sebagai generasi muda, kita harus aktif berpartisipasi dalam melestarikan dan mempromosikan budaya Indonesia, yang merupakan aset paling berharga suatu bangsa."
+      }
+    },
+    "anti-bullying-socialization-activities": {
+      "title": "Kegiatan Sosialisasi Anti Bullying",
+      "date": "September 2022 - Desember 2022",
+      "description": {
+        "excerpt": "Saya berpartisipasi sebagai sukarelawan bersama kelompok yang terdiri dari sembilan orang untuk mensosialisasikan kampanye anti-perundungan, menyadari bahaya perundungan, terutama di kalangan remaja.",
+        "moreText": "Setelah kampanye tersebut, saya merasa beruntung memiliki kesempatan untuk menjelaskan masalah perundungan yang semakin umum terjadi di sekolah. Poin penting yang saya dapatkan adalah pentingnya meningkatkan kesadaran dan kepedulian saya terhadap setiap masalah sosial yang terjadi di komunitas kita."
+      }
+    }
+  }
 }

@@ -1,16 +1,22 @@
 "use client";
 
 import ProjectTable from "@/components/career/ProjectTable";
-import BackSection from "@/components/shared/BackSection";
-import TechBadge from "@/components/shared/TechBadge";
-import { CAREER_ENTRIES, Project } from "@/lib/career-data";
+import { CAREER_ENTRIES } from "@/lib/career-data";
 import { notFound, useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { Project } from "@/types/career";
+import { mergeProjects } from "@/lib/merge-projects";
+import DetailPageWrapper from "@/components/detail-page/DetailPageWrapper";
+import TechStackSection from "@/components/detail-page/TechStackSection";
+import DescriptionSection from "@/components/detail-page/DescriptionSection";
+import { DescriptionSectionData } from "@/types/detail-page/DescriptionSectionData";
+import HeaderSection from "@/components/detail-page/HeaderSection";
+import { ResponsibilitySectionData } from "@/types/detail-page/ResponsibilitySectionData";
+import ResponsibilitySection from "@/components/detail-page/ResponsibilitySection";
 
 const CareerDetailPage = () => {
   const { slug } = useParams();
   const t = useTranslations("career");
-  const tDetail = useTranslations("career.detail");
 
   const baseCareer = CAREER_ENTRIES.find((c) => c.slug === slug);
 
@@ -22,59 +28,43 @@ const CareerDetailPage = () => {
     ...baseCareer,
     company: content.company,
     responsibilities: content.responsibilities,
-    projects: Object.values(content.projects || {}),
+    projects: mergeProjects(baseCareer.projects, content.projects),
+  };
+
+  const description: DescriptionSectionData = {
+    data: career.company?.description ?? "",
+    showTitle: true,
+  };
+
+  const responsibilities: ResponsibilitySectionData = {
+    data: career.responsibilities,
   };
 
   return (
-    <div className="container py-12 lg:py-16 mx-auto max-w-5xl">
-      <BackSection />
-
+    <DetailPageWrapper>
       {/* HEADER */}
-      <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold">
-          {career.company?.name}
-        </h1>
-
+      <HeaderSection text={career.company?.name}>
         <p className="text-primary font-semibold mt-1">{career.position}</p>
 
         <p className="text-sm text-secondary mt-1">
           {career.joinDate} - {career.endDate}
         </p>
-      </div>
+      </HeaderSection>
 
       {/* TECH STACK */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {career.techStack.map((tech) => (
-          <TechBadge key={tech} tech={tech} />
-        ))}
-      </div>
+      <TechStackSection data={career.techStack} />
 
       {/* DESCRIPTION */}
-      <p className="text-secondary mb-8 leading-relaxed">
-        {career.company?.description}
-      </p>
+      <DescriptionSection {...description} />
 
       {/* RESPONSIBILITIES */}
-      <div className="mb-10">
-        <h2 className="text-xl font-bold mb-4">
-          {tDetail("responsibilities")}
-        </h2>
-
-        <ul className="space-y-2">
-          {career.responsibilities?.map((item: string, i: number) => (
-            <li key={i} className="flex gap-2">
-              <span className="text-primary">•</span>
-              <span className="text-secondary">{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ResponsibilitySection {...responsibilities} />
 
       {/* PROJECT TABLE */}
       {career.projects && career.projects.length > 0 && (
         <ProjectTable projects={career.projects as Project[]} />
       )}
-    </div>
+    </DetailPageWrapper>
   );
 };
 

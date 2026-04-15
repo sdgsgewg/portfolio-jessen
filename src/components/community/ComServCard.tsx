@@ -1,46 +1,50 @@
-import React, { useState } from "react";
 import { ComServ } from "@/lib/community-data";
-import Image from "next/image";
-import { useSafeSectionContext } from "@/app/hooks/useSafeSectionContext";
-import {
-  getPrimaryColor,
-  getReadMoreColor,
-  getSecondaryColor,
-} from "@/lib/utils/getTextColor";
+import { useSafeSectionContext } from "@/hooks/useSafeSectionContext";
+import { getPrimaryColor, getSecondaryColor } from "@/lib/utils/getTextColor";
 import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
+import ImageWrapper from "../shared/ImageWrapper";
+import { ROUTES } from "@/constants/routes";
+import { useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
 
 interface ComServCardProps {
   comserv: ComServ;
+  slide: "slide-left" | "slide-right";
 }
 
-const ComServCard = ({ comserv }: ComServCardProps) => {
-  const { slide, image, subject, title, date, location, excerpt, moreText } =
-    comserv;
+const ComServCard = ({ comserv, slide }: ComServCardProps) => {
+  const locale = useLocale();
+  const router = useRouter();
 
   const { isOdd } = useSafeSectionContext();
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const { image, subject, title, slug, date, location, description } = comserv;
+
+  const modifiedDescription = description
+    ? `${description.excerpt} ${description.moreText}`
+    : "";
+
+  const handleClick = () => {
+    router.push(`/${locale}/${ROUTES.COMMUNITY}/${slug}`);
+  };
 
   return (
-    <div className={`${slide} h-full p-4`}>
+    <div className={`${slide} h-full p-4 cursor-pointer`} onClick={handleClick}>
       <div className="h-full group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white/5 backdrop-blur-sm">
         {/* Image */}
-        <div className="relative h-64 w-full overflow-hidden">
-          <Image
-            src={image}
-            alt={subject}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
-
+        <ImageWrapper
+          src={image}
+          alt={subject}
+          className={{
+            container: "h-64",
+            overlay: "bg-linear-to-t from-black/60 via-black/20 to-transparent",
+          }}
+        >
           {/* Subject Badge */}
           <span className="absolute top-4 left-4 bg-primary text-white text-xs px-3 py-1 rounded-full shadow">
             {subject}
           </span>
-        </div>
+        </ImageWrapper>
 
         {/* Content */}
         <div className="p-5">
@@ -67,18 +71,11 @@ const ComServCard = ({ comserv }: ComServCardProps) => {
           </div>
 
           {/* Description */}
-          <p className={`text-sm leading-relaxed ${getSecondaryColor(isOdd)}`}>
-            {excerpt}
-            {isExpanded && moreText}
-          </p>
-
-          {/* CTA */}
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className={`${getReadMoreColor(isOdd)} font-semibold text-sm mt-3 hover:underline`}
+          <p
+            className={`line-clamp-3 text-sm leading-relaxed ${getSecondaryColor(isOdd)}`}
           >
-            {isExpanded ? "Read Less" : "Read More"}
-          </button>
+            {modifiedDescription}
+          </p>
         </div>
       </div>
     </div>

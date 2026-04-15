@@ -1,7 +1,7 @@
 "use client";
 
-import useAnimationObserver from "../hooks/useAnimationObserver";
-import { sections } from "../constants/sections";
+import useAnimationObserver from "../../hooks/useAnimationObserver";
+import { sections } from "../../constants/sections";
 import { Section } from "@/components/section/Section";
 
 export default function HomePage() {

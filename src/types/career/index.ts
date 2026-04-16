@@ -1,5 +1,5 @@
 import { TechName } from "@/constants/tech-stack";
-import { CareerProjectOrigin, ProjectPlatform, ProjectRole } from "../project";
+import { ProjectOrigin, ProjectPlatform, ProjectRole } from "../project";
 
 export type Project = {
   key: string;
@@ -7,7 +7,7 @@ export type Project = {
   focus?: string;
   period?: string;
 
-  origin: CareerProjectOrigin;
+  origin: ProjectOrigin;
 
   platforms: ProjectPlatform[];
 

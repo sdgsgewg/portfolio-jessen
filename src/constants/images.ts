@@ -409,5 +409,7 @@ export const IMAGES = {
   COMMON: {
     FALLBACK:
       "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/common/fallback.jpg",
+    DATA_NOT_FOUND:
+      "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/common/data-not-found.png",
   },
 };

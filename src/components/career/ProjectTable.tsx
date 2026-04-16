@@ -7,17 +7,17 @@ interface ProjectTableProps {
 }
 
 const TableHeader = ({ title }: { title: string }) => {
-  const tProjectDataLabels = useTranslations("career.project.data.labels");
+  const tProjectLabels = useTranslations("project.labels");
 
   const getWidthClass = () => {
     switch (title) {
-      case tProjectDataLabels("focus"):
+      case tProjectLabels("focus"):
         return "min-w-48";
-      case tProjectDataLabels("techStack"):
+      case tProjectLabels("techStack"):
         return "min-w-48";
-      case tProjectDataLabels("description"):
+      case tProjectLabels("description"):
         return "min-w-64";
-      case tProjectDataLabels("contributions"):
+      case tProjectLabels("contributions"):
         return "min-w-80";
       default:
         return "min-w-40";
@@ -41,18 +41,18 @@ const TableData = ({ children }: { children: React.ReactNode }) => {
 
 const ProjectTable = ({ projects }: ProjectTableProps) => {
   const tSections = useTranslations("career.detail.sections");
-  const tProjectDataLabels = useTranslations("career.project.data.labels");
-  const tProjectDataValues = useTranslations("career.project.data.values");
+  const tProjectLabels = useTranslations("project.labels");
+  const tProjectValues = useTranslations("project.values");
 
   if (!projects) return null;
 
   const getModifiedPlatforms = (proj: Project) => {
     if (proj.platforms.length > 1) {
       return proj.platforms
-        .map((p) => tProjectDataValues(`platform.${p}`))
+        .map((p) => tProjectValues(`platform.${p}`))
         .join(" & ");
     }
-    return `${tProjectDataValues(`platform.${proj.platforms[0]}`)}`;
+    return `${tProjectValues(`platform.${proj.platforms[0]}`)}`;
   };
 
   return (
@@ -64,16 +64,16 @@ const ProjectTable = ({ projects }: ProjectTableProps) => {
           <thead className="sticky top-0 z-20 bg-slate-100 dark:bg-slate-800 text-left">
             <tr>
               <th className="p-3 min-w-30 sticky left-0 z-30 bg-slate-100 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700">
-                {tProjectDataLabels("name")}
+                {tProjectLabels("name")}
               </th>
-              <TableHeader title={tProjectDataLabels("focus")} />
-              <TableHeader title={tProjectDataLabels("origin")} />
-              <TableHeader title={tProjectDataLabels("platform")} />
-              <TableHeader title={tProjectDataLabels("role")} />
-              <TableHeader title={tProjectDataLabels("techStack")} />
-              <TableHeader title={tProjectDataLabels("period")} />
-              <TableHeader title={tProjectDataLabels("description")} />
-              <TableHeader title={tProjectDataLabels("contributions")} />
+              <TableHeader title={tProjectLabels("focus")} />
+              <TableHeader title={tProjectLabels("origin")} />
+              <TableHeader title={tProjectLabels("platform")} />
+              <TableHeader title={tProjectLabels("role")} />
+              <TableHeader title={tProjectLabels("techStack")} />
+              <TableHeader title={tProjectLabels("period")} />
+              <TableHeader title={tProjectLabels("description")} />
+              <TableHeader title={tProjectLabels("contributions")} />
             </tr>
           </thead>
 
@@ -87,11 +87,9 @@ const ProjectTable = ({ projects }: ProjectTableProps) => {
                   {proj.name}
                 </td>
                 <TableData>{proj.focus}</TableData>
-                <TableData>
-                  {tProjectDataValues(`origin.${proj.origin}`)}
-                </TableData>
+                <TableData>{tProjectValues(`origin.${proj.origin}`)}</TableData>
                 <TableData>{getModifiedPlatforms(proj)}</TableData>
-                <TableData>{tProjectDataValues(`role.${proj.role}`)}</TableData>
+                <TableData>{tProjectValues(`role.${proj.role}`)}</TableData>
                 <TableData>{proj.techStack.join(", ")}</TableData>
                 <TableData>{proj.period}</TableData>
                 <TableData>{proj.description}</TableData>

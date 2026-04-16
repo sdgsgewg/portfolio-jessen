@@ -227,47 +227,6 @@
     "sections": {
       "responsibilities": "Responsibilities",
       "projects": "Projects"
-    },
-    "table": {
-      "name": "Name",
-      "focus": "Focus",
-      "projectSource": "Project Source",
-      "platform": "Platform",
-      "role": "Role",
-      "techStack": "Tech Stack",
-      "period": "Period",
-      "description": "Description",
-      "contributions": "Contributions"
-    }
-  },
-  "project": {
-    "data": {
-      "labels": {
-        "name": "Name",
-        "focus": "Focus",
-        "origin": "Project Source",
-        "platform": "Platform",
-        "role": "Role",
-        "techStack": "Tech Stack",
-        "period": "Period",
-        "description": "Description",
-        "contributions": "Contributions"
-      },
-      "values": {
-        "role": {
-          "frontend": "Frontend Developer",
-          "backend": "Backend Developer",
-          "fullstack": "Fullstack Developer"
-        },
-        "platform": {
-          "mobile": "Mobile Application",
-          "website": "Website"
-        },
-        "origin": {
-          "internal": "Internal",
-          "external": "External"
-        }
-      }
     }
   }
 }

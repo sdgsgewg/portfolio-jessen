@@ -30,8 +30,8 @@ const META_VALUE_STYLE: Record<string, string> = {
 };
 
 const MetaBadge = ({ metaKey, value }: { metaKey: string; value: string }) => {
-  const tLabel = useTranslations("portfolio.meta.labels");
-  const tValue = useTranslations("portfolio.meta.values");
+  const tLabel = useTranslations("project.labels");
+  const tValue = useTranslations("project.values");
 
   return (
     <div className="flex flex-col gap-1">

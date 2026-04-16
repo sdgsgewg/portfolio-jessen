@@ -1,6 +1,6 @@
 import { TechName } from "@/constants/tech-stack";
 import { ExpandableText } from "../ExpandableText";
-import { PortfolioProjectOrigin, ProjectDifficulty, ProjectPlatform, ProjectRole, ProjectStatus, ProjectTeam } from "../project";
+import { ProjectDifficulty, ProjectOrigin, ProjectPlatform, ProjectRole, ProjectStatus, ProjectTeam } from "../project";
 
 export type PortfolioLink = {
   github?: string;
@@ -20,6 +20,8 @@ export type Portfolio = {
   slug: string;
   techStack: TechName[];
   date: string;
+  startDate: string;
+  endDate: string;
 
   description?: ExpandableText;
 
@@ -28,7 +30,7 @@ export type Portfolio = {
   links: PortfolioLink;
 
   meta?: {
-    origin: PortfolioProjectOrigin;
+    origin: ProjectOrigin;
     platform: ProjectPlatform;
     role: ProjectRole;
 

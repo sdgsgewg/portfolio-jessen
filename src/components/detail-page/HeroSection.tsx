@@ -10,7 +10,7 @@ const HeroSection = ({ image, slug }: HeroSectionProps) => {
       src={image}
       alt={slug}
       className={{
-        container: "h-100 rounded-2xl",
+        container: "w-full h-100 rounded-2xl",
         overlay: "bg-linear-to-t from-black/60 via-black/20 to-transparent",
       }}
       priority

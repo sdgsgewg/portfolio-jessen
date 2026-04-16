@@ -15,6 +15,7 @@ async function getMessages(locale: string) {
     footer: (await import(`./messages/${locale}/footer.json`)).default,
     theme: (await import(`./messages/${locale}/theme.json`)).default,
     common: (await import(`./messages/${locale}/common.json`)).default,
+    project: (await import(`./messages/${locale}/project.json`)).default,
   };
 
   return messages;

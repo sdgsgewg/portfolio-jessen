@@ -50,7 +50,7 @@ export default function ImageWrapper({
               )
           : undefined
       }
-      className={`relative w-full aspect-video overflow-hidden ${
+      className={`relative aspect-video overflow-hidden ${
         clickable ? "cursor-pointer" : ""
       } ${className?.container || ""}`}
     >

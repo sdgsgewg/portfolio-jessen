@@ -18,5 +18,23 @@
 
   "badges": {
     "featured": "Featured"
+  },
+
+  "search": {
+    "placeholder": "Search by name...",
+    "loading": "Searching..."
+  },
+
+  "filter": {
+    "allRoles": "All Roles",
+    "allPlatforms": "All Platforms",
+    "allTechs": "All Techs",
+    "clear": "Clear Filters"
+  },
+
+  "sort": {
+    "title": "Sort",
+    "newest": "Newest",
+    "oldest": "Oldest"
   }
 }

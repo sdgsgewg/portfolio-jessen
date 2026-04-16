@@ -6,6 +6,7 @@ import PortfolioCard from "./PortfolioCard";
 import SectionWrapper from "../section/SectionWrapper";
 import { FaStar } from "react-icons/fa";
 import { ROUTES } from "@/constants/routes";
+import FeaturedPortfolioCard from "./FeaturedPortfolioCard";
 
 const Portfolio = () => {
   const t = useTranslations("portfolio");
@@ -45,7 +46,7 @@ const Portfolio = () => {
 
           {/* Card */}
           <div className="border border-primary/20 rounded-2xl p-4 pt-6 md:p-6">
-            <PortfolioCard
+            <FeaturedPortfolioCard
               portfolio={{
                 ...featured,
                 name: featuredContent.name,

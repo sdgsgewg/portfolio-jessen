@@ -34,7 +34,7 @@ const GallerySection = ({ data, slug }: GallerySectionProps) => {
               gallery={data} // kirim semua gambar
               index={index} // posisi gambar
               className={{
-                container: "h-48 rounded-xl group",
+                container: "w-full h-48 rounded-xl group",
               }}
               hoverOverlay
               clickable
@@ -64,7 +64,7 @@ const GallerySection = ({ data, slug }: GallerySectionProps) => {
                       gallery={d.images} // kirim semua gambar
                       index={index} // posisi gambar
                       className={{
-                        container: "h-48 rounded-xl group",
+                        container: "w-full h-48 rounded-xl group",
                       }}
                       hoverOverlay
                       clickable

@@ -1,0 +1,50 @@
+{
+  "labels": {
+    "name": "Nama",
+    "focus": "Fokus",
+    "origin": "Sumber Proyek",
+    "platform": "Platform",
+    "role": "Role",
+    "techStack": "Tech Stack",
+    "period": "Periode",
+    "description": "Deskripsi",
+    "contributions": "Kontribusi",
+    "team": "Tim",
+    "difficulty": "Tingkat Kesulitan",
+    "status": "Status"
+  },
+  "values": {
+    "role": {
+      "frontend": "Frontend Developer",
+      "backend": "Backend Developer",
+      "fullstack": "Fullstack Developer",
+      "ui-ux": "UI/UX Designer",
+      "ai": "AI Engineer"
+    },
+    "platform": {
+      "website": "Website",
+      "ai-model": "Model AI",
+      "mobile": "Mobile"
+    },
+    "origin": {
+      "practice": "Latihan",
+      "assignment": "Tugas",
+      "real-world": "Dunia Nyata",
+      "internal": "Internal",
+      "external": "External"
+    },
+    "team": {
+      "solo": "Solo",
+      "team": "Tim"
+    },
+    "difficulty": {
+      "easy": "Mudah",
+      "medium": "Sedang",
+      "hard": "Sulit"
+    },
+    "status": {
+      "completed": "Selesai",
+      "in-progress": "Sedang Berlangsung"
+    }
+  }
+}

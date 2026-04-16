@@ -1,0 +1,50 @@
+{
+  "labels": {
+    "name": "Name",
+    "focus": "Focus",
+    "origin": "Project Source",
+    "platform": "Platform",
+    "role": "Role",
+    "techStack": "Tech Stack",
+    "period": "Period",
+    "description": "Description",
+    "contributions": "Contributions",
+    "team": "Team",
+    "difficulty": "Difficulty",
+    "status": "Status"
+  },
+  "values": {
+    "role": {
+      "frontend": "Frontend Developer",
+      "backend": "Backend Developer",
+      "fullstack": "Fullstack Developer",
+      "ui-ux": "UI/UX Designer",
+      "ai": "AI Engineer"
+    },
+    "platform": {
+      "website": "Website",
+      "mobile": "Mobile",
+      "ai-model": "AI Model"
+    },
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
+    "team": {
+      "solo": "Solo",
+      "team": "Team"
+    },
+    "status": {
+      "completed": "Completed",
+      "in-progress": "In Progress"
+    },
+    "origin": {
+      "practice": "Practice",
+      "assignment": "Assignment",
+      "real-world": "Real World",
+      "internal": "Internal",
+      "external": "External"
+    }
+  }
+}

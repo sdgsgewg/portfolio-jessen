@@ -18,5 +18,23 @@
 
   "badges": {
     "featured": "Unggulan"
+  },
+
+  "search": {
+    "placeholder": "Cari berdasarkan nama...",
+    "loading": "Mencari..."
+  },
+
+  "filter": {
+    "allRoles": "Semua Peran",
+    "allPlatforms": "Semua Platform",
+    "allTechs": "Semua Teknologi",
+    "clear": "Hapus Filter"
+  },
+
+  "sort": {
+    "title": "Urutkan",
+    "newest": "Terbaru",
+    "oldest": "Terlama"
   }
 }

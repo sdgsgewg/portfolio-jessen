@@ -226,35 +226,5 @@
       "responsibilities": "Tanggung Jawab",
       "projects": "Daftar Proyek"
     }
-  },
-  "project": {
-    "data": {
-      "labels": {
-        "name": "Nama",
-        "focus": "Fokus",
-        "origin": "Sumber Proyek",
-        "platform": "Platform",
-        "role": "Peran",
-        "techStack": "Tech Stack",
-        "period": "Periode",
-        "description": "Deskripsi",
-        "contributions": "Kontribusi"
-      },
-      "values": {
-        "role": {
-          "frontend": "Frontend Developer",
-          "backend": "Backend Developer",
-          "fullstack": "Fullstack Developer"
-        },
-        "platform": {
-          "mobile": "Mobile Application",
-          "website": "Website"
-        },
-        "origin": {
-          "internal": "Internal",
-          "external": "External"
-        }
-      }
-    }
   }
 }

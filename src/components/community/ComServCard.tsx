@@ -36,7 +36,7 @@ const ComServCard = ({ comserv, slide }: ComServCardProps) => {
           src={image}
           alt={subject}
           className={{
-            container: "h-64",
+            container: "w-full h-64",
             overlay: "bg-linear-to-t from-black/60 via-black/20 to-transparent",
           }}
         >

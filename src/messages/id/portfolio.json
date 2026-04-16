@@ -193,9 +193,47 @@
       "projectInfo": "Info Proyek",
       "techStack": "Tech Stack",
       "features": "Fitur Utama"
+    }
+  },
+  "meta": {
+    "labels": {
+      "origin": "Sumber Proyek",
+      "platform": "Platform",
+      "role": "Peran",
+      "team": "Tim",
+      "difficulty": "Tingkat Kesulitan",
+      "status": "Status"
     },
-    "badges": {
-      "featured": "Unggulan"
+    "values": {
+      "role": {
+        "frontend": "Frontend Developer",
+        "backend": "Backend Developer",
+        "fullstack": "Fullstack Developer",
+        "ui-ux": "UI/UX Designer",
+        "ai": "AI Engineer"
+      },
+      "platform": {
+        "website": "Website",
+        "ai-model": "Model AI"
+      },
+      "origin": {
+        "practice": "Latihan",
+        "assignment": "Tugas",
+        "real-world": "Dunia Nyata"
+      },
+      "team": {
+        "solo": "Solo",
+        "team": "Tim"
+      },
+      "difficulty": {
+        "easy": "Mudah",
+        "medium": "Sedang",
+        "hard": "Sulit"
+      },
+      "status": {
+        "completed": "Selesai",
+        "in-progress": "Sedang Berlangsung"
+      }
     }
   }
 }

@@ -7,41 +7,6 @@ interface MetaSectionProps {
   meta: Meta;
 }
 
-const META_LABEL: Record<string, string> = {
-  origin: "Type",
-  role: "Role",
-  team: "Team",
-  difficulty: "Difficulty",
-  status: "Status",
-};
-
-const META_VALUE_LABEL: Record<string, string> = {
-  // Role
-  frontend: "Frontend Developer",
-  backend: "Backend Developer",
-  fullstack: "Fullstack Developer",
-  "ui-ux": "UI/UX Designer",
-  ai: "AI Engineer",
-
-  // Origin
-  practice: "Practice",
-  assignment: "Assignment",
-  "real-world": "Real World",
-
-  // Team
-  solo: "Solo",
-  team: "Team",
-
-  // Difficulty
-  easy: "Easy",
-  medium: "Medium",
-  hard: "Hard",
-
-  // Status
-  completed: "Completed",
-  "in-progress": "In Progress",
-};
-
 const META_VALUE_STYLE: Record<string, string> = {
   practice: "bg-yellow-100 text-yellow-700",
   assignment: "bg-orange-100 text-orange-700",
@@ -64,14 +29,19 @@ const META_VALUE_STYLE: Record<string, string> = {
   "in-progress": "bg-blue-100 text-blue-700",
 };
 
-const MetaBadge = ({ label, value }: { label: string; value: string }) => {
+const MetaBadge = ({ metaKey, value }: { metaKey: string; value: string }) => {
+  const tLabel = useTranslations("portfolio.meta.labels");
+  const tValue = useTranslations("portfolio.meta.values");
+
   return (
     <div className="flex flex-col gap-1">
-      <span className="text-xs text-muted-foreground">{label}</span>
+      <span className="text-xs text-muted-foreground">
+        {tLabel(metaKey) || metaKey}
+      </span>
       <span
         className={`text-xs px-2 py-1 rounded-md w-fit capitalize ${META_VALUE_STYLE[value] || "bg-gray-100"}`}
       >
-        {META_VALUE_LABEL[value] || value}
+        {tValue(`${metaKey}.${value}`) || value}
       </span>
     </div>
   );
@@ -79,6 +49,7 @@ const MetaBadge = ({ label, value }: { label: string; value: string }) => {
 
 const MetaSection = ({ meta }: MetaSectionProps) => {
   const t = useTranslations("portfolio.detail");
+  const tBadges = useTranslations("common.badges");
 
   if (!meta) return null;
 
@@ -87,7 +58,7 @@ const MetaSection = ({ meta }: MetaSectionProps) => {
       {/* FLOATING BADGE */}
       {meta.featured && (
         <span className="absolute top-3 right-3 text-xs bg-primary text-white px-2 py-1 rounded-full shadow">
-          ⭐ {t("badges.featured")}
+          ⭐ {tBadges("featured")}
         </span>
       )}
 
@@ -103,13 +74,7 @@ const MetaSection = ({ meta }: MetaSectionProps) => {
         {Object.entries(meta).map(([key, value]) => {
           if (!value || key === "impact" || key === "featured") return null;
 
-          return (
-            <MetaBadge
-              key={key}
-              label={META_LABEL[key] || key}
-              value={value as string}
-            />
-          );
+          return <MetaBadge key={key} metaKey={key} value={value as string} />;
         })}
       </div>
 

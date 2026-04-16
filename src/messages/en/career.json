@@ -15,70 +15,209 @@
         "Collaborated in an SDLC (Scrum) team (developers, BA, PM) to deliver iterative releases, contributing to successful sprint deliveries and UAT readiness through active requirement analysis, debugging, and refactoring."
       ],
       "projects": {
-        "project-i": {
-          "name": "Project I",
-          "focus": "Managing Dealer Finance reports",
-          "period": "1 - 11 September 2025",
-          "role": "FE & BE Developer",
-          "description": "A system for managing Dealer Finance reports used to process ceiling data and dealer collection reports",
+        "project-a1": {
+          "name": "Project A1",
+          "focus": "Task tracking system (Today & Yesterday Task)",
+          "period": "April 16 – May 8, 2025",
+          "description": "Module for tracking daily employee tasks to support effective manpower distribution",
           "contributions": [
-            "Bug fixes on various reports (Waiting Outstanding, Outstanding Loan, Dealer Payment, Payment Report)",
-            "Data processing based on Invoice Number",
-            "Fixes for date filters, data validation, and Excel export results",
-            "Adjustment of Aging Day calculations according to business logic"
+            "Fixed a bug in tab switching (Today Task & Yesterday Task)",
+            "Implemented a confirmation pop-up when there are unsaved data changes",
+            "Improved task submission logic and data validation",
+            "Fixed submit button issues (disabled, spam clicks, and inconsistent states)",
+            "Adjusted the pop-up UI to match Figma design",
+            "Handled edge cases such as empty data and canceled changes"
+          ]
+        },
+        "project-a2": {
+          "name": "Project A2",
+          "focus": "Approval management (Voucher & Purchase Order)",
+          "period": "May 7 - 16, 2025",
+          "description": "Approval module for vouchers and purchase orders integrated from web to mobile systems",
+          "contributions": [
+            "Implementation of approval features (Approve, Decline, Need Revision)",
+            "Development of list and detail pages for Voucher Requests",
+            "Development of list and detail pages for Purchase Order Requests",
+            "Implementation of the select multiple action feature",
+            "Addition of notes feature for Need Revisions",
+            "UI/UX improvements such as fixed buttons and notification text adjustments"
+          ]
+        },
+        "project-a3": {
+          "name": "Project A3",
+          "focus": "Project & revenue tracking system",
+          "period": "May 19 – June 3, 2025",
+          "description": "Module for tracking project, pipeline, and revenue data, including master data management",
+          "contributions": [
+            "Bug fixes in master data (customer & manager)",
+            "Fix data storage issues (fields not saved, save not working)",
+            "Fix field validation and dependency improvements between fields",
+            "Implement autofill in the create revenue feature",
+            "Fix pipeline status not updating",
+            "Business logic adjustments in the revenue and pipeline features"
+          ]
+        },
+        "project-a4": {
+          "name": "Project A4",
+          "focus": "Notification & inbox system (Human Capital)",
+          "period": "June 10 - 24, 2025",
+          "role": "FE Developer",
+          "description": "Notification module for Human Capital users, including reminders and broadcast messages",
+          "contributions": [
+            "Development of Reminder and Notification (Inbox) features",
+            "Implementation of read/unread status feature",
+            "Addition of search and filter features to notifications",
+            "Development of broadcast message feature",
+            "Addition of notification icon (bell) on landing page",
+            "Fixed bugs related to loading, freezing, and navigation"
+          ]
+        },
+        "project-b": {
+          "name": "Project B",
+          "focus": "Student & mentor management system (mobile)",
+          "period": "April 25 – July 25, 2025",
+          "description": "Mobile application for managing student and mentor data, including statistics, news, profiles, and user relationships",
+          "contributions": [
+            "Bug fixes in the UI and input fields (email, name, etc.)",
+            "Validation implementation in input forms",
+            "Data binding improvements in user profiles",
+            "Layout and spacing adjustments according to design",
+            "Addition of confirmation pop-ups when data changes have not been saved"
           ]
         },
         "project-c": {
           "name": "Project C",
-          "focus": "Displaying employee work history in a company",
-          "period": "15 September - 14 October 2025",
-          "role": "FE & BE Developer",
-          "description": "A website to display employee work history used for monitoring and documenting work activities",
+          "focus": "Employee work history system (web)",
+          "period": "April 25 – October 14, 2025",
+          "description": "Website to display employee work histories that can be used internally and externally by the company",
           "contributions": [
-            "Development of Reply Message component",
-            "Development of Admin Inbox page UI",
+            "Home page development (Hero, Features, Clients)",
+            "Creation of reusable components and section layouts",
+            "Reply Message feature development (editor, attachment, toolbar)",
+            "Employee Detail Screen development",
+            "Frontend and backend API integration (partially canceled)",
+            "Admin Inbox page UI development",
             "API integration for reply & approval features",
             "UI design adjustments based on admin needs"
           ]
         },
-        "project-a5": {
-          "name": "Project A5",
-          "focus": "Managing employee leave applications, usage, and records",
-          "period": "16 September - 17 December 2025",
-          "role": "Mobile & BE Developer",
-          "description": "A leave system based on journaling (debit / credit) with multi-roles: Employee & Human Capital",
+        "project-e": {
+          "name": "Project E",
+          "focus": "Job vacancy platform",
+          "period": "27 May – 21 July 2025",
+          "description": "Website for job vacancy management and recruitment process",
           "contributions": [
-            "Development of Leave quota mutation page",
-            "Backgrounder for automatic leave approval",
-            "API integration & UI improvements",
-            "Adjustment of leave quota business logic"
+            "Bug fixes in the CMS vacancy feature",
+            "Migrating encryption methods from symmetric (AES) to asymmetric (RSA)",
+            "Improving the login encryption process",
+            "Email service integration using SendGrid for production",
+            "Debugging production issues related to encryption and email"
+          ]
+        },
+        "project-f": {
+          "name": "Project F",
+          "focus": "Event management & attendance system (mobile)",
+          "period": "June 30 – July 1, 2025",
+          "description": "Mobile application for event registration, participant monitoring, and QR scanning attendance",
+          "contributions": [
+            "Bug fixes in the pop-up navigation feature",
+            "UX improvements in filter, sort, and ticket selection",
+            "Debugging user interaction issues in the pop-up menu"
+          ]
+        },
+        "project-g": {
+          "name": "Project G",
+          "focus": "Community & event platform (web & mobile)",
+          "period": "July 7 – August 1, 2025",
+          "description": "Community platform for creating, joining, and managing events",
+          "contributions": [
+            "Bug fixes in the dashboard and role management",
+            "Development of the Latest Info (CRUD) feature",
+            "Improvements to the chat and notification features",
+            "Implementation of automatic chat room creation logic",
+            "UI/UX improvements on mobile (chat, header, event links)"
           ]
         },
         "project-h": {
           "name": "Project H",
-          "focus": "Monitoring project progress",
-          "period": "29 September - 31 December 2025",
-          "role": "FE & BE Developer",
-          "description": "A system for monitoring project progress covering requirement, development, and monitoring phases",
+          "focus": "Monitoring or tracking the progress of a project being worked on",
+          "period": "July 22 – December 31, 2025",
+          "description": "System for monitoring project progress from the requirements stage to development",
           "contributions": [
-            "UI fixes and adjustments according to Figma",
-            "Bug fixing on Role Management & PICA Management features",
+            "Dashboard UI and User Management Development",
+            "API Development for dashboard and PICA management",
+            "Frontend and backend integration",
+            "CRUD user management feature implementation",
+            "UI improvements and adjustments according to Figma",
+            "Bug fixing in Role Management & PICA Management features",
             "Code refactoring to improve maintainability",
-            "Implementation of role access checking (CRUD)"
+            "Role access checking (CRUD) implementation based on user privileges"
+          ]
+        },
+        "project-i": {
+          "name": "Project I",
+          "focus": "Managing Dealer Finance Reports",
+          "period": "August 15 - September 11, 2025",
+          "description": "A system for managing Dealer Finance reports used to process ceiling data and dealer collection reports",
+          "contributions": [
+            "Report development (Waiting Outstanding, Outstanding Loan, Dealer Payment, Payment Report)",
+            "Implementation of filter features, data grids, and report export to Excel",
+            "Invoice data processing based on statuses such as Waiting Outstanding, Outstanding Loan, and Payment",
+            "Addition of report upload and download features",
+            "Development of the User to Dealer Mapping feature to manage data visibility based on user",
+            "Implementation of automatic logic for dealer mapping based on username if there is no manual mapping"
+          ]
+        },
+        "project-a5": {
+          "name": "Project A5",
+          "focus": "Managing employee leave applications, usage, and recording",
+          "period": "September 16 - December 17, 2025",
+          "description": "Journaling-based leave system (debit/credit) with multiple roles: Employee & Human Capital",
+          "contributions": [
+            "Development of the Leave Quota Mutation page",
+            "Backgrounder for auto-approving leave",
+            "API integration & UI improvements",
+            "Adjustment of the leave quota business logic"
           ]
         },
         "project-j": {
           "name": "Project J",
-          "focus": "Educational website that serves as a platform to educate and develop young talent across Indonesia",
-          "period": "31 October - 23 December 2025",
-          "role": "FE Developer & Content Creation",
-          "description": "Educational website that serves as a platform for companies to educate and develop young talent across Indonesia",
+          "focus": "An educational website that serves as a platform for educating and developing young talent throughout Indonesia",
+          "period": "October 31 - December 23, 2025",
+          "description": "An educational website that serves as a platform for companies to educate and develop young talent throughout Indonesia",
           "contributions": [
-            "Development of website page UI",
-            "Content fixes for Navbar & Footer",
+            "Website UI development",
+            "Navbar & Footer content improvements",
             "Addition of Gallery & Prize sections",
             "Creation of course certificates (Moodle)",
-            "Preparation of Python Competition questions (Junior High & High School)"
+            "Compilation of Python Competition questions (Junior High & High School)"
+          ]
+        },
+        "project-k": {
+          "name": "Project K",
+          "focus": "Church management system",
+          "period": "January 8, 2026",
+          "description": "System for managing the management of church organizations",
+          "contributions": [
+            "Compiling MPK management data based on Excel files",
+            "Creating SQL scripts to insert data into databases",
+            "Mapping data structures into relational tables",
+            "Ensuring data consistency and structure according to system requirements"
+          ]
+        },
+        "project-a": {
+          "name": "Project A",
+          "focus": "Enterprise administration system (web & mobile)",
+          "period": "January 12 – February 27, 2026",
+          "role": "FE & BE Developer",
+          "description": "Enterprise administration system (web & mobile) for managing various departments such as marketing,human capital, etc",
+          "contributions": [
+            "Single Sign-On (SSO) integration into the login feature using SSO Prime (Adaptist)",
+            "Studying and implementing SSO documentation",
+            "Implementing data encryption and decryption processes in the database",
+            "Implementing encryption for data read/write processes",
+            "Implementing encryption for login authentication",
+            "Adjusting data security logic according to system requirements"
           ]
         }
       }
@@ -92,11 +231,43 @@
     "table": {
       "name": "Name",
       "focus": "Focus",
+      "projectSource": "Project Source",
+      "platform": "Platform",
       "role": "Role",
       "techStack": "Tech Stack",
       "period": "Period",
       "description": "Description",
       "contributions": "Contributions"
+    }
+  },
+  "project": {
+    "data": {
+      "labels": {
+        "name": "Name",
+        "focus": "Focus",
+        "origin": "Project Source",
+        "platform": "Platform",
+        "role": "Role",
+        "techStack": "Tech Stack",
+        "period": "Period",
+        "description": "Description",
+        "contributions": "Contributions"
+      },
+      "values": {
+        "role": {
+          "frontend": "Frontend Developer",
+          "backend": "Backend Developer",
+          "fullstack": "Fullstack Developer"
+        },
+        "platform": {
+          "mobile": "Mobile Application",
+          "website": "Website"
+        },
+        "origin": {
+          "internal": "Internal",
+          "external": "External"
+        }
+      }
     }
   }
 }

@@ -14,5 +14,9 @@
       "description": "Deskripsi",
       "gallery": "Galeri"
     }
+  },
+
+  "badges": {
+    "featured": "Unggulan"
   }
 }

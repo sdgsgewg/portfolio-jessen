@@ -43,7 +43,7 @@ export function Navbar() {
         <div className="flex h-16 items-center px-4 container mx-auto justify-between">
           <div className="flex items-center">
             <Link
-              href="#home"
+              href={ROUTES.HOME}
               className="font-bold text-2xl mr-6 bg-linear-to-r from-primary to-cyan-500 bg-clip-text text-transparent shrink-0"
             >
               Jessen

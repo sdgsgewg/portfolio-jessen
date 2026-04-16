@@ -26,10 +26,9 @@ export type Portfolio = {
   gallery?: PortfolioGallery;
   links: PortfolioLink;
 
-  type: "website" | "ai-model";
-
   meta?: {
     origin: "practice" | "assignment" | "real-world";
+    platform: "website" | "ai-model";
     role: "frontend" | "backend" | "fullstack" | "ui-ux" | "ai";
 
     team?: "solo" | "team";

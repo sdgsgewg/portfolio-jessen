@@ -189,9 +189,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       github: "https://github.com/sdgsgewg/gamification-fe",
       web: "https://gamification-fe-phi.vercel.app/",
     },
-    type: "website",
     meta: {
       origin: "assignment",
+      platform: "website",
       role: "fullstack",
       team: "team",
       featured: true,
@@ -221,9 +221,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       github: "https://github.com/sdgsgewg/my-react-app",
       web: "https://my-react-app-one-cyan.vercel.app",
     },
-    type: "website",
     meta: {
       origin: "practice",
+      platform: "website",
       role: "frontend",
       team: "solo",
       status: "completed",
@@ -250,9 +250,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
     links: {
       github: "https://github.com/sdgsgewg/spotify-clone-react-app",
     },
-    type: "website",
     meta: {
       origin: "practice",
+      platform: "website",
       role: "frontend",
       team: "solo",
       status: "completed",
@@ -280,9 +280,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       github: "https://github.com/sdgsgewg/new-inspira-umkm",
       // web: "https://new-inspira-umkm.vercel.app/",
     },
-    type: "website",
     meta: {
       origin: "assignment",
+      platform: "website",
       role: "fullstack",
       team: "team",
       status: "completed",
@@ -391,9 +391,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       github: "https://github.com/sdgsgewg/PustakaBekas",
       // web: "https://pustaka-bekas.vercel.app/",
     },
-    type: "website",
     meta: {
       origin: "assignment",
+      platform: "website",
       role: "fullstack",
       team: "team",
       status: "completed",
@@ -425,9 +425,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       model:
         "https://colab.research.google.com/drive/1od0r0MlhEnWHDHQOo8plLG6jRHShKwTW?usp=sharing",
     },
-    type: "ai-model",
     meta: {
       origin: "assignment",
+      platform: "ai-model",
       role: "ai",
       team: "team",
       status: "completed",
@@ -458,9 +458,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       github: "https://github.com/jovitawaisakhi/NITIP",
       // web: "#",
     },
-    type: "website",
     meta: {
       origin: "assignment",
+      platform: "website",
       role: "frontend",
       team: "team",
       status: "completed",
@@ -489,9 +489,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       github: "https://github.com/sdgsgewg/CodeReengineering",
       web: "https://sdgsgewg.github.io/CodeReengineering/HomePage",
     },
-    type: "website",
     meta: {
       origin: "assignment",
+      platform: "website",
       role: "frontend",
       team: "solo",
       status: "completed",
@@ -553,9 +553,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       github: "https://github.com/sdgsgewg/HI-Toyz",
       web: "https://sdgsgewg.github.io/HI-Toyz/Home/Home_Page.html",
     },
-    type: "website",
     meta: {
       origin: "assignment",
+      platform: "website",
       role: "frontend",
       team: "solo",
       status: "completed",
@@ -608,9 +608,9 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       github: "https://github.com/sdgsgewg/DOG-CARE",
       web: "https://sdgsgewg.github.io/DOG-CARE/",
     },
-    type: "website",
     meta: {
       origin: "assignment",
+      platform: "website",
       role: "ui-ux",
       team: "team",
       status: "completed",

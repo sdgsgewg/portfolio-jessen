@@ -5,8 +5,15 @@ export type Project = {
   name?: string;
   focus?: string;
   period?: string;
-  role?: string;
+
+  origin: "internal" | "external";
+
+  platforms: ("mobile" | "website")[];
+
+  role: "frontend" | "backend" | "fullstack";
+
   techStack: TechName[];
+
   description?: string;
   contributions?: string[];
 };

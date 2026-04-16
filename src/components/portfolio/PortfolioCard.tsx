@@ -16,13 +16,9 @@ import { filterTechByCategory } from "@/lib/filter-tech-stack";
 
 interface PortfolioCardProps {
   portfolio: Portfolio;
-  variant?: "featured" | "default";
 }
 
-const PortfolioCard = ({
-  portfolio,
-  variant = "default",
-}: PortfolioCardProps) => {
+const PortfolioCard = ({ portfolio }: PortfolioCardProps) => {
   const locale = useLocale();
   const router = useRouter();
 
@@ -46,7 +42,7 @@ const PortfolioCard = ({
     router.push(`/${locale}/${ROUTES.PORTFOLIO}/${slug}`);
   };
 
-  if (variant === "featured") {
+  if (portfolio.meta?.featured) {
     return (
       <div
         className="group relative grid md:grid-cols-2 gap-6 items-center overflow-hidden transition-all duration-300 hover:-translate-y-1 cursor-pointer"
@@ -132,14 +128,18 @@ const PortfolioCard = ({
         <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition">
           <a
             href={
-              portfolio.type === "ai-model"
+              portfolio.meta?.platform === "ai-model"
                 ? portfolio.links.paper
                 : portfolio.links.github
             }
             target="_blank"
             className="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold"
           >
-            {portfolio.type === "ai-model" ? <FaFileAlt /> : <FaGithub />}
+            {portfolio.meta?.platform === "ai-model" ? (
+              <FaFileAlt />
+            ) : (
+              <FaGithub />
+            )}
           </a>
 
           {deployedLink && (
@@ -148,7 +148,7 @@ const PortfolioCard = ({
               target="_blank"
               className="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold"
             >
-              {portfolio.type === "ai-model" ? (
+              {portfolio.meta?.platform === "ai-model" ? (
                 <GiArtificialIntelligence />
               ) : (
                 <MdPublic />

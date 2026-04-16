@@ -10,6 +10,7 @@ import { ROUTES } from "@/constants/routes";
 const Portfolio = () => {
   const t = useTranslations("portfolio");
   const tProjects = useTranslations("portfolio.projects");
+  const tBadges = useTranslations("common.badges");
   const locale = useLocale();
   const myPortfolio = PORTFOLIO_ENTRIES;
 
@@ -18,8 +19,11 @@ const Portfolio = () => {
     url: `${locale}/${ROUTES.PORTFOLIO}`,
   };
 
-  const featured = myPortfolio[0];
-  const rest = myPortfolio.slice(1, 4);
+  const featured =
+    myPortfolio.find((entry) => entry.meta?.featured) || myPortfolio[0];
+  const rest = myPortfolio
+    .filter((entry) => entry.slug !== featured.slug)
+    .slice(0, 3);
 
   const featuredContent = tProjects.raw(featured.slug);
 
@@ -36,7 +40,7 @@ const Portfolio = () => {
           {/* Badge */}
           <span className="absolute -top-3 left-4 bg-linear-to-r from-primary to-teal-400 text-white flex flex-row gap-1 items-center text-xs px-3 py-1 rounded-full shadow">
             <FaStar className="text-[10px]" />
-            <p className="m-0">Featured</p>
+            <p className="m-0">{tBadges("featured")}</p>
           </span>
 
           {/* Card */}
@@ -48,7 +52,6 @@ const Portfolio = () => {
                 description: featuredContent.description,
                 features: featuredContent.features,
               }}
-              variant="featured"
             />
           </div>
         </div>

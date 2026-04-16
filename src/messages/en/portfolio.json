@@ -192,9 +192,47 @@
       "projectInfo": "Project Info",
       "techStack": "Tech Stack",
       "features": "Key Features"
+    }
+  },
+  "meta": {
+    "labels": {
+      "origin": "Project Source",
+      "platform": "Platform",
+      "role": "Role",
+      "team": "Team",
+      "difficulty": "Difficulty",
+      "status": "Status"
     },
-    "badges": {
-      "featured": "Featured"
+    "values": {
+      "role": {
+        "frontend": "Frontend Developer",
+        "backend": "Backend Developer",
+        "fullstack": "Fullstack Developer",
+        "ui-ux": "UI/UX Designer",
+        "ai": "AI Engineer"
+      },
+      "platform": {
+        "website": "Website",
+        "ai-model": "AI Model"
+      },
+      "origin": {
+        "practice": "Practice",
+        "assignment": "Assignment",
+        "real-world": "Real World"
+      },
+      "team": {
+        "solo": "Solo",
+        "team": "Team"
+      },
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard"
+      },
+      "status": {
+        "completed": "Completed",
+        "in-progress": "In Progress"
+      }
     }
   }
 }

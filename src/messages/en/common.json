@@ -14,5 +14,9 @@
       "description": "Description",
       "gallery": "Gallery"
     }
+  },
+
+  "badges": {
+    "featured": "Featured"
   }
 }

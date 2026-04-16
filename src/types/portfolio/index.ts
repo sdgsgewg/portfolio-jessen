@@ -1,5 +1,6 @@
 import { TechName } from "@/constants/tech-stack";
 import { ExpandableText } from "../ExpandableText";
+import { PortfolioProjectOrigin, ProjectDifficulty, ProjectPlatform, ProjectRole, ProjectStatus, ProjectTeam } from "../project";
 
 export type PortfolioLink = {
   github?: string;
@@ -27,15 +28,15 @@ export type Portfolio = {
   links: PortfolioLink;
 
   meta?: {
-    origin: "practice" | "assignment" | "real-world";
-    platform: "website" | "ai-model";
-    role: "frontend" | "backend" | "fullstack" | "ui-ux" | "ai";
+    origin: PortfolioProjectOrigin;
+    platform: ProjectPlatform;
+    role: ProjectRole;
 
-    team?: "solo" | "team";
-    difficulty?: "easy" | "medium" | "hard";
+    team?: ProjectTeam;
+    difficulty?: ProjectDifficulty;
 
     featured?: boolean;
-    status?: "completed" | "in-progress";
+    status?: ProjectStatus;
 
     impact?: string;
   };

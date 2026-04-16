@@ -1,3 +1,3 @@
 import { PortfolioLink } from "../portfolio";
 
-export type CtaSectionData = { links: PortfolioLink; type: string };
+export type CtaSectionData = { links: PortfolioLink; platform: string };

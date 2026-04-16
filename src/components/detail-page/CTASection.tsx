@@ -29,7 +29,7 @@ const CtaButton = ({
 
 type CTASectionProps = CtaSectionData;
 
-const CTASection = ({ links, type }: CTASectionProps) => {
+const CTASection = ({ links, platform = "website" }: CTASectionProps) => {
   return (
     <div className="fixed bottom-2 left-1/2 -translate-x-1/2 w-full px-4 z-50">
       <div className="max-w-4xl mx-auto bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-lg rounded-full px-4 py-3 flex flex-wrap justify-center gap-3 border border-white/20">
@@ -42,7 +42,7 @@ const CTASection = ({ links, type }: CTASectionProps) => {
           />
         )}
 
-        {type === "ai-model" && links.paper && (
+        {platform === "ai-model" && links.paper && (
           <CtaButton
             link={links.paper}
             icon={<FaFileAlt />}
@@ -51,7 +51,7 @@ const CTASection = ({ links, type }: CTASectionProps) => {
           />
         )}
 
-        {type === "ai-model" && links.model && (
+        {platform === "ai-model" && links.model && (
           <CtaButton
             link={links.model}
             icon={<GiArtificialIntelligence />}
@@ -60,7 +60,7 @@ const CTASection = ({ links, type }: CTASectionProps) => {
           />
         )}
 
-        {type === "website" && links.web && (
+        {platform === "website" && links.web && (
           <CtaButton
             link={links.web}
             icon={<MdPublic />}

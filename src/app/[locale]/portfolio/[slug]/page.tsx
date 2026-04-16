@@ -29,7 +29,7 @@ export default function PortfolioDetailPage() {
 
   if (!project) return notFound();
 
-  const { image, links, type } = project;
+  const { image, links } = project;
   const content = tProjects.raw(project.slug);
 
   const hero: HeroSectionData = {
@@ -49,7 +49,7 @@ export default function PortfolioDetailPage() {
 
   const cta: CtaSectionData = {
     links,
-    type,
+    platform: meta?.platform ?? "website",
   };
 
   const description: DescriptionSectionData = {

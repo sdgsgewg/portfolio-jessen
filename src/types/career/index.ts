@@ -1,4 +1,5 @@
 import { TechName } from "@/constants/tech-stack";
+import { CareerProjectOrigin, ProjectPlatform, ProjectRole } from "../project";
 
 export type Project = {
   key: string;
@@ -6,11 +7,11 @@ export type Project = {
   focus?: string;
   period?: string;
 
-  origin: "internal" | "external";
+  origin: CareerProjectOrigin;
 
-  platforms: ("mobile" | "website")[];
+  platforms: ProjectPlatform[];
 
-  role: "frontend" | "backend" | "fullstack";
+  role: ProjectRole;
 
   techStack: TechName[];
 

@@ -13,7 +13,7 @@ const FeatureSection = ({ data }: FeatureSectionProps) => {
       <SectionTitle title={t("features")} />
 
       <ul className="grid sm:grid-cols-2 gap-3">
-        {data.map((feature: string, index: number) => (
+        {data && data.map((feature: string, index: number) => (
           <li
             key={index}
             className="flex items-start gap-2 bg-primary/5 border border-primary/10 rounded-lg p-3"

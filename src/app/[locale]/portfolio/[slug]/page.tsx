@@ -89,10 +89,10 @@ export default function PortfolioDetailPage() {
       <DescriptionSection {...description} />
 
       {/* FEATURES */}
-      {features && <FeatureSection {...features} />}
+      {features && features.data && <FeatureSection {...features} />}
 
       {/* GALLERY */}
-      {gallery && <GallerySection {...gallery} />}
+      {gallery && gallery.data && <GallerySection {...gallery} />}
     </DetailPageWrapper>
   );
 }

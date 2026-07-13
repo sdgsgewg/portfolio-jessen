@@ -12,6 +12,10 @@ const META_VALUE_STYLE: Record<string, string> = {
   assignment: "bg-orange-100 text-orange-700",
   "real-world": "bg-green-100 text-green-700",
 
+  "website": "bg-blue-100 text-blue-700",
+  "mobile": "bg-green-100 text-green-700",
+  "ai-model": "bg-purple-100 text-purple-700",
+
   frontend: "bg-blue-100 text-blue-700",
   backend: "bg-purple-100 text-purple-700",
   fullstack: "bg-indigo-100 text-indigo-700",

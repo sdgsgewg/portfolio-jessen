@@ -1,3 +1,4 @@
+import { Link } from "@/navigation";
 import GitHubIcon from "../icons/GitHubIcon";
 import InstagramIcon from "../icons/InstagramIcon";
 import LinkedInIcon from "../icons/LinkedInIcon";
@@ -8,59 +9,59 @@ import YouTubeIcon from "../icons/YouTubeIcon";
 export default function SocialLinks() {
   return (
     <>
-      <a
+      <Link
         href="https://www.instagram.com/jessen_/"
         target="_blank"
         rel="noopener noreferrer"
         className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
       >
         <InstagramIcon />
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="https://www.linkedin.com/in/jessen-jessen-829545313/"
         target="_blank"
         rel="noopener noreferrer"
         className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
       >
         <LinkedInIcon />
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="https://github.com/sdgsgewg"
         target="_blank"
         rel="noopener noreferrer"
         className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
       >
         <GitHubIcon />
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="https://youtube.com/@jessenjessen9454?si=tE3jh-qFr4yGhZqY"
         target="_blank"
         rel="noopener noreferrer"
         className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
       >
         <YouTubeIcon />
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="https://x.com/jessen261103"
         target="_blank"
         rel="noopener noreferrer"
         className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
       >
         <XIcon />
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="https://www.tiktok.com/@jessenjessen014"
         target="_blank"
         rel="noopener noreferrer"
         className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
       >
         <TikTokIcon />
-      </a>
+      </Link>
     </>
   );
 }

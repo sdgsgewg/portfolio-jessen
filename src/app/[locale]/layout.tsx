@@ -3,10 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Navbar } from "@/components/shared/Navbar";
-import { Footer } from "@/components/shared/Footer";
-import { LightboxProvider } from "@/context/LightboxContext";
+import { Footer } from "@/components/layout/footer/Footer";
+import { Navbar } from "@/components/layout/navbar/Navbar";
+import Providers from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,21 +35,14 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <LightboxProvider>
-              <Navbar />
-              <main className="min-h-screen">{children}</main>
-              <Footer />
-            </LightboxProvider>
-          </ThemeProvider>
+          <Providers>
+            <Navbar />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

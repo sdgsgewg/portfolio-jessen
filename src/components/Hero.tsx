@@ -1,4 +1,6 @@
 import { IMAGES } from "@/constants/images";
+import { ROUTES } from "@/constants/routes";
+import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
@@ -22,12 +24,12 @@ const Hero = () => {
           <p className="font-medium text-secondary mb-10 leading-relaxed">
             {t("description")}
           </p>
-          <a
-            href="#contact"
+          <Link
+            href={ROUTES.SECTION.PORTFOLIO}
             className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
           >
             {t("cta")}
-          </a>
+          </Link>
         </div>
         <div className="w-full self-end px-4 lg:w-1/2">
           <div className="relative mt-10 lg:mt-0 lg:right-0">

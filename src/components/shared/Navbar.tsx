@@ -1,41 +1,22 @@
 "use client";
 
 import { Link, usePathname } from "@/navigation";
-import { useTranslations } from "next-intl";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
 import { ModeToggle } from "./ModeToggle";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Navigation from "./Navigation";
 import { ROUTES } from "@/constants/routes";
 import { cn } from "@/lib/utils";
+import { useNavLinks } from "@/hooks/useNavLinks";
 
 export function Navbar() {
-  const tNav = useTranslations("navigation");
-  const isFooter: boolean = false;
-  const [open, setOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isActive = (path: string) => pathname === path;
+  const { navLinks } = useNavLinks();
 
-  const navLinks = [
-    { name: tNav("home"), path: ROUTES.SECTION.HOME },
-    { name: tNav("about"), path: ROUTES.SECTION.ABOUT },
-    { name: tNav("skills"), path: ROUTES.SECTION.SKILLS },
-    { name: tNav("portfolio"), path: ROUTES.SECTION.PORTFOLIO },
-    { name: tNav("career"), path: ROUTES.SECTION.CAREER },
-    { name: tNav("education"), path: ROUTES.SECTION.EDUCATION },
-    { name: tNav("community"), path: ROUTES.SECTION.COMMUNITY },
-    { name: tNav("contact"), path: ROUTES.SECTION.CONTACT },
-  ];
+  const isActive = (path: string) => pathname === path;
 
   return (
     <>
@@ -65,58 +46,6 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-
-              {/* <DropdownMenu open={open} onOpenChange={setOpen}>
-                <DropdownMenuTrigger
-                  className={cn(
-                    "flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary cursor-pointer",
-                    pathname.startsWith("/reksadana")
-                      ? "text-primary"
-                      : "text-muted-foreground",
-                  )}
-                >
-                  {tReksadana("base")}
-                  <ChevronDown
-                    className={cn(
-                      "h-4 w-4 transition-transform duration-200",
-                      open && "rotate-180",
-                    )}
-                  />
-                </DropdownMenuTrigger>
-
-                <DropdownMenuContent align="start">
-                  <DropdownMenuItem
-                    asChild
-                    className={cn(
-                      pathname === ROUTES.REKSADANA.RECAP.INPUT && "bg-accent",
-                    )}
-                  >
-                    <Link href={ROUTES.REKSADANA.RECAP.INPUT}>
-                      {tReksadana("recap")}
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem
-                    asChild
-                    className={cn(
-                      pathname === ROUTES.REKSADANA.ITEMS && "bg-accent",
-                    )}
-                  >
-                    <Link href={ROUTES.REKSADANA.ITEMS}>
-                      {tReksadana("items")}
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem
-                    asChild
-                    className={cn(
-                      pathname === ROUTES.REKSADANA.CATEGORIES && "bg-accent",
-                    )}
-                  >
-                    <Link href={ROUTES.REKSADANA.CATEGORIES}>
-                      {tReksadana("categories")}
-                    </Link>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu> */}
             </div>
           </div>
 
@@ -177,50 +106,6 @@ export function Navbar() {
                   </Link>
                 ))}
               </div>
-
-              {/* <div className="border-t pt-6">
-                <h3 className="text-sm font-semibold text-muted-foreground mb-4 uppercase tracking-wider px-2">
-                  {tReksadana("base")}
-                </h3>
-                <div className="flex flex-col space-y-2">
-                  <Link
-                    href={ROUTES.REKSADANA.RECAP.INPUT}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={cn(
-                      "text-lg font-medium transition-colors p-2 rounded-md hover:bg-accent",
-                      pathname === ROUTES.REKSADANA.RECAP.INPUT
-                        ? "text-primary bg-primary/5"
-                        : "text-muted-foreground",
-                    )}
-                  >
-                    {tReksadana("recap")}
-                  </Link>
-                  <Link
-                    href={ROUTES.REKSADANA.ITEMS}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={cn(
-                      "text-lg font-medium transition-colors p-2 rounded-md hover:bg-accent",
-                      pathname === ROUTES.REKSADANA.ITEMS
-                        ? "text-primary bg-primary/5"
-                        : "text-muted-foreground",
-                    )}
-                  >
-                    {tReksadana("items")}
-                  </Link>
-                  <Link
-                    href={ROUTES.REKSADANA.CATEGORIES}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={cn(
-                      "text-lg font-medium transition-colors p-2 rounded-md hover:bg-accent",
-                      pathname === ROUTES.REKSADANA.CATEGORIES
-                        ? "text-primary bg-primary/5"
-                        : "text-muted-foreground",
-                    )}
-                  >
-                    {tReksadana("categories")}
-                  </Link>
-                </div>
-              </div> */}
             </div>
           </motion.div>
         )}

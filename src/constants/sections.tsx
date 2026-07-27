@@ -35,9 +35,9 @@ export const sections: SectionType[] = [
     element: <ComServ />,
     hasCustomBackground: true,
   },
-  {
-    name: SECTION_NAME.CONTACT,
-    element: <Contact />,
-    hasCustomBackground: false,
-  },
+  // {
+  //   name: SECTION_NAME.CONTACT,
+  //   element: <Contact />,
+  //   hasCustomBackground: false,
+  // },
 ];

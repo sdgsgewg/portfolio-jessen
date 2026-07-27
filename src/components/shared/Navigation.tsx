@@ -1,33 +1,22 @@
-import { useTranslations } from "next-intl";
-import React from "react";
+import { useNavLinks } from "@/hooks/useNavLinks";
+import { Link } from "@/navigation";
 
 interface NavigationProps {
   isFooter: boolean;
 }
 
 const Navigation = ({ isFooter }: NavigationProps) => {
-  const tNav = useTranslations("navigation");
+  const { navLinks } = useNavLinks();
 
   const renderLinks = () => {
-    const links = [
-      { href: "#home", text: tNav("home") },
-      { href: "#about", text: tNav("about") },
-      { href: "#skills", text: tNav("skills") },
-      { href: "#portfolio", text: tNav("portfolio") },
-      { href: "#career", text: tNav("career") },
-      { href: "#education", text: tNav("education") },
-      { href: "#community", text: tNav("community") },
-      { href: "#contact", text: tNav("contact") },
-    ];
-
-    return links.map((link) => (
-      <li key={link.href} className="group">
-        <a
-          href={link.href}
+    return navLinks.map((link) => (
+      <li key={link.path} className="group">
+        <Link
+          href={link.path}
           className={`text-base ${isFooter ? "hover:text-primary mb-3" : "text-dark py-2 mx-8 flex group-hover:text-primary"}`}
         >
-          {link.text}
-        </a>
+          {link.name}
+        </Link>
       </li>
     ));
   };

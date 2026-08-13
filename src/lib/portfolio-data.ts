@@ -9,6 +9,82 @@ import { Portfolio } from "@/types/portfolio";
 
 export const PORTFOLIO_ENTRIES: Portfolio[] = [
   {
+    image: IMAGES.PORTFOLIO.INVESTBIT.GALLERY.HOME.P1,
+    slug: "investbit",
+    techStack: [
+      PROGRAMMING_LANGUAGES.TYPESCRIPT,
+      FRAMEWORK.NEXT_JS,
+      FRAMEWORK.TAILWIND_CSS,
+      DATABASE.POSTGRESQL,
+      PLATFORMS.SUPABASE,
+    ],
+    date: "March 2026 - August 2026",
+    startDate: "2026-03",
+    endDate: "2026-08",
+    gallery: [
+      {
+        key: "home",
+        images: [
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.HOME.P1,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.HOME.P2,
+        ],
+      },
+      {
+        key: "learn",
+        images: [
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P1,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P2,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P3,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P4,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P5,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P6,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P7,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P8,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P9,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.LEARN.P10,
+        ],
+      },
+      {
+        key: "glossary",
+        images: [
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.GLOSSARY.P1,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.GLOSSARY.P2,
+        ],
+      },
+      {
+        key: "mutual-fund-performance",
+        images: [
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.MUTUAL_FUND.PERFORMANCE.P1,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.MUTUAL_FUND.PERFORMANCE.P2,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.MUTUAL_FUND.PERFORMANCE.P3,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.MUTUAL_FUND.PERFORMANCE.P4,
+        ],
+      },
+      {
+        key: "dashboard",
+        images: [
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.DASHBOARD.MUTUAL_FUND.CATEGORIES
+            .P1,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.DASHBOARD.MUTUAL_FUND.ITEMS.P1,
+          IMAGES.PORTFOLIO.INVESTBIT.GALLERY.DASHBOARD.MUTUAL_FUND.RECORDS.P1,
+        ],
+      },
+    ],
+    links: {
+      github: "https://github.com/sdgsgewg/gamification-fe",
+      web: "https://gamification-fe-phi.vercel.app/",
+    },
+    meta: {
+      origin: "practice",
+      platform: "website",
+      role: "fullstack",
+      team: "solo",
+      featured: true,
+      status: "completed",
+    },
+  },
+
+  {
     image: IMAGES.PORTFOLIO.GAMIFICATION_WEBSITE.GALLERY.HOME.P1,
     slug: "gamification-website",
     techStack: [
@@ -200,6 +276,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.MY_REACT_APP.GALLERY.TO_DO_LIST,
     slug: "my-react-app",
@@ -233,6 +310,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.SPOTIFY_CLONE_APP.GALLERY.P1,
     slug: "spotify-clone-app",
@@ -264,6 +342,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.INSPIRA_UMKM.GALLERY.P1,
     slug: "inspira-umkm",
@@ -296,6 +375,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.PUSTAKA_BEKAS.GALLERY.HOME.HERO,
     slug: "pustaka-bekas",
@@ -409,6 +489,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.PASSENGER_MONITORING_MODEL.GALLERY.TUESDAY,
     slug: "passenger-monitoring-models-at-bus-stop",
@@ -445,6 +526,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.NITIP_DONK.GALLERY.P1,
     slug: "nitip-donk",
@@ -480,6 +562,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.CODE_RE_ENG.GALLERY.HOME,
     slug: "code-reengineering",
@@ -513,6 +596,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.HI_TOYZ.HOME.HERO,
     slug: "hi-toyz",
@@ -579,6 +663,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       status: "completed",
     },
   },
+
   {
     image: IMAGES.PORTFOLIO.DOG_CARE.GALLERY.HOME.DOG_LIST,
     slug: "dog-care",

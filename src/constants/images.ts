@@ -3,6 +3,7 @@ export const IMAGES = {
     PROFILE:
       "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/hero/profile.png",
   },
+
   SKILL: {
     TECHNICAL_SKILL: {
       C_SHARP:
@@ -13,18 +14,72 @@ export const IMAGES = {
         "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/skills/technical-skill/tailwind-css.png",
     },
   },
+
   PORTFOLIO: {
+    INVESTBIT: {
+      GALLERY: {
+        HOME: {
+          P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/home/gallery-1.png",
+          P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/home/gallery-2.png",
+          P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/home/gallery-3.png",
+        },
+
+        LEARN: {
+          P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/stock-basics.png",
+          P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/analysis-101.png",
+          P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/idx-guide.png",
+          P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/chapters-1.png",
+          P5: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/chapters-2.png",
+          P6: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/chart-pattern-1.png",
+          P7: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/chart-pattern-2.png",
+          P8: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/chart-pattern-3.png",
+          P9: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/chart-pattern-4.png",
+          P10: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/learn/chart-pattern-5.png",
+        },
+
+        GLOSSARY: {
+          P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/glossary/gallery-1.png",
+          P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/glossary/gallery-2.png",
+        },
+
+        MUTUAL_FUND: {
+          PERFORMANCE: {
+            P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/mutual-fund/performance/gallery-1.png",
+            P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/mutual-fund/performance/gallery-2.png",
+            P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/mutual-fund/performance/gallery-3.png",
+            P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/mutual-fund/performance/gallery-4.png",
+          },
+        },
+
+        DASHBOARD: {
+          MUTUAL_FUND: {
+            CATEGORIES: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/dashboard/mutual-fund/categories/gallery-1.png",
+            },
+            ITEMS: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/dashboard/mutual-fund/items/gallery-1.png",
+            },
+            RECORDS: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/investbit/dashboard/mutual-fund/records/gallery-1.png",
+            },
+          },
+        },
+      },
+    },
+
     GAMIFICATION_WEBSITE: {
       GALLERY: {
         GUEST: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/guest/gallery-1.png",
         },
+
         AUTH: {
           REGISTER:
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/auth/register.png",
           LOGIN:
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/auth/login.png",
         },
+
         HOME: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/home/gallery-1.png",
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/home/gallery-2.png",
@@ -34,9 +89,11 @@ export const IMAGES = {
           P6: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/home/gallery-6.png",
           P7: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/home/gallery-7.png",
         },
+
         SUBJECTS: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/subjects/gallery-1.png",
         },
+
         ACTIVITIES: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/activities/gallery-1.png",
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/activities/gallery-2.png",
@@ -49,24 +106,28 @@ export const IMAGES = {
             P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/activities/sections/gallery-1.png",
           },
         },
+
         HISTORY: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/history/gallery-1.png",
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/history/gallery-2.png",
           P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/history/gallery-3.png",
           P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/history/gallery-4.png",
         },
+
         LEADERBOARD: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/leaderboard/gallery-1.png",
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/leaderboard/gallery-2.png",
           P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/leaderboard/gallery-3.png",
           P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/leaderboard/gallery-4.png",
         },
+
         PROFILE: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/profile/gallery-1.png",
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/profile/gallery-2.png",
           P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/profile/gallery-3.png",
           P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/profile/gallery-4.png",
         },
+
         ATTEMPT_ACTIVITY_PROCESS: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/attempt-activity-process/gallery-1.png",
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/attempt-activity-process/gallery-2.png",
@@ -76,6 +137,7 @@ export const IMAGES = {
           P6: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/attempt-activity-process/gallery-6.png",
           P7: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/attempt-activity-process/gallery-7.png",
         },
+
         DASHBOARD: {
           STUDENT: {
             P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/dashboard/student/gallery-1.png",
@@ -110,6 +172,7 @@ export const IMAGES = {
               },
             },
           },
+
           TEACHER: {
             P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/dashboard/teacher/gallery-1.png",
             P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/dashboard/teacher/gallery-2.png",
@@ -127,6 +190,7 @@ export const IMAGES = {
               P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/dashboard/teacher/analytics/gallery-1.png",
             },
           },
+
           ADMIN: {
             P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/dashboard/admin/gallery-1.png",
             P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/dashboard/admin/gallery-2.png",
@@ -149,6 +213,7 @@ export const IMAGES = {
               P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/dashboard/admin/manage-task-types/gallery-1.png",
             },
           },
+
           LEADERBOARD: {
             CLASS:
               "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/gamification-website/dashboard/leaderboard/class.png",
@@ -158,6 +223,7 @@ export const IMAGES = {
         },
       },
     },
+
     MY_REACT_APP: {
       GALLERY: {
         TO_DO_LIST:
@@ -168,28 +234,33 @@ export const IMAGES = {
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/my-react-app/expense-tracker.png",
       },
     },
+
     SPOTIFY_CLONE_APP: {
       GALLERY: {
         P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/spotify-clone-app/gallery-1.png",
         P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/spotify-clone-app/gallery-2.png",
       },
     },
+
     INSPIRA_UMKM: {
       GALLERY: {
         P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/inspira-umkm/gallery-1.png",
       },
     },
+
     PUSTAKA_BEKAS: {
       GALLERY: {
         GUEST: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/guest/gallery-1.png",
         },
+
         AUTH: {
           REGISTER:
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/auth/register.png",
           LOGIN:
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/auth/login.png",
         },
+
         HOME: {
           HERO: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/home/hero.png",
           TRENDING:
@@ -197,17 +268,21 @@ export const IMAGES = {
           RECENTLY_UPLOADED_BOOKS:
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/home/recently-uploaded-books.png",
         },
+
         ABOUT: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/about/gallery-1.png",
         },
+
         BOOKS: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/gallery-1.png",
+
           SEARCH: {
             VALID_KEYWORD:
               "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/search/valid-keyword.png",
             NO_RESULT:
               "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/search/no-result.png",
           },
+
           FILTER: {
             FILTER_MODAL:
               "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/filter/filter-modal.png",
@@ -216,31 +291,38 @@ export const IMAGES = {
             BOOKS_BY_GENRE:
               "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/filter/books-by-genre.png",
           },
+
           DETAIL: {
             BUYER: {
               P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/detail/buyer/gallery-1.png",
               P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/detail/buyer/gallery-2.png",
               P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/detail/buyer/gallery-3.png",
             },
+
             SELLER: {
               P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/detail/seller/gallery-1.png",
               P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/books/detail/seller/gallery-2.png",
             },
           },
         },
+
         CATEGORIES: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/categories/gallery-1.png",
+
           DETAIL: {
             P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/categories/detail/gallery-1.png",
             P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/categories/detail/gallery-2.png",
           },
         },
+
         SELLERS: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/sellers/gallery-1.png",
         },
+
         CARTS: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/carts/gallery-1.png",
         },
+
         TRANSACTIONS: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/transactions/gallery-1.png",
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/transactions/gallery-2.png",
@@ -256,6 +338,7 @@ export const IMAGES = {
           P12: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/transactions/gallery-12.png",
           P13: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/transactions/gallery-13.png",
         },
+
         SEND_FEEDBACK: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/send-feedback/gallery-1.png",
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/pustaka-bekas/send-feedback/gallery-2.png",
@@ -267,6 +350,7 @@ export const IMAGES = {
         },
       },
     },
+
     PASSENGER_MONITORING_MODEL: {
       GALLERY: {
         MONDAY:
@@ -283,12 +367,14 @@ export const IMAGES = {
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/passenger-monitoring-model/result.png",
       },
     },
+
     NITIP_DONK: {
       GALLERY: {
         P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/nitip-donk/gallery-1.png",
         P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/nitip-donk/gallery-2.png",
       },
     },
+
     CODE_RE_ENG: {
       GALLERY: {
         HOME: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/code-re-eng/home.png",
@@ -298,6 +384,7 @@ export const IMAGES = {
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/code-re-eng/the-dispensables.png",
       },
     },
+
     HI_TOYZ: {
       AUTH: {
         REGISTER: {
@@ -305,18 +392,21 @@ export const IMAGES = {
           P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/auth/register/gallery-2.png",
         },
       },
+
       HOME: {
         HERO: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/home/hero.png",
         IN_DEMAND_ITEMS:
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/home/in-demand-items.png",
         CTA: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/home/cta.png",
       },
+
       GALLERY: {
         OUR_OFFLINE_STORE:
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/gallery/our-offline-store.png",
         OUR_CUSTOMER:
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/gallery/our-customer.png",
       },
+
       PRODUCTS: {
         HERO: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/products/hero.png",
         TOP_BRANDS:
@@ -332,6 +422,7 @@ export const IMAGES = {
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/products/detail/reviews.png",
         },
       },
+
       EVENT: {
         PROMOTIONS:
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/event/promotions.png",
@@ -339,17 +430,20 @@ export const IMAGES = {
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/hi-toyz/event/activities.png",
       },
     },
+
     DOG_CARE: {
       GALLERY: {
         GUEST: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/guest/gallery-1.png",
         },
+
         AUTH: {
           REGISTER:
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/auth/register.png",
           LOGIN:
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/auth/login.png",
         },
+
         HOME: {
           HERO: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/home/hero.png",
           DOG_LIST:
@@ -361,12 +455,14 @@ export const IMAGES = {
           CONSULTATION:
             "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/home/consultation.png",
         },
+
         ABOUT:
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/about/gallery-1.png",
         DOG_LIST:
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/dog-list/gallery-1.png",
         DOG_DETAIL:
           "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/dog-detail/gallery-1.png",
+
         CONSULTATION: {
           CHAT: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/consultation/chat.png",
           CALL: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/dog-care/consultation/call.png",
@@ -374,6 +470,7 @@ export const IMAGES = {
       },
     },
   },
+
   COMMUNITY: {
     COMSERV: {
       BINUS_SEM1: {
@@ -383,6 +480,7 @@ export const IMAGES = {
           P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/community/binus-sem1/gallery-3.jpg",
         },
       },
+
       BINUS_SEM2: {
         GALLERY: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/community/binus-sem2/gallery-1.jpg",
@@ -391,6 +489,7 @@ export const IMAGES = {
           P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/community/binus-sem2/gallery-4.jpg",
         },
       },
+
       BINUS_SEM3: {
         GALLERY: {
           P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/community/binus-sem3/gallery-1.png",
@@ -406,6 +505,7 @@ export const IMAGES = {
       },
     },
   },
+
   COMMON: {
     FALLBACK:
       "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/common/fallback.jpg",

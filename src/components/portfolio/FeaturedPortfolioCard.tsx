@@ -31,10 +31,6 @@ const FeaturedPortfolioCard = ({ portfolio }: FeaturedPortfolioCardProps) => {
     "library",
   ]);
 
-  const modifiedDescription = description
-    ? `${description.excerpt} ${description.moreText}`
-    : "";
-
   const deployedLink = links.web || links.model;
 
   const handleClick = () => {
@@ -72,11 +68,11 @@ const FeaturedPortfolioCard = ({ portfolio }: FeaturedPortfolioCardProps) => {
         </div>
 
         {/* Description */}
-        {portfolio.description && (
+        {description && (
           <p
             className={`line-clamp-3 text-base ${getSecondaryColor(isOdd)} mb-4`}
           >
-            {modifiedDescription}
+            {description}
           </p>
         )}
 

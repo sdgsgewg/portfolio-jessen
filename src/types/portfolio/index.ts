@@ -1,5 +1,4 @@
 import { TechName } from "@/constants/tech-stack";
-import { ExpandableText } from "../ExpandableText";
 import { ProjectDifficulty, ProjectOrigin, ProjectPlatform, ProjectRole, ProjectStatus, ProjectTeam } from "../project";
 
 export type PortfolioLink = {
@@ -23,7 +22,7 @@ export type Portfolio = {
   startDate: string;
   endDate: string;
 
-  description?: ExpandableText;
+  description?: string;
 
   features?: string[];
   gallery?: PortfolioGallery;

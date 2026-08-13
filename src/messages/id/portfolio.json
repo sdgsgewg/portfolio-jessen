@@ -1,24 +1,47 @@
 {
   "title": "Portfolio",
   "subtitle": "Proyek Saya",
+
   "description": "Berikut adalah beberapa proyek saya yang menunjukkan keterampilan dan dedikasi saya dalam pengembangan web dan bidang ilmu komputer lainnya. Klik pada setiap proyek untuk mempelajari lebih lanjut tentang proses, teknologi yang digunakan, dan tantangan yang diatasi.",
+
   "cta": {
     "label": "Lihat Semua Portfolio"
   },
-  "noProjects": "Tidak ada proyek yang ditemukan",  
+
+  "noProjects": "Tidak ada proyek yang ditemukan",
+
   "projects": {
+    "investbit": {
+      "name": "Investbit",
+
+      "description": "Investbit adalah sebuah situs web yang berfungsi sebagai platform pembelajaran melalui halaman Learn yang menyediakan penjelasan dasar mengenai saham, cara menganalisis saham, serta beberapa istilah yang berkaitan dengan IDX (Indonesia Stock Exchange). Selain itu, terdapat halaman Glossary yang menyediakan penjelasan mengenai istilah-istilah khusus dalam dunia investasi saham. Platform ini juga menyediakan halaman mutual fund performance yang menampilkan reksa dana dengan performa terbaik, leaderboard, serta analisis secara lebih mendetail. Selain itu, sistem ini dilengkapi dengan dashboard yang dapat digunakan oleh admin untuk mengelola konten yang berkaitan dengan reksa dana, seperti kategori, item, dan records yang menyimpan yield harian dan YTD (Year-to-Date) pada setiap harinya. Dalam pengembangan situs web ini, saya menggunakan Next.js sebagai framework frontend dan backend, Tailwind CSS sebagai tools untuk styling, serta Supabase sebagai sistem manajemen basis data open-source.",
+
+      "features": [
+        "Halaman Publik: Belajar, glosarium, and kinerja reksa dana (kinerja terbaik, papan peringkat, dan analisis mendalam)",
+        "Dasbor: Manajemen konten untuk kategori, item, dan data reksa dana"
+      ],
+
+      "gallery": {
+        "home": "Beranda",
+        "learn": "Belajar",
+        "glossary": "Glosarium",
+        "mutual-fund-performance": "Performa Reksa Dana",
+        "dashboard": "Dasbor"
+      }
+    },
+
     "gamification-website": {
       "name": "Website Gamifikasi",
-      "description": {
-        "excerpt": "Sebuah situs web pembelajaran berbasis gamifikasi untuk meningkatkan motivasi, keterlibatan, dan hasil belajar siswa dalam lingkungan pembelajaran digital yang selaras dengan kurikulum nasional Indonesia. Platform ini berhasil mengintegrasikan elemen-elemen gamifikasi utama,",
-        "moreText": "seperti poin, pengalaman (XP), level, tantangan, dan papan peringkat, yang memenuhi kebutuhan siswa dan guru. Selain itu, sistem ini mencakup dasbor analitik yang membantu guru memantau kemajuan siswa dan membuat keputusan berdasarkan data. Kami menggunakan Next.js sebagai kerangka kerja frontend, Nest.js sebagai kerangka kerja backend, Tailwind CSS sebagai alat penataan gaya, dan Supabase sebagai manajemen basis data sumber terbuka untuk mengembangkan situs web ini."
-      },
+
+      "description": "Sebuah situs web pembelajaran berbasis gamifikasi untuk meningkatkan motivasi, keterlibatan, dan hasil belajar siswa dalam lingkungan pembelajaran digital yang selaras dengan kurikulum nasional Indonesia. Platform ini berhasil mengintegrasikan elemen-elemen gamifikasi utama, seperti poin, pengalaman (XP), level, tantangan, dan papan peringkat, yang memenuhi kebutuhan siswa dan guru. Selain itu, sistem ini mencakup dasbor analitik yang membantu guru memantau kemajuan siswa dan membuat keputusan berdasarkan data. Kami menggunakan Next.js sebagai kerangka kerja frontend, Nest.js sebagai kerangka kerja backend, Tailwind CSS sebagai alat penataan gaya, dan Supabase sebagai manajemen basis data sumber terbuka untuk mengembangkan situs web ini.",
+
       "features": [
         "Halaman Utama: Aktivitas, papan peringkat, riwayat aktivitas, dan profil pengguna",
         "Dasbor Siswa: Lihat tugas yang tertunda, aktivitas terbaru, kelas siswa, kemajuan tugas, kemajuan pengumpulan, analitik tugas, dan peringkat papan peringkat",
         "Dasbor Guru: Lihat pengumpulan terbaru, aktivitas terbaru, manajemen kelas, manajemen tugas, tinjauan pengumpulan tugas kelas, analitik tugas, dan peringkat papan peringkat",
         "Dasbor Admin: Pemantauan platform, papan peringkat popularitas tugas, bagan siswa per kelas, aktivitas terbaru, manajemen tugas, dan konfigurasi sistem untuk mata pelajaran, materi, tugas, dan jenis tugas"
       ],
+
       "gallery": {
         "guest": "Tamu",
         "auth": "Autentikasi",
@@ -35,47 +58,50 @@
         "dashboard-leaderboard": "Papan Pernigkat Dasbor"
       }
     },
+
     "my-react-app": {
       "name": "My React App",
-      "description": {
-        "excerpt": "Proyek ini berfungsi sebagai sumber pembelajaran bagi saya untuk meningkatkan keterampilan saya dalam menggunakan React untuk mengembangkan situs web.",
-        "moreText": "Ini adalah aplikasi produktivitas serba guna di mana pengguna dapat mengelola daftar tugas, keranjang belanja, dan melacak pengeluaran mereka. Saya menggunakan React JS dan Tailwind CSS untuk mengembangkan situs web ini."
-      },
+
+      "description": "Proyek ini berfungsi sebagai sumber pembelajaran bagi saya untuk meningkatkan keterampilan saya dalam menggunakan React untuk mengembangkan situs web. Ini adalah aplikasi produktivitas serba guna di mana pengguna dapat mengelola daftar tugas, keranjang belanja, dan melacak pengeluaran mereka. Saya menggunakan React JS dan Tailwind CSS untuk mengembangkan situs web ini.",
+
       "features": [
         "Manajemen tugas",
         "Pelacak pengeluaran",
         "Sistem keranjang belanja"
       ],
+
       "gallery": {
         "home": "Beranda"
       }
     },
+
     "spotify-clone-app": {
       "name": "Spotify Clone App",
-      "description": {
-        "excerpt": "Proyek ini adalah aplikasi klon Spotify di mana kita dapat mengontrol lagu di situs web Spotify kita. Situs web ini menggunakan API Spotify untuk mencapai fungsionalitas ini.",
-        "moreText": "Di situs web ini kita dapat melihat daftar putar dan lagu di akun Spotify kita. Kita juga dapat memilih lagu mana yang ingin diputar, mengatur lompatan ke lagu sebelumnya atau berikutnya, menjeda atau memutar lagu, dan mengatur volume lagu. Saya menggunakan React JS dan TailwindCSS untuk mengembangkan situs web ini."
-      },
+
+      "description": "Proyek ini adalah aplikasi klon Spotify di mana kita dapat mengontrol lagu di situs web Spotify kita. Situs web ini menggunakan API Spotify untuk mencapai fungsionalitas ini. Di situs web ini kita dapat melihat daftar putar dan lagu di akun Spotify kita. Kita juga dapat memilih lagu mana yang ingin diputar, mengatur lompatan ke lagu sebelumnya atau berikutnya, menjeda atau memutar lagu, dan mengatur volume lagu. Saya menggunakan React JS dan TailwindCSS untuk mengembangkan situs web ini.",
+
       "features": [
         "Lihat daftar putar secara real-time",
         "Kontrol audio (putar, jeda, volume)"
       ],
+
       "gallery": {
         "home": "Beranda"
       }
     },
+
     "inspira-umkm": {
       "name": "InspiraUMKM",
-      "description": {
-        "excerpt": "Proyek ini adalah sebuah situs web yang berfungsi sebagai pasar untuk desain kemasan, banner, dan stiker. Kami mengembangkan proyek ini untuk membantu meningkatkan",
-        "moreText": "nilai toko UMKM. Dengan menggunakan desain kami, kami bertujuan untuk membantu toko mereka mencapai daya tarik visual yang lebih baik. Kami menggunakan Laravel sebagai framework dan Bootstrap sebagai alat styling untuk mengembangkan situs web ini."
-      },
+
+      "description": "Proyek ini adalah sebuah situs web yang berfungsi sebagai pasar untuk desain kemasan, banner, dan stiker. Kami mengembangkan proyek ini untuk membantu meningkatkan nilai toko UMKM. Dengan menggunakan desain kami, kami bertujuan untuk membantu toko mereka mencapai daya tarik visual yang lebih baik. Kami menggunakan Laravel sebagai framework dan Bootstrap sebagai alat styling untuk mengembangkan situs web ini.",
+
       "features": [
         "Lihat produk (semua peran)",
         "Transaksi produk menggunakan Midtrans (pembeli & penjual)",
         "Memberikan rating untuk produk yang telah dibeli (pembeli)",
         "Kelola katalog (admin)"
       ],
+
       "gallery": {
         "guest": "Tamu",
         "authentication": "Autentikasi",
@@ -85,18 +111,19 @@
         "send-feedback-process": "Proses Mengirimkan Umpan Balik"
       }
     },
+
     "pustaka-bekas": {
       "name": "PustakaBekas",
-      "description": {
-        "excerpt": "Proyek ini adalah sebuah situs web yang berfungsi sebagai pasar untuk buku bekas. Kami mengembangkan proyek ini sebagai upaya untuk meningkatkan kesadaran tentang penggunaan kembali produk bekas",
-        "moreText": "yang masih dalam kondisi bagus. Pasar ini mendukung transaksi dan pertukaran normal, yang merupakan fitur utama dari situs web ini. Pengguna dapat saling bertukar buku selama harga kedua buku tersebut berada dalam rentang harga 10%. Kami menggunakan Laravel sebagai framework dan Bootstrap sebagai alat styling untuk mengembangkan situs web ini."
-      },
+
+      "description": "Proyek ini adalah sebuah situs web yang berfungsi sebagai pasar untuk buku bekas. Kami mengembangkan proyek ini sebagai upaya untuk meningkatkan kesadaran tentang penggunaan kembali produk bekas yang masih dalam kondisi bagus. Pasar ini mendukung transaksi dan pertukaran normal, yang merupakan fitur utama dari situs web ini. Pengguna dapat saling bertukar buku selama harga kedua buku tersebut berada dalam rentang harga 10%. Kami menggunakan Laravel sebagai framework dan Bootstrap sebagai alat styling untuk mengembangkan situs web ini.",
+
       "features": [
         "Lihat produk (semua peran)",
         "Transaksi produk menggunakan Midtrans (pembeli & penjual)",
         "Memberikan rating untuk produk yang telah dibeli (pembeli)",
         "Kelola katalog (admin)"
       ],
+
       "gallery": {
         "guest": "Tamu",
         "authentication": "Autentikasi",
@@ -110,55 +137,57 @@
         "send-feedback-process": "Proses Kirim Umpan Balik"
       }
     },
+
     "passenger-monitoring-models-at-bus-stop": {
       "name": "Passengers Monitoring Models at Bus Stop",
-      "description": {
-        "excerpt": "Proyek ini bertujuan untuk memantau jumlah orang di halte bus Transjakarta, tepatnya di halte bus S.Parman Transjakarta. Proyek ini dikembangkan menggunakan Python dan",
-        "moreText": "kami memanfaatkan algoritma computer vision yang disebut algoritma YOLOv3 untuk membangun keseluruhan model. Proyek ini terutama berfokus pada pemeriksaan atau analisis waktu dan hari mana yang memiliki jumlah orang terbanyak, yang dapat memberikan data penting mengenai pola kepadatan di halte bus Jakarta."
-      },
+
+      "description": "Proyek ini bertujuan untuk memantau jumlah orang di halte bus Transjakarta, tepatnya di halte bus S.Parman Transjakarta. Proyek ini dikembangkan menggunakan Python dan kami memanfaatkan algoritma computer vision yang disebut algoritma YOLOv3 untuk membangun keseluruhan model. Proyek ini terutama berfokus pada pemeriksaan atau analisis waktu dan hari mana yang memiliki jumlah orang terbanyak, yang dapat memberikan data penting mengenai pola kepadatan di halte bus Jakarta.",
+
       "gallery": {
         "experiment": "Eksperimen",
         "result": "Hasil"
       }
     },
+
     "nitip-donk": {
       "name": "NITIP DONK",
-      "description": {
-        "excerpt": "NITIP DONK adalah situs web pemesanan makanan yang bertujuan membantu orang memesan makanan atau minuman kapan saja dan di mana saja. Situs web ini dikembangkan menggunakan React Vite, Typescript, dan",
-        "moreText": "Vanilla CSS untuk penataan gaya. Proyek ini menggunakan Scrum sebagai siklus pengembangan. Saya berkontribusi sebagai tim pengembang, tepatnya sebagai pengembang frontend."
-      },
+
+      "description": "NITIP DONK adalah situs web pemesanan makanan yang bertujuan membantu orang memesan makanan atau minuman kapan saja dan di mana saja. Situs web ini dikembangkan menggunakan React Vite, Typescript, dan Vanilla CSS untuk penataan gaya. Proyek ini menggunakan Scrum sebagai siklus pengembangan. Saya berkontribusi sebagai tim pengembang, tepatnya sebagai pengembang frontend.",
+
       "features": [
         "Lihat makanan (semua peran)",
         "Transaksi makanan (pembeli & penjual)",
         "Lihat status pesanan (pembeli)",
         "Kelola katalog makanan (penjual)"
       ],
+
       "gallery": {
         "home": "Beranda"
       }
     },
+
     "code-reengineering": {
       "name": "Code Reengineering",
-      "description": {
-        "excerpt": "Situs web ini bertujuan untuk menyediakan materi mengenai code smell, seperti change preventer dan dispensables. Proyek ini dikembangkan menggunakan",
-        "moreText": "HTML, Vanilla CSS, dan JS."
-      },
+
+      "description": "Situs web ini bertujuan untuk menyediakan materi mengenai code smell, seperti change preventer dan dispensables. Proyek ini dikembangkan menggunakan HTML, Vanilla CSS, dan JS.",
+
       "gallery": {
         "home": "Beranda"
       }
     },
+
     "hi-toyz": {
       "name": "HI-Toyz",
-      "description": {
-        "excerpt": "HI-Toyz adalah situs web yang berfungsi untuk menjual mainan dan memberikan informasi detail mengenai toko tersebut. Situs web ini",
-        "moreText": "dikembangkan menggunakan HTML, Vanilla CSS, dan JS."
-      },
+
+      "description": "HI-Toyz adalah situs web yang berfungsi untuk menjual mainan dan memberikan informasi detail mengenai toko tersebut. Situs web ini dikembangkan menggunakan HTML, Vanilla CSS, dan JS.",
+
       "features": [
         "Lihat produk",
         "Transaksi produk",
         "Lihat testimoni",
         "Lihat acara"
       ],
+
       "gallery": {
         "authentication": "Autentikasi",
         "home": "Beranda",
@@ -167,18 +196,19 @@
         "event": "Event"
       }
     },
+
     "dog-care": {
       "name": "DOG CARE",
-      "description": {
-        "excerpt": "DOG CARE adalah situs web yang menyediakan informasi tentang berbagai ras anjing dan memberikan konsultasi dengan dokter hewan. Situs web ini dikembangkan menggunakan HTML, Vanilla CSS, dan JS.",
-        "moreText": "Saya berkontribusi sebagai desainer UI/UX dalam proyek ini. Saya menghadapi banyak masalah selama proyek ini karena ini adalah proyek pertama yang saya kerjakan, tetapi saya dapat mengatasi masalah ini dengan menonton tutorial di internet dan meminta bantuan teman-teman saya."
-      },
+
+      "description": "DOG CARE adalah situs web yang menyediakan informasi tentang berbagai ras anjing dan memberikan konsultasi dengan dokter hewan. Situs web ini dikembangkan menggunakan HTML, Vanilla CSS, dan JS. Saya berkontribusi sebagai desainer UI/UX dalam proyek ini. Saya menghadapi banyak masalah selama proyek ini karena ini adalah proyek pertama yang saya kerjakan, tetapi saya dapat mengatasi masalah ini dengan menonton tutorial di internet dan meminta bantuan teman-teman saya.",
+
       "features": [
         "Lihat produk",
         "Transaksi produk",
         "Lihat testimoni",
         "Lihat acara"
       ],
+
       "gallery": {
         "guest": "Tamu",
         "authentication": "Autentikasi",
@@ -189,6 +219,7 @@
       }
     }
   },
+
   "detail": {
     "sections": {
       "projectInfo": "Info Proyek",

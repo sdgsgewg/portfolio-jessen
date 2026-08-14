@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 import React from "react";
 import { Input } from "../ui/input";
 import { motion } from "framer-motion";
-import { Select, SelectContent, SelectItem, SelectTrigger } from "../ui/select";
 import { ProjectPlatform, ProjectRole } from "@/types/project";
 import {
   PROJECT_PLATFORM_OPTIONS,
@@ -11,6 +10,7 @@ import {
 } from "@/constants/project-options";
 import TechFilter from "./TechFilter";
 import { PortfolioFilter } from "@/types/portfolio";
+import { SelectField } from "../fields";
 
 interface PortfolioFiltersProps {
   filters: PortfolioFilter;
@@ -56,62 +56,26 @@ const PortfolioFilters = ({
       {/* Filter */}
       <div className="flex flex-wrap items-center gap-2">
         {/* Role Dropdown */}
-        <Select
-          value={filters.role ?? "all"}
-          onValueChange={(val) => {
-            const value = val === "all" ? undefined : (val as ProjectRole);
-            setFilter("role", value);
-          }}
-        >
-          <SelectTrigger className="w-54 h-9 text-sm focus:ring-0">
-            <div className="flex items-center gap-2">
-              <User className="w-4 h-4 text-muted-foreground" />
-              <span className="truncate">
-                {filters.role
-                  ? tProjectOptions(`role.${filters.role}`)
-                  : tCommon("filter.allRoles")}
-              </span>
-            </div>
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">{tCommon("filter.allRoles")}</SelectItem>
-            {PROJECT_ROLE_OPTIONS.map((role) => (
-              <SelectItem key={role} value={role}>
-                {tProjectOptions(`role.${role}`)}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+        <SelectField<ProjectRole>
+          value={filters.role}
+          options={PROJECT_ROLE_OPTIONS}
+          onChange={(value) => setFilter("role", value)}
+          allLabel={tCommon("filter.allRoles")}
+          getLabel={(role) => tProjectOptions(`role.${role}`)}
+          icon={<User />}
+          className="w-54"
+        />
 
         {/* Platform Dropdown */}
-        <Select
-          value={filters.platform ?? "all"}
-          onValueChange={(val) => {
-            const value = val === "all" ? undefined : (val as ProjectPlatform);
-            setFilter("platform", value);
-          }}
-        >
-          <SelectTrigger className="w-46 h-9 text-sm focus:ring-0">
-            <div className="flex items-center gap-2">
-              <Monitor className="w-4 h-4 text-muted-foreground" />
-              <span className="truncate">
-                {filters.platform
-                  ? tProjectOptions(`platform.${filters.platform}`)
-                  : tCommon("filter.allPlatforms")}
-              </span>
-            </div>
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">
-              {tCommon("filter.allPlatforms")}
-            </SelectItem>
-            {PROJECT_PLATFORM_OPTIONS.map((platform) => (
-              <SelectItem key={platform} value={platform}>
-                {tProjectOptions(`platform.${platform}`)}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+        <SelectField<ProjectPlatform>
+          value={filters.platform}
+          options={PROJECT_PLATFORM_OPTIONS}
+          onChange={(value) => setFilter("platform", value)}
+          allLabel={tCommon("filter.allPlatforms")}
+          getLabel={(platform) => tProjectOptions(`platform.${platform}`)}
+          icon={<Monitor />}
+          className="w-46"
+        />
 
         {/* Tech Stack Filter */}
         <TechFilter

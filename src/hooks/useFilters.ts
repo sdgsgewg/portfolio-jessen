@@ -25,7 +25,7 @@ export function useFilters<TFilter extends FilterBase>(defaultFilter: TFilter) {
     const params = new URLSearchParams();
 
     Object.entries(filter).forEach(([key, value]) => {
-      if (value === undefined && value === null && value === "") {
+      if (value === undefined || value === null || value === "") {
         return;
       }
 

@@ -1,71 +1,67 @@
 "use client";
 
-import { Filter } from "@/hooks/usePortfolioFilter";
-import { ProjectPlatform, ProjectRole } from "@/types/project";
-import { TechName } from "@/constants/tech-stack";
 import { X } from "lucide-react";
+import { PortfolioFilter } from "@/types/portfolio";
+import { useTranslations } from "next-intl";
 
 interface Props {
-  filters: Filter;
-  setFilters: React.Dispatch<React.SetStateAction<Filter>>;
-  onClearAll: () => void;
-  tProjectValues: (key: string) => string;
-  tCommon: (key: string) => string;
+  filters: PortfolioFilter;
+
+  setFilter: <K extends keyof PortfolioFilter>(
+    key: K,
+    value: PortfolioFilter[K],
+  ) => void;
+
+  clearFilters: () => void;
 }
 
 export default function ActiveFiltersBar({
   filters,
-  setFilters,
-  onClearAll,
-  tProjectValues,
-  tCommon,
+  setFilter,
+  clearFilters,
 }: Props) {
+  const tProjectOptions = useTranslations("project.options");
+
   const chips: {
     label: string;
     onRemove: () => void;
   }[] = [];
 
-  // 🔍 Search
+  // Search
   if (filters.search) {
     chips.push({
       label: `Search: ${filters.search}`,
-      onRemove: () => setFilters((prev) => ({ ...prev, search: "" })),
+      onRemove: () => setFilter("search", ""),
     });
   }
 
-  // 🎭 Role
+  // Role
   if (filters.role) {
     chips.push({
-      label: tProjectValues(`role.${filters.role}`),
-      onRemove: () => setFilters((prev) => ({ ...prev, role: undefined })),
+      label: tProjectOptions(`role.${filters.role}`),
+      onRemove: () => setFilter("role", undefined),
     });
   }
 
-  // 🌐 Platform
+  // Platform
   if (filters.platform) {
     chips.push({
-      label: tProjectValues(`platform.${filters.platform}`),
-      onRemove: () => setFilters((prev) => ({ ...prev, platform: undefined })),
+      label: tProjectOptions(`platform.${filters.platform}`),
+      onRemove: () => setFilter("platform", undefined),
     });
   }
 
-  // 🧩 Tech
-  filters.tech.forEach((tech) => {
-    chips.push({
-      label: tech,
-      onRemove: () =>
-        setFilters((prev) => ({
-          ...prev,
-          tech: prev.tech.filter((t) => t !== tech),
-        })),
-    });
-  });
-
-  // 🔽 Sort (optional)
-  if (filters.sort !== "newest") {
-    chips.push({
-      label: `${tCommon("sort.title")}: ${tCommon(`sort.${filters.sort}`)}`,
-      onRemove: () => setFilters((prev) => ({ ...prev, sort: "newest" })),
+  // Tech
+  if (filters.tech) {
+    filters.tech.forEach((tech) => {
+      chips.push({
+        label: tech,
+        onRemove: () =>
+          setFilter(
+            "tech",
+            filters.tech && filters.tech.filter((t) => t !== tech),
+          ),
+      });
     });
   }
 
@@ -88,7 +84,7 @@ export default function ActiveFiltersBar({
 
       {/* Clear all */}
       <button
-        onClick={onClearAll}
+        onClick={clearFilters}
         className="text-xs underline ml-2 text-muted-foreground hover:text-foreground cursor-pointer transition-colors"
       >
         Clear all

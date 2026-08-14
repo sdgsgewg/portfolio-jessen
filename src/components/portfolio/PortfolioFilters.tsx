@@ -1,5 +1,4 @@
-import { Filter } from "@/hooks/usePortfolioFilter";
-import { ArrowUpDown, Loader2, Monitor, Search, User } from "lucide-react";
+import { Loader2, Monitor, Search, User } from "lucide-react";
 import { useTranslations } from "next-intl";
 import React from "react";
 import { Input } from "../ui/input";
@@ -11,23 +10,24 @@ import {
   PROJECT_ROLE_OPTIONS,
 } from "@/constants/project-options";
 import TechFilter from "./TechFilter";
-import { SortType } from "@/types/SortType";
+import { PortfolioFilter } from "@/types/portfolio";
 
 interface PortfolioFiltersProps {
-  filters: Filter;
-  setFilters: React.Dispatch<React.SetStateAction<Filter>>;
-  updateQuery: (filters: Filter) => void;
+  filters: PortfolioFilter;
+  setFilter: <K extends keyof PortfolioFilter>(
+    key: K,
+    value: PortfolioFilter[K],
+  ) => void;
   isSearching: boolean;
 }
 
 const PortfolioFilters = ({
   filters,
-  setFilters,
-  updateQuery,
+  setFilter,
   isSearching,
 }: PortfolioFiltersProps) => {
   const tCommon = useTranslations("common");
-  const tProjectValues = useTranslations("project.values");
+  const tProjectOptions = useTranslations("project.options");
 
   return (
     <div className="flex flex-col gap-4 mb-4">
@@ -39,12 +39,7 @@ const PortfolioFilters = ({
           placeholder={tCommon("search.placeholder")}
           className="pl-9 h-9"
           value={filters.search}
-          onChange={(e) =>
-            setFilters((prev) => ({
-              ...prev,
-              search: e.target.value,
-            }))
-          }
+          onChange={(e) => setFilter("search", e.target.value)}
         />
 
         {isSearching && (
@@ -65,11 +60,7 @@ const PortfolioFilters = ({
           value={filters.role ?? "all"}
           onValueChange={(val) => {
             const value = val === "all" ? undefined : (val as ProjectRole);
-            setFilters((prev) => {
-              const updated = { ...prev, role: value };
-              updateQuery(updated);
-              return updated;
-            });
+            setFilter("role", value);
           }}
         >
           <SelectTrigger className="w-54 h-9 text-sm focus:ring-0">
@@ -77,7 +68,7 @@ const PortfolioFilters = ({
               <User className="w-4 h-4 text-muted-foreground" />
               <span className="truncate">
                 {filters.role
-                  ? tProjectValues(`role.${filters.role}`)
+                  ? tProjectOptions(`role.${filters.role}`)
                   : tCommon("filter.allRoles")}
               </span>
             </div>
@@ -86,7 +77,7 @@ const PortfolioFilters = ({
             <SelectItem value="all">{tCommon("filter.allRoles")}</SelectItem>
             {PROJECT_ROLE_OPTIONS.map((role) => (
               <SelectItem key={role} value={role}>
-                {tProjectValues(`role.${role}`)}
+                {tProjectOptions(`role.${role}`)}
               </SelectItem>
             ))}
           </SelectContent>
@@ -97,11 +88,7 @@ const PortfolioFilters = ({
           value={filters.platform ?? "all"}
           onValueChange={(val) => {
             const value = val === "all" ? undefined : (val as ProjectPlatform);
-            setFilters((prev) => {
-              const updated = { ...prev, platform: value };
-              updateQuery(updated);
-              return updated;
-            });
+            setFilter("platform", value);
           }}
         >
           <SelectTrigger className="w-46 h-9 text-sm focus:ring-0">
@@ -109,7 +96,7 @@ const PortfolioFilters = ({
               <Monitor className="w-4 h-4 text-muted-foreground" />
               <span className="truncate">
                 {filters.platform
-                  ? tProjectValues(`platform.${filters.platform}`)
+                  ? tProjectOptions(`platform.${filters.platform}`)
                   : tCommon("filter.allPlatforms")}
               </span>
             </div>
@@ -120,7 +107,7 @@ const PortfolioFilters = ({
             </SelectItem>
             {PROJECT_PLATFORM_OPTIONS.map((platform) => (
               <SelectItem key={platform} value={platform}>
-                {tProjectValues(`platform.${platform}`)}
+                {tProjectOptions(`platform.${platform}`)}
               </SelectItem>
             ))}
           </SelectContent>
@@ -128,40 +115,9 @@ const PortfolioFilters = ({
 
         {/* Tech Stack Filter */}
         <TechFilter
-          value={filters.tech}
-          onChange={(newTech) =>
-            setFilters((prev) => {
-              const updated = { ...prev, tech: newTech };
-              updateQuery(updated);
-              return updated;
-            })
-          }
+          value={filters.tech ?? []}
+          onChange={(newTech) => setFilter("tech", newTech)}
         />
-
-        {/* Sort Dropdown */}
-        <Select
-          value={filters.sort}
-          onValueChange={(val) => {
-            setFilters((prev) => {
-              const updated = { ...prev, sort: val as SortType };
-              updateQuery(updated);
-              return updated;
-            });
-          }}
-        >
-          <SelectTrigger className="w-32.5 h-9 text-sm focus:ring-0">
-            <div className="flex items-center gap-2">
-              <ArrowUpDown className="w-4 h-4 text-muted-foreground" />
-              <span className="truncate">
-                {tCommon(`sort.${filters.sort}`)}
-              </span>
-            </div>
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="newest">{tCommon("sort.newest")}</SelectItem>
-            <SelectItem value="oldest">{tCommon("sort.oldest")}</SelectItem>
-          </SelectContent>
-        </Select>
       </div>
     </div>
   );

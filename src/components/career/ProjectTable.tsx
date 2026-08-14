@@ -42,17 +42,17 @@ const TableData = ({ children }: { children: React.ReactNode }) => {
 const ProjectTable = ({ projects }: ProjectTableProps) => {
   const tSections = useTranslations("career.detail.sections");
   const tProjectLabels = useTranslations("project.labels");
-  const tProjectValues = useTranslations("project.values");
+  const tProjectOptions = useTranslations("project.options");
 
   if (!projects) return null;
 
   const getModifiedPlatforms = (proj: Project) => {
     if (proj.platforms.length > 1) {
       return proj.platforms
-        .map((p) => tProjectValues(`platform.${p}`))
+        .map((p) => tProjectOptions(`platform.${p}`))
         .join(" & ");
     }
-    return `${tProjectValues(`platform.${proj.platforms[0]}`)}`;
+    return `${tProjectOptions(`platform.${proj.platforms[0]}`)}`;
   };
 
   return (
@@ -87,9 +87,9 @@ const ProjectTable = ({ projects }: ProjectTableProps) => {
                   {proj.name}
                 </td>
                 <TableData>{proj.focus}</TableData>
-                <TableData>{tProjectValues(`origin.${proj.origin}`)}</TableData>
+                <TableData>{tProjectOptions(`origin.${proj.origin}`)}</TableData>
                 <TableData>{getModifiedPlatforms(proj)}</TableData>
-                <TableData>{tProjectValues(`role.${proj.role}`)}</TableData>
+                <TableData>{tProjectOptions(`role.${proj.role}`)}</TableData>
                 <TableData>{proj.techStack.join(", ")}</TableData>
                 <TableData>{proj.period}</TableData>
                 <TableData>{proj.description}</TableData>

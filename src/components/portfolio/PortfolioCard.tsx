@@ -9,12 +9,12 @@ import TechBadge from "../shared/TechBadge";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { ROUTES } from "@/constants/routes";
-import { Portfolio } from "@/types/portfolio";
 import { filterTechByCategory } from "@/lib/filter-tech-stack";
 import ImageWrapper from "../shared/ImageWrapper";
+import { PortfolioListItem } from "@/types/portfolio";
 
 interface PortfolioCardProps {
-  portfolio: Portfolio;
+  portfolio: PortfolioListItem;
 }
 
 const PortfolioCard = ({ portfolio }: PortfolioCardProps) => {

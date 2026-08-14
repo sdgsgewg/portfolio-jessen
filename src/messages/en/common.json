@@ -1,4 +1,20 @@
 {
+  "actions": {
+    "add": "Add",
+    "create": "Create",
+    "view": "View",
+    "update": "Update",
+    "edit": "Edit",
+    "remove": "Remove",
+    "clear": "Clear",
+    "clearAll": "Clear All",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "retry": "Retry",
+    "back": "Back"
+  },
+
   "card": {
     "readMore": "Read More",
     "readLess": "Read Less"

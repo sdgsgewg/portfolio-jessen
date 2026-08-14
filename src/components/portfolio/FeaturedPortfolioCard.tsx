@@ -10,11 +10,11 @@ import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { ROUTES } from "@/constants/routes";
 import ImageWrapper from "../shared/ImageWrapper";
-import { Portfolio } from "@/types/portfolio";
 import { filterTechByCategory } from "@/lib/filter-tech-stack";
+import { PortfolioListItem } from "@/types/portfolio";
 
 interface FeaturedPortfolioCardProps {
-  portfolio: Portfolio;
+  portfolio: PortfolioListItem;
 }
 
 const FeaturedPortfolioCard = ({ portfolio }: FeaturedPortfolioCardProps) => {

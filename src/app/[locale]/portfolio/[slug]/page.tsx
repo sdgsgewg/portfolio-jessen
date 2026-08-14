@@ -8,7 +8,6 @@ import { HeaderSectionData } from "@/types/detail-page/HeaderSectionData";
 import { CtaSectionData } from "@/types/detail-page/CtaSectionData";
 import { GallerySectionData } from "@/types/detail-page/GallerySectionData";
 import { TechStackSectionData } from "@/types/detail-page/TechStackSectionData";
-import { Portfolio } from "@/types/portfolio";
 import DetailPageWrapper from "@/components/detail-page/DetailPageWrapper";
 import HeroSection from "@/components/detail-page/HeroSection";
 import HeaderSection from "@/components/detail-page/HeaderSection";
@@ -20,6 +19,7 @@ import { DescriptionSectionData } from "@/types/detail-page/DescriptionSectionDa
 import FeatureSection from "@/components/detail-page/FeatureSection";
 import GallerySection from "@/components/detail-page/GallerySection";
 import { FeatureSectionData } from "@/types/detail-page/FeatureSectionData";
+import { PortfolioListItem } from "@/types/portfolio";
 
 export default function PortfolioDetailPage() {
   const tProjects = useTranslations("portfolio.projects");
@@ -41,7 +41,7 @@ export default function PortfolioDetailPage() {
     text: content.name,
   };
 
-  const meta: Portfolio["meta"] = project.meta;
+  const meta: PortfolioListItem["meta"] = project.meta;
 
   const techStack: TechStackSectionData = {
     data: project.techStack,

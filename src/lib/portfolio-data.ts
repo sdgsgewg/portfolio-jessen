@@ -5,11 +5,12 @@ import { LIBRARY } from "@/constants/library";
 import { PLATFORMS } from "@/constants/platforms";
 import { PROGRAMMING_LANGUAGES } from "@/constants/programming-languages";
 import { TOOLS } from "@/constants/tools";
-import { Portfolio } from "@/types/portfolio";
+import { PortfolioListItem } from "@/types/portfolio";
 
-export const PORTFOLIO_ENTRIES: Portfolio[] = [
+export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
   {
     image: IMAGES.PORTFOLIO.INVESTBIT.GALLERY.HOME.P1,
+    name: "Investbit",
     slug: "investbit",
     techStack: [
       PROGRAMMING_LANGUAGES.TYPESCRIPT,
@@ -71,8 +72,8 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/gamification-fe",
-      web: "https://gamification-fe-phi.vercel.app/",
+      github: "https://github.com/sdgsgewg/investbit",
+      web: "https://investbit-xi.vercel.app/en",
     },
     meta: {
       origin: "practice",
@@ -86,6 +87,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.GAMIFICATION_WEBSITE.GALLERY.HOME.P1,
+    name: "Gamification Website",
     slug: "gamification-website",
     techStack: [
       PROGRAMMING_LANGUAGES.TYPESCRIPT,
@@ -279,6 +281,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.MY_REACT_APP.GALLERY.TO_DO_LIST,
+    name: "My React App",
     slug: "my-react-app",
     techStack: [
       PROGRAMMING_LANGUAGES.JAVASCRIPT,
@@ -313,6 +316,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.SPOTIFY_CLONE_APP.GALLERY.P1,
+    name: "Spotify Clone App",
     slug: "spotify-clone-app",
     techStack: [
       PROGRAMMING_LANGUAGES.JAVASCRIPT,
@@ -345,6 +349,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.INSPIRA_UMKM.GALLERY.P1,
+    name: "InspiraUMKM",
     slug: "inspira-umkm",
     techStack: [
       PROGRAMMING_LANGUAGES.PHP,
@@ -378,6 +383,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.PUSTAKA_BEKAS.GALLERY.HOME.HERO,
+    name: "Pustaka Bekas",
     slug: "pustaka-bekas",
     techStack: [
       PROGRAMMING_LANGUAGES.PHP,
@@ -492,6 +498,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.PASSENGER_MONITORING_MODEL.GALLERY.TUESDAY,
+    name: "Passengers Monitoring Models at Bus Stop",
     slug: "passenger-monitoring-models-at-bus-stop",
     techStack: [PROGRAMMING_LANGUAGES.PYTHON],
     date: "1 April 2024 - 20 August 2024",
@@ -529,6 +536,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.NITIP_DONK.GALLERY.P1,
+    name: "NITIP DONK",
     slug: "nitip-donk",
     techStack: [
       PROGRAMMING_LANGUAGES.TYPESCRIPT,
@@ -565,6 +573,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.CODE_RE_ENG.GALLERY.HOME,
+    name: "Code Reengineering",
     slug: "code-reengineering",
     techStack: [
       PROGRAMMING_LANGUAGES.HTML,
@@ -599,6 +608,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.HI_TOYZ.HOME.HERO,
+    name: "HI-Toyz",
     slug: "hi-toyz",
     techStack: [
       PROGRAMMING_LANGUAGES.HTML,
@@ -666,6 +676,7 @@ export const PORTFOLIO_ENTRIES: Portfolio[] = [
 
   {
     image: IMAGES.PORTFOLIO.DOG_CARE.GALLERY.HOME.DOG_LIST,
+    name: "Dog Care",
     slug: "dog-care",
     techStack: [
       PROGRAMMING_LANGUAGES.HTML,

@@ -13,7 +13,8 @@
     "difficulty": "Difficulty",
     "status": "Status"
   },
-  "values": {
+
+  "options": {
     "role": {
       "frontend": "Frontend Developer",
       "backend": "Backend Developer",

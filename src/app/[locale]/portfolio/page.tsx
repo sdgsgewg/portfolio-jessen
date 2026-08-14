@@ -1,46 +1,27 @@
 "use client";
 
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
-import { PORTFOLIO_ENTRIES } from "@/lib/portfolio-data";
 import { useTranslations } from "next-intl";
-import { Filter, usePortfolioFilter } from "@/hooks/usePortfolioFilter";
-import { ProjectPlatform, ProjectRole } from "@/types/project";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import DataNotFound from "@/components/shared/DataNotFound";
 import ActiveFiltersBar from "@/components/portfolio/ActiveFiltersBar";
-import { TechName } from "@/constants/tech-stack";
-import { SortType } from "@/types/SortType";
 import PortfolioFilters from "@/components/portfolio/PortfolioFilters";
+import { useFilterSync } from "@/hooks/useFilterSync";
+import { usePortfolioData, usePortfolioFilter } from "@/hooks/portfolio";
 
 const PortfolioPage = () => {
-  const router = useRouter();
-
   const t = useTranslations("portfolio");
   const tPortfolioProjects = useTranslations("portfolio.projects");
-  const tProjectValues = useTranslations("project.values");
-  const tCommon = useTranslations("common");
-  const myPortfolio = PORTFOLIO_ENTRIES;
 
-  const { filters, setFilters, sortedData, isSearching } = usePortfolioFilter(
-    myPortfolio,
-    tPortfolioProjects,
-  );
+  const { filters, debouncedFilters, setFilter, syncUrl, clearFilters } =
+    usePortfolioFilter();
 
-  const clearFilters = () => {
-    const reset: Filter = {
-      search: "",
-      tech: [],
-      role: undefined,
-      platform: undefined,
-      difficulty: undefined,
-      sort: "newest",
-    };
+  const isSearching = filters.search !== debouncedFilters.search;
 
-    setFilters(reset);
-    router.push("?"); // reset URL
-  };
+  const { portfolioList } = usePortfolioData({
+    ...debouncedFilters,
+    search: debouncedFilters.search,
+  });
 
   const getTitleClassName = (): string => {
     return "text-primary";
@@ -54,31 +35,8 @@ const PortfolioPage = () => {
     return "text-secondary dark:text-gray-300";
   };
 
-  const updateQuery = (newFilters: Filter) => {
-    const params = new URLSearchParams();
-
-    if (newFilters.sort) params.set("sort", newFilters.sort);
-    if (newFilters.search) params.set("search", newFilters.search);
-    if (newFilters.role) params.set("role", newFilters.role);
-    if (newFilters.platform) params.set("platform", newFilters.platform);
-    if (newFilters.tech.length > 0)
-      params.set("tech", newFilters.tech.join(","));
-
-    router.push(`?${params.toString()}`);
-  };
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-
-    setFilters((prev) => ({
-      ...prev,
-      role: (params.get("role") as ProjectRole) || undefined,
-      platform: (params.get("platform") as ProjectPlatform) || undefined,
-      tech: (params.get("tech")?.split(",") as TechName[]) || [],
-      sort: (params.get("sort") as SortType) || "newest",
-      search: params.get("search") || "",
-    }));
-  }, []);
+  // Sync URL on filter
+  useFilterSync(debouncedFilters, syncUrl);
 
   return (
     <div className="container pt-12 pb-20">
@@ -102,37 +60,26 @@ const PortfolioPage = () => {
       <div className="flex flex-col gap-4 mb-12">
         <PortfolioFilters
           filters={filters}
-          setFilters={setFilters}
-          updateQuery={updateQuery}
+          setFilter={setFilter}
           isSearching={isSearching}
         />
 
         <ActiveFiltersBar
           filters={filters}
-          setFilters={(updater) =>
-            setFilters((prev) => {
-              const updated =
-                typeof updater === "function" ? updater(prev) : updater;
-
-              updateQuery(updated);
-              return updated;
-            })
-          }
-          onClearAll={clearFilters}
-          tProjectValues={tProjectValues}
-          tCommon={tCommon}
+          setFilter={setFilter}
+          clearFilters={clearFilters}
         />
       </div>
 
       <motion.div layout className="w-full">
-        {sortedData.length === 0 ? (
+        {portfolioList.length === 0 ? (
           <DataNotFound message={t("noProjects")} />
         ) : (
           <motion.div
             layout
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {sortedData.map((portfolio) => {
+            {portfolioList.map((portfolio) => {
               const content = tPortfolioProjects.raw(portfolio.slug);
 
               return (

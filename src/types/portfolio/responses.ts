@@ -25,7 +25,6 @@ export type PortfolioListItem = {
   name: string;
   slug: string;
   techStack: TechName[];
-  date: string;
   startDate: string;
   endDate: string;
 

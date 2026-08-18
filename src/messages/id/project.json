@@ -11,7 +11,8 @@
     "contributions": "Kontribusi",
     "team": "Tim",
     "difficulty": "Tingkat Kesulitan",
-    "status": "Status"
+    "status": "Status",
+    "duration": "Durasi"
   },
 
   "options": {
@@ -22,11 +23,13 @@
       "ui-ux": "UI/UX Designer",
       "ai": "AI Engineer"
     },
+
     "platform": {
       "website": "Website",
       "ai-model": "Model AI",
       "mobile": "Mobile"
     },
+
     "origin": {
       "practice": "Latihan",
       "assignment": "Tugas",
@@ -34,15 +37,18 @@
       "internal": "Internal",
       "external": "External"
     },
+
     "team": {
       "solo": "Solo",
       "team": "Tim"
     },
+
     "difficulty": {
       "easy": "Mudah",
       "medium": "Sedang",
       "hard": "Sulit"
     },
+    
     "status": {
       "completed": "Selesai",
       "in-progress": "Sedang Berlangsung"

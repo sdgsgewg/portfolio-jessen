@@ -8,6 +8,9 @@ import { PortfolioGallery } from "@/types/portfolio";
 
 type GallerySectionProps = GallerySectionData;
 
+const GALLERY_IMAGE_SIZES =
+  "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw";
+
 const GallerySection = ({ data, slug }: GallerySectionProps) => {
   function isStringArray(data: unknown): data is string[] {
     return (
@@ -33,6 +36,7 @@ const GallerySection = ({ data, slug }: GallerySectionProps) => {
               alt={`gallery-${index}`}
               gallery={data} // kirim semua gambar
               index={index} // posisi gambar
+              sizes={GALLERY_IMAGE_SIZES}
               className={{
                 container: "w-full h-48 rounded-xl group",
               }}
@@ -63,6 +67,7 @@ const GallerySection = ({ data, slug }: GallerySectionProps) => {
                       alt={`${t(d.key)}-${index}`}
                       gallery={d.images} // kirim semua gambar
                       index={index} // posisi gambar
+                      sizes={GALLERY_IMAGE_SIZES}
                       className={{
                         container: "w-full h-48 rounded-xl group",
                       }}

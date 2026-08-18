@@ -1,10 +1,13 @@
+import { formatProjectDuration } from "@/lib/utils/format-project-duration";
 import { PortfolioListItem } from "@/types/portfolio";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 type Meta = PortfolioListItem["meta"];
 
 interface MetaSectionProps {
   meta: Meta;
+  startDate?: string;
+  endDate?: string;
 }
 
 const META_VALUE_STYLE: Record<string, string> = {
@@ -51,11 +54,16 @@ const MetaBadge = ({ metaKey, value }: { metaKey: string; value: string }) => {
   );
 };
 
-const MetaSection = ({ meta }: MetaSectionProps) => {
-  const t = useTranslations("portfolio.detail");
+const MetaSection = ({ meta, startDate, endDate }: MetaSectionProps) => {
+  const locale = useLocale();
+
+  const tPortfolioDetail = useTranslations("portfolio.detail");
+  const tProjectLabel = useTranslations("project.labels");
   const tBadges = useTranslations("common.badges");
 
   if (!meta) return null;
+
+  const duration = formatProjectDuration(startDate, endDate, locale);
 
   return (
     <div className="relative border rounded-xl p-4 bg-muted/30">
@@ -69,7 +77,7 @@ const MetaSection = ({ meta }: MetaSectionProps) => {
       {/* TOP BAR */}
       <div className="mb-3">
         <h1 className="text-sm font-semibold text-muted-foreground">
-          {t("sections.projectInfo")}
+          {tPortfolioDetail("sections.projectInfo")}
         </h1>
       </div>
 
@@ -80,6 +88,18 @@ const MetaSection = ({ meta }: MetaSectionProps) => {
 
           return <MetaBadge key={key} metaKey={key} value={value as string} />;
         })}
+
+        {duration && (
+          <div className="flex flex-col gap-1">
+            <span className="text-xs text-muted-foreground">
+              {tProjectLabel("duration")}
+            </span>
+
+            <span className="text-xs px-2 py-1 rounded-md w-fit bg-gray-100 text-gray-700">
+              {duration}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Impact highlight */}

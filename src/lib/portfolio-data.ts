@@ -19,7 +19,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       DATABASE.POSTGRESQL,
       PLATFORMS.SUPABASE,
     ],
-    date: "March 2026 - August 2026",
     startDate: "2026-03",
     endDate: "2026-08",
     gallery: [
@@ -98,7 +97,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       PLATFORMS.SUPABASE,
       TOOLS.FIGMA,
     ],
-    date: "February 2025 - March 2026",
     startDate: "2025-02",
     endDate: "2026-03",
     gallery: [
@@ -287,7 +285,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       LIBRARY.REACT,
       FRAMEWORK.TAILWIND_CSS,
     ],
-    date: "1 December 2024 - 1 January 2025",
     startDate: "2024-12-01",
     endDate: "2025-01-01",
     gallery: [
@@ -322,7 +319,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       LIBRARY.REACT,
       FRAMEWORK.TAILWIND_CSS,
     ],
-    date: "1 December 2024 - 1 January 2025",
     startDate: "2024-12-01",
     endDate: "2025-01-01",
     gallery: [
@@ -358,7 +354,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       PLATFORMS.AIVEN,
       TOOLS.FIGMA,
     ],
-    date: "9 September 2024 - 10 January 2025",
     startDate: "2024-09-09",
     endDate: "2025-01-10",
     gallery: [
@@ -392,7 +387,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       PLATFORMS.AIVEN,
       TOOLS.FIGMA,
     ],
-    date: "9 September 2024 - 10 December 2024",
     startDate: "2024-09-09",
     endDate: "2024-12-10",
     gallery: [
@@ -500,7 +494,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
     name: "Passengers Monitoring Models at Bus Stop",
     slug: "passenger-monitoring-models-at-bus-stop",
     techStack: [PROGRAMMING_LANGUAGES.PYTHON],
-    date: "1 April 2024 - 20 August 2024",
     startDate: "2024-04-01",
     endDate: "2024-08-20",
     gallery: [
@@ -545,7 +538,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       PLATFORMS.FIREBASE,
       TOOLS.FIGMA,
     ],
-    date: "March 2024 - June 2024",
     startDate: "2024-03-01",
     endDate: "2024-06-30",
     gallery: [
@@ -579,7 +571,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       PROGRAMMING_LANGUAGES.CSS,
       PROGRAMMING_LANGUAGES.JAVASCRIPT,
     ],
-    date: "15 April 2024 - 25 April 2024",
     startDate: "2024-04-15",
     endDate: "2024-04-25",
     gallery: [
@@ -615,7 +606,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       PROGRAMMING_LANGUAGES.JAVASCRIPT,
       TOOLS.FIGMA,
     ],
-    date: "28 May 2023 - 13 June 2023",
     startDate: "2023-05-28",
     endDate: "2023-06-13",
     gallery: [
@@ -682,7 +672,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       PROGRAMMING_LANGUAGES.CSS,
       PROGRAMMING_LANGUAGES.JAVASCRIPT,
     ],
-    date: "March 2023 - June 2023",
     startDate: "2023-03-01",
     endDate: "2023-06-30",
     gallery: [

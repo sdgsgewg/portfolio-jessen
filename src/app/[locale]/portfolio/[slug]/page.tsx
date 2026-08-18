@@ -76,7 +76,13 @@ export default function PortfolioDetailPage() {
         <HeaderSection {...header} />
 
         {/* META */}
-        {meta && <MetaSection meta={meta} />}
+        {meta && (
+          <MetaSection
+            meta={meta}
+            startDate={project.startDate}
+            endDate={project.endDate}
+          />
+        )}
 
         {/* Tech Stack */}
         {techStack && <TechStackSection {...techStack} />}

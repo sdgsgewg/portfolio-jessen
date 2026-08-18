@@ -274,7 +274,6 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       platform: "website",
       role: "fullstack",
       team: "team",
-      featured: true,
       status: "completed",
     },
   },

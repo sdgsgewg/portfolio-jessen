@@ -22,9 +22,8 @@ const Portfolio = () => {
 
   const featured =
     myPortfolio.find((entry) => entry.meta?.featured) || myPortfolio[0];
-  const rest = myPortfolio
-    .filter((entry) => entry.slug !== featured.slug)
-    .slice(0, 3);
+
+  const rest = myPortfolio.filter((entry) => !entry.meta?.featured).slice(0, 3);
 
   const featuredContent = tProjects.raw(featured.slug);
 

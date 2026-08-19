@@ -6,13 +6,17 @@ import { notFound, useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Project } from "@/types/career";
 import { mergeProjects } from "@/lib/merge-projects";
-import DetailPageWrapper from "@/components/detail-page/DetailPageWrapper";
-import TechStackSection from "@/components/detail-page/TechStackSection";
-import DescriptionSection from "@/components/detail-page/DescriptionSection";
-import { DescriptionSectionData } from "@/types/detail-page/DescriptionSectionData";
-import HeaderSection from "@/components/detail-page/HeaderSection";
-import { ResponsibilitySectionData } from "@/types/detail-page/ResponsibilitySectionData";
-import ResponsibilitySection from "@/components/detail-page/ResponsibilitySection";
+import {
+  DescriptionSectionData,
+  ResponsibilitySectionData,
+} from "@/types/detail-page";
+import {
+  DescriptionSection,
+  DetailPageWrapper,
+  HeaderSection,
+  TechStackSection,
+} from "@/components/detail-page";
+import { ResponsibilitySection } from "@/components/career/detail";
 
 const CareerDetailPage = () => {
   const { slug } = useParams();

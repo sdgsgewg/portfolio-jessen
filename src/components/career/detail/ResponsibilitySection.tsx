@@ -1,6 +1,6 @@
+import { SectionTitle } from "@/components/detail-page";
 import { ResponsibilitySectionData } from "@/types/detail-page/ResponsibilitySectionData";
 import { useTranslations } from "next-intl";
-import SectionTitle from "./SectionTitle";
 
 type ResponsibilitySectionProps = ResponsibilitySectionData;
 

@@ -1,46 +1,18 @@
-import { CtaSectionData } from "@/types/detail-page/CtaSectionData";
+import { CtaSectionData } from "@/types/portfolio/detail";
 import React from "react";
-import { FaFileAlt, FaGithub } from "react-icons/fa";
+import { FaFileAlt } from "react-icons/fa";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { MdPublic } from "react-icons/md";
+import CtaButton from "./CtaButton";
+import GithubButton from "./GithubButton";
 
-const CtaButton = ({
-  link,
-  icon,
-  text,
-  btnType,
-}: {
-  link: string;
-  icon: React.ReactNode;
-  text: string;
-  btnType: "btn-dark" | "btn-primary";
-}) => {
-  return (
-    <a
-      className={`${btnType} min-w-30 flex flex-col items-center justify-center gap-1`}
-      href={link}
-      target="_blank"
-    >
-      <div className="text-xl">{icon}</div>
-      <span className="text-sm">{text}</span>
-    </a>
-  );
-};
+type CtaSectionProps = CtaSectionData;
 
-type CTASectionProps = CtaSectionData;
-
-const CTASection = ({ links, platform = "website" }: CTASectionProps) => {
+const CtaSection = ({ links, platform = "website" }: CtaSectionProps) => {
   return (
     <div className="fixed bottom-2 left-1/2 -translate-x-1/2 w-full px-4 z-50">
       <div className="max-w-4xl mx-auto bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-lg rounded-full px-4 py-3 flex flex-wrap justify-center gap-3 border border-white/20">
-        {links.github && (
-          <CtaButton
-            link={links.github}
-            icon={<FaGithub />}
-            text="Github"
-            btnType="btn-dark"
-          />
-        )}
+        {links.github && <GithubButton github={links.github} />}
 
         {platform === "ai-model" && links.paper && (
           <CtaButton
@@ -73,4 +45,4 @@ const CTASection = ({ links, platform = "website" }: CTASectionProps) => {
   );
 };
 
-export default CTASection;
+export default CtaSection;

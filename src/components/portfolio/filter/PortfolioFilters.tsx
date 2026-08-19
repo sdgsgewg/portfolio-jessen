@@ -1,7 +1,7 @@
 import { Loader2, Monitor, Search, User } from "lucide-react";
 import { useTranslations } from "next-intl";
 import React from "react";
-import { Input } from "../ui/input";
+import { Input } from "../../ui/input";
 import { motion } from "framer-motion";
 import { ProjectPlatform, ProjectRole } from "@/types/project";
 import {
@@ -10,7 +10,7 @@ import {
 } from "@/constants/project-options";
 import TechFilter from "./TechFilter";
 import { PortfolioFilter } from "@/types/portfolio";
-import { SelectField } from "../fields";
+import { SelectField } from "../../fields";
 
 interface PortfolioFiltersProps {
   filters: PortfolioFilter;

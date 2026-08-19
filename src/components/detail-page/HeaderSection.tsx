@@ -1,5 +1,4 @@
-import { HeaderSectionData } from "@/types/detail-page/HeaderSectionData";
-import React from "react";
+import { HeaderSectionData } from "@/types/detail-page";
 
 type HeaderSectionProps = HeaderSectionData;
 

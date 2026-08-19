@@ -3,23 +3,29 @@
 import { PORTFOLIO_ENTRIES } from "@/lib/portfolio-data";
 import { notFound, useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { HeroSectionData } from "@/types/detail-page/HeroSectionData";
-import { HeaderSectionData } from "@/types/detail-page/HeaderSectionData";
-import { CtaSectionData } from "@/types/detail-page/CtaSectionData";
-import { GallerySectionData } from "@/types/detail-page/GallerySectionData";
-import { TechStackSectionData } from "@/types/detail-page/TechStackSectionData";
-import DetailPageWrapper from "@/components/detail-page/DetailPageWrapper";
-import HeroSection from "@/components/detail-page/HeroSection";
-import HeaderSection from "@/components/detail-page/HeaderSection";
-import MetaSection from "@/components/detail-page/MetaSection";
-import TechStackSection from "@/components/detail-page/TechStackSection";
-import CTASection from "@/components/detail-page/CTASection";
-import DescriptionSection from "@/components/detail-page/DescriptionSection";
-import { DescriptionSectionData } from "@/types/detail-page/DescriptionSectionData";
-import FeatureSection from "@/components/detail-page/FeatureSection";
-import GallerySection from "@/components/detail-page/GallerySection";
-import { FeatureSectionData } from "@/types/detail-page/FeatureSectionData";
+
 import { PortfolioListItem } from "@/types/portfolio";
+import {
+  DescriptionSectionData,
+  GallerySectionData,
+  HeaderSectionData,
+  HeroSectionData,
+  TechStackSectionData,
+} from "@/types/detail-page";
+import { CtaSectionData, FeatureSectionData } from "@/types/portfolio/detail";
+import {
+  DescriptionSection,
+  DetailPageWrapper,
+  GallerySection,
+  HeaderSection,
+  HeroSection,
+  TechStackSection,
+} from "@/components/detail-page";
+import {
+  CtaSection,
+  FeatureSection,
+  MetaSection,
+} from "@/components/portfolio/detail";
 
 export default function PortfolioDetailPage() {
   const tProjects = useTranslations("portfolio.projects");
@@ -89,7 +95,7 @@ export default function PortfolioDetailPage() {
       </div>
 
       {/* CTA buttons */}
-      {cta && <CTASection {...cta} />}
+      {cta && <CtaSection {...cta} />}
 
       {/* DESCRIPTION */}
       <DescriptionSection {...description} />

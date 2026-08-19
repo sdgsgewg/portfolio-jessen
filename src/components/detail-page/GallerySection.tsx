@@ -2,9 +2,9 @@
 
 import ImageWrapper from "../shared/ImageWrapper";
 import { useTranslations } from "next-intl";
-import { GallerySectionData } from "@/types/detail-page/GallerySectionData";
 import SectionTitle from "./SectionTitle";
 import { PortfolioGallery } from "@/types/portfolio";
+import { GallerySectionData } from "@/types/detail-page";
 
 type GallerySectionProps = GallerySectionData;
 

@@ -71,7 +71,10 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/investbit",
+      github: {
+        frontend: "https://github.com/sdgsgewg/investbit",
+        backend: "https://github.com/sdgsgewg/investbit",
+      },
       web: "https://investbit-xi.vercel.app/en",
     },
     meta: {
@@ -264,7 +267,10 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/gamification-fe",
+      github: {
+        frontend: "https://github.com/sdgsgewg/gamification-fe",
+        backend: "https://github.com/sdgsgewg/gamification-be",
+      },
       web: "https://gamification-fe-phi.vercel.app/",
     },
     meta: {
@@ -298,7 +304,9 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/my-react-app",
+      github: {
+        frontend: "https://github.com/sdgsgewg/my-react-app",
+      },
       web: "https://my-react-app-one-cyan.vercel.app",
     },
     meta: {
@@ -331,7 +339,9 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/spotify-clone-react-app",
+      github: {
+        frontend: "https://github.com/sdgsgewg/spotify-clone-react-app",
+      },
     },
     meta: {
       origin: "practice",
@@ -363,7 +373,10 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/new-inspira-umkm",
+      github: {
+        frontend: "https://github.com/sdgsgewg/new-inspira-umkm",
+        backend: "https://github.com/sdgsgewg/new-inspira-umkm",
+      },
       // web: "https://new-inspira-umkm.vercel.app/",
     },
     meta: {
@@ -477,7 +490,10 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/PustakaBekas",
+      github: {
+        frontend: "https://github.com/sdgsgewg/PustakaBekas",
+        backend: "https://github.com/sdgsgewg/PustakaBekas",
+      },
       // web: "https://pustaka-bekas.vercel.app/",
     },
     meta: {
@@ -550,7 +566,9 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/jovitawaisakhi/NITIP",
+      github: {
+        frontend: "https://github.com/jovitawaisakhi/NITIP",
+      },
       // web: "#",
     },
     meta: {
@@ -584,7 +602,9 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/CodeReengineering",
+      github: {
+        frontend: "https://github.com/sdgsgewg/CodeReengineering",
+      },
       web: "https://sdgsgewg.github.io/CodeReengineering/HomePage",
     },
     meta: {
@@ -651,7 +671,9 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/HI-Toyz",
+      github: {
+        frontend: "https://github.com/sdgsgewg/HI-Toyz",
+      },
       web: "https://sdgsgewg.github.io/HI-Toyz/Home/Home_Page.html",
     },
     meta: {
@@ -709,7 +731,9 @@ export const PORTFOLIO_ENTRIES: PortfolioListItem[] = [
       },
     ],
     links: {
-      github: "https://github.com/sdgsgewg/DOG-CARE",
+      github: {
+        frontend: "https://github.com/sdgsgewg/DOG-CARE",
+      },
       web: "https://sdgsgewg.github.io/DOG-CARE/",
     },
     meta: {

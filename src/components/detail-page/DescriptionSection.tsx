@@ -1,7 +1,7 @@
 import SectionTitle from "./SectionTitle";
 import { useTranslations } from "next-intl";
-import { DescriptionSectionData } from "@/types/detail-page/DescriptionSectionData";
 import { ExpandableText } from "@/types/ExpandableText";
+import { DescriptionSectionData } from "@/types/detail-page";
 
 type DescriptionSectionProps = DescriptionSectionData;
 

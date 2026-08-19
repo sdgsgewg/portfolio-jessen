@@ -2,11 +2,14 @@ import { PORTFOLIO_ENTRIES } from "@/lib/portfolio-data";
 import { useLocale } from "next-intl";
 import React from "react";
 import { useTranslations } from "next-intl";
-import PortfolioCard from "./PortfolioCard";
 import SectionWrapper from "../section/SectionWrapper";
 import { FaStar } from "react-icons/fa";
 import { ROUTES } from "@/constants/routes";
-import FeaturedPortfolioCard from "./FeaturedPortfolioCard";
+import {
+  FeaturedPortfolioCard,
+  PortfolioCard,
+  PortfolioCardWrapper,
+} from "./cards";
 
 const Portfolio = () => {
   const t = useTranslations("portfolio");
@@ -57,7 +60,7 @@ const Portfolio = () => {
         </div>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <PortfolioCardWrapper>
           {rest.map((portfolio) => {
             const content = tProjects.raw(portfolio.slug);
 
@@ -73,7 +76,7 @@ const Portfolio = () => {
               />
             );
           })}
-        </div>
+        </PortfolioCardWrapper>
       </>
     </SectionWrapper>
   );

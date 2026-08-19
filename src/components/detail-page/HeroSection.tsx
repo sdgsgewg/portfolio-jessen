@@ -1,6 +1,6 @@
 import React from "react";
 import ImageWrapper from "../shared/ImageWrapper";
-import { HeroSectionData } from "@/types/detail-page/HeroSectionData";
+import { HeroSectionData } from "@/types/detail-page";
 
 type HeroSectionProps = HeroSectionData;
 

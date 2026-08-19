@@ -1,13 +1,13 @@
 "use client";
 
-import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import DataNotFound from "@/components/shared/DataNotFound";
-import ActiveFiltersBar from "@/components/portfolio/ActiveFiltersBar";
-import PortfolioFilters from "@/components/portfolio/PortfolioFilters";
+import ActiveFiltersBar from "@/components/portfolio/filter/ActiveFiltersBar";
+import PortfolioFilters from "@/components/portfolio/filter/PortfolioFilters";
 import { useFilterSync } from "@/hooks/useFilterSync";
 import { usePortfolioData, usePortfolioFilter } from "@/hooks/portfolio";
+import { PortfolioCard } from "@/components/portfolio/cards";
 
 const PortfolioPage = () => {
   const t = useTranslations("portfolio");

@@ -8,13 +8,17 @@ import {
   ProjectTeam,
 } from "../project";
 
+export type PortfolioRepository = {
+  frontend?: string;
+  backend?: string;
+};
+
 export type PortfolioLink = {
-  github?: string;
+  github?: PortfolioRepository;
   web?: string;
   paper?: string;
   model?: string;
 };
-
 export type PortfolioGallery = {
   key: string;
   images: string[];
@@ -34,7 +38,7 @@ export type PortfolioListItem = {
   gallery?: PortfolioGallery;
   links: PortfolioLink;
 
-  meta?: {
+  meta: {
     origin: ProjectOrigin;
     platform: ProjectPlatform;
     role: ProjectRole;

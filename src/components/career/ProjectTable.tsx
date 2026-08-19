@@ -1,9 +1,10 @@
 import { Project } from "@/types/career";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import SectionTitle from "../detail-page/SectionTitle";
+import { formatProjectDuration } from "@/lib/project/formatter";
 
 interface ProjectTableProps {
-  projects?: Project[];
+  projects: Project[];
 }
 
 const TableHeader = ({ title }: { title: string }) => {
@@ -40,6 +41,8 @@ const TableData = ({ children }: { children: React.ReactNode }) => {
 };
 
 const ProjectTable = ({ projects }: ProjectTableProps) => {
+  const locale = useLocale();
+
   const tSections = useTranslations("career.detail.sections");
   const tProjectLabels = useTranslations("project.labels");
   const tProjectOptions = useTranslations("project.options");
@@ -87,11 +90,15 @@ const ProjectTable = ({ projects }: ProjectTableProps) => {
                   {proj.name}
                 </td>
                 <TableData>{proj.focus}</TableData>
-                <TableData>{tProjectOptions(`origin.${proj.origin}`)}</TableData>
+                <TableData>
+                  {tProjectOptions(`origin.${proj.origin}`)}
+                </TableData>
                 <TableData>{getModifiedPlatforms(proj)}</TableData>
                 <TableData>{tProjectOptions(`role.${proj.role}`)}</TableData>
                 <TableData>{proj.techStack.join(", ")}</TableData>
-                <TableData>{proj.period}</TableData>
+                <TableData>
+                  {formatProjectDuration(proj.startDate, proj.endDate, locale)}
+                </TableData>
                 <TableData>{proj.description}</TableData>
 
                 {/* Contributions */}

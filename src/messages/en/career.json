@@ -20,7 +20,6 @@
         "project-a1": {
           "name": "Project A1",
           "focus": "Task tracking system (Today & Yesterday Task)",
-          "period": "April 16 – May 8, 2025",
           "description": "Module for tracking daily employee tasks to support effective manpower distribution",
           "contributions": [
             "Fixed a bug in tab switching (Today Task & Yesterday Task)",
@@ -35,7 +34,6 @@
         "project-a2": {
           "name": "Project A2",
           "focus": "Approval management (Voucher & Purchase Order)",
-          "period": "May 7 - 16, 2025",
           "description": "Approval module for vouchers and purchase orders integrated from web to mobile systems",
           "contributions": [
             "Implementation of approval features (Approve, Decline, Need Revision)",
@@ -50,7 +48,6 @@
         "project-a3": {
           "name": "Project A3",
           "focus": "Project & revenue tracking system",
-          "period": "May 19 – June 3, 2025",
           "description": "Module for tracking project, pipeline, and revenue data, including master data management",
           "contributions": [
             "Bug fixes in master data (customer & manager)",
@@ -65,7 +62,6 @@
         "project-a4": {
           "name": "Project A4",
           "focus": "Notification & inbox system (Human Capital)",
-          "period": "June 10 - 24, 2025",
           "description": "Notification module for Human Capital users, including reminders and broadcast messages",
           "contributions": [
             "Development of Reminder and Notification (Inbox) features",
@@ -80,7 +76,6 @@
         "project-b": {
           "name": "Project B",
           "focus": "Student & mentor management system (mobile)",
-          "period": "April 25 – July 25, 2025",
           "description": "Mobile application for managing student and mentor data, including statistics, news, profiles, and user relationships",
           "contributions": [
             "Bug fixes in the UI and input fields (email, name, etc.)",
@@ -94,7 +89,6 @@
         "project-c": {
           "name": "Project C",
           "focus": "Employee work history system (web)",
-          "period": "April 25 – October 14, 2025",
           "description": "Website to display employee work histories that can be used internally and externally by the company",
           "contributions": [
             "Home page development (Hero, Features, Clients)",
@@ -111,7 +105,6 @@
         "project-e": {
           "name": "Project E",
           "focus": "Job vacancy platform",
-          "period": "27 May – 21 July 2025",
           "description": "Website for job vacancy management and recruitment process",
           "contributions": [
             "Bug fixes in the CMS vacancy feature",
@@ -125,7 +118,6 @@
         "project-f": {
           "name": "Project F",
           "focus": "Event management & attendance system (mobile)",
-          "period": "June 30 – July 1, 2025",
           "description": "Mobile application for event registration, participant monitoring, and QR scanning attendance",
           "contributions": [
             "Bug fixes in the pop-up navigation feature",
@@ -137,7 +129,6 @@
         "project-g": {
           "name": "Project G",
           "focus": "Community & event platform (web & mobile)",
-          "period": "July 7 – August 1, 2025",
           "description": "Community platform for creating, joining, and managing events",
           "contributions": [
             "Bug fixes in the dashboard and role management",
@@ -151,7 +142,6 @@
         "project-h": {
           "name": "Project H",
           "focus": "Monitoring or tracking the progress of a project being worked on",
-          "period": "July 22 – December 31, 2025",
           "description": "System for monitoring project progress from the requirements stage to development",
           "contributions": [
             "Dashboard UI and User Management Development",
@@ -168,7 +158,6 @@
         "project-i": {
           "name": "Project I",
           "focus": "Managing Dealer Finance Reports",
-          "period": "August 15 - September 11, 2025",
           "description": "A system for managing Dealer Finance reports used to process ceiling data and dealer collection reports",
           "contributions": [
             "Report development (Waiting Outstanding, Outstanding Loan, Dealer Payment, Payment Report)",
@@ -183,7 +172,6 @@
         "project-a5": {
           "name": "Project A5",
           "focus": "Managing employee leave applications, usage, and recording",
-          "period": "September 16 - December 17, 2025",
           "description": "Journaling-based leave system (debit/credit) with multiple roles: Employee & Human Capital",
           "contributions": [
             "Development of the Leave Quota Mutation page",
@@ -196,7 +184,6 @@
         "project-j": {
           "name": "Project J",
           "focus": "An educational website that serves as a platform for educating and developing young talent throughout Indonesia",
-          "period": "October 31 - December 23, 2025",
           "description": "An educational website that serves as a platform for companies to educate and develop young talent throughout Indonesia",
           "contributions": [
             "Website UI development",
@@ -210,7 +197,6 @@
         "project-k": {
           "name": "Project K",
           "focus": "Church management system",
-          "period": "January 8, 2026",
           "description": "System for managing the management of church organizations",
           "contributions": [
             "Compiling MPK management data based on Excel files",
@@ -223,7 +209,6 @@
         "project-a": {
           "name": "Project A",
           "focus": "Enterprise administration system (web & mobile)",
-          "period": "January 12 – February 27, 2026",
           "description": "Enterprise administration system (web & mobile) for managing various departments such as marketing,human capital, etc",
           "contributions": [
             "Single Sign-On (SSO) integration into the login feature using SSO Prime (Adaptist)",
@@ -237,6 +222,7 @@
       }
     }
   },
+  
   "detail": {
     "sections": {
       "responsibilities": "Responsibilities",

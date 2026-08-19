@@ -19,6 +19,7 @@ export type PortfolioLink = {
   paper?: string;
   model?: string;
 };
+
 export type PortfolioGallery = {
   key: string;
   images: string[];
@@ -30,7 +31,7 @@ export type PortfolioListItem = {
   slug: string;
   techStack: TechName[];
   startDate: string;
-  endDate: string;
+  endDate?: string;
 
   description?: string;
 

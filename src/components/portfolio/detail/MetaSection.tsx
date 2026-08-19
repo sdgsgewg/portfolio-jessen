@@ -1,4 +1,4 @@
-import { formatProjectDuration } from "@/lib/utils/format-project-duration";
+import { formatProjectDuration } from "@/lib/project/formatter";
 import { PortfolioListItem } from "@/types/portfolio";
 import { useLocale, useTranslations } from "next-intl";
 

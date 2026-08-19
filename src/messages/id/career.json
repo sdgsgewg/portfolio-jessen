@@ -20,7 +20,6 @@
         "project-a1": {
           "name": "Project A1",
           "focus": "Sistem pelacakan tugas (Tugas Hari Ini & Kemarin)",
-          "period": "16 April – 8 Mei 2025",
           "description": "Modul untuk tracking task harian karyawan guna mendukung distribusi manpower secara efektif",
           "contributions": [
             "Perbaikan bug pada perpindahan tab (Today Task & Yesterday Task)",
@@ -35,7 +34,6 @@
         "project-a2": {
           "name": "Project A2",
           "focus": "Sistem manajemen approval (Voucher & Purchase Order)",
-          "period": "7 - 16 Mei 2025",
           "description": "Modul approval untuk voucher dan purchase order yang diintegrasikan dari sistem web ke mobile",
           "contributions": [
             "Implementasi fitur approval (Approve, Decline, Need Revision)",
@@ -50,7 +48,6 @@
         "project-a3": {
           "name": "Project A3",
           "focus": "Sistem pelacakan project & revenue",
-          "period": "19 Mei – 3 Juni 2025",
           "description": "Modul untuk tracking data project, pipeline, dan revenue termasuk master data management",
           "contributions": [
             "Perbaikan bug pada master data (customer & manager)",
@@ -65,7 +62,6 @@
         "project-a4": {
           "name": "Project A4",
           "focus": "Sistem notifikasi & inbox (Human Capital)",
-          "period": "10 - 24 Juni 2025",
           "description": "Modul notifikasi untuk user Human Capital termasuk reminder dan broadcast message",
           "contributions": [
             "Pengembangan fitur Reminder dan Notification (Inbox)",
@@ -80,7 +76,6 @@
         "project-b": {
           "name": "Project B",
           "focus": "Sistem manajemen siswa & mentor",
-          "period": "25 April – 25 Juli 2025",
           "description": "Aplikasi mobile untuk mengelola data murid dan mentor, termasuk statistik, berita, profil, dan relasi antar user",
           "contributions": [
             "Perbaikan bug pada tampilan UI dan field input (email, nama, dll)",
@@ -94,7 +89,6 @@
         "project-c": {
           "name": "Project C",
           "focus": "Sistem riwayat pekerjaan karyawan",
-          "period": "25 April – 14 Oktober 2025",
           "description": "Website untuk menampilkan riwayat pekerjaan karyawan yang dapat digunakan secara internal maupun eksternal perusahaan",
           "contributions": [
             "Pengembangan halaman Home (Hero, Features, Clients)",
@@ -111,7 +105,6 @@
         "project-e": {
           "name": "Project E",
           "focus": "Platform lowongan kerja",
-          "period": "27 Mei – 21 Juli 2025",
           "description": "Website untuk manajemen lowongan pekerjaan dan proses rekrutmen",
           "contributions": [
             "Perbaikan bug pada fitur CMS vacancy",
@@ -125,7 +118,6 @@
         "project-f": {
           "name": "Project F",
           "focus": "Sistem manajemen event & kehadiran",
-          "period": "30 Juni – 1 Juli 2025",
           "description": "Aplikasi mobile untuk registrasi event, monitoring peserta, dan scanning QR kehadiran",
           "contributions": [
             "Perbaikan bug pada fitur pop-up navigation",
@@ -137,7 +129,6 @@
         "project-g": {
           "name": "Project G",
           "focus": "Platform komunitas & acara",
-          "period": "7 Juli – 1 Agustus 2025",
           "description": "Platform komunitas untuk membuat, bergabung, dan mengelola event",
           "contributions": [
             "Perbaikan bug pada dashboard dan role management",
@@ -151,7 +142,6 @@
         "project-h": {
           "name": "Project H",
           "focus": "Mengawasi atau track progress dari sebuah project yang dikerjakan",
-          "period": "22 Juli – 31 Desember 2025",
           "description": "Sistem untuk memonitor progress project dari tahap requirement hingga development",
           "contributions": [
             "Pengembangan UI Dashboard dan Manage User",
@@ -164,11 +154,10 @@
             "Implementasi pengecekan role access (CRUD) berdasarkan privilege user"
           ]
         },
-        
+
         "project-i": {
           "name": "Project I",
           "focus": "Mengelola laporan Dealer Finance",
-          "period": "15 Agustus - 11 September 2025",
           "description": "Sistem untuk mengelola laporan Dealer Finance yang digunakan untuk memproses data plafon dan laporan collection dealer",
           "contributions": [
             "Pengembangan report (Waiting Outstanding, Outstanding Loan, Dealer Payment, Payment Report)",
@@ -183,7 +172,6 @@
         "project-a5": {
           "name": "Project A5",
           "focus": "Mengelola pengajuan, penggunaan, dan pencatatan cuti karyawan",
-          "period": "16 September - 17 Desember 2025",
           "description": "Sistem cuti berbasis journaling (debit / credit) dan memiliki multi-role yaitu Employee & Human Capital",
           "contributions": [
             "Pengembangan halaman Leave quota mutation",
@@ -196,7 +184,6 @@
         "project-j": {
           "name": "Project J",
           "focus": "Website edukasi yang berfungsi sebagai wadah untuk mendidik dan mengembangkan talenta muda di seluruh Indonesia",
-          "period": "31 Oktober - 23 Desember 2025",
           "description": "Website edukasi yang berfungsi sebagai wadah bagi perusahaan untuk mendidik dan mengembangkan talenta muda di seluruh Indonesia",
           "contributions": [
             "Pengembangan UI halaman website",
@@ -210,7 +197,6 @@
         "project-k": {
           "name": "Project K",
           "focus": "Sistem manajemen gereja",
-          "period": "8 Januari 2026",
           "description": "Sistem untuk mengelola kepengurusan organisasi gereja",
           "contributions": [
             "Menyusun data pengurus MPK berdasarkan file Excel",
@@ -219,11 +205,10 @@
             "Memastikan konsistensi dan struktur data sesuai kebutuhan sistem"
           ]
         },
-        
+
         "project-a": {
           "name": "Project A",
           "focus": "Sistem administrasi perusahaan (web & mobile)",
-          "period": "12 Januari – 27 Februari 2026",
           "description": "Sistem berbasis web dan mobile untuk mengelola administrasi berbagai departemen seperti marketing, human capital, dll",
           "contributions": [
             "Integrasi SSO (Single Sign-On) pada fitur login menggunakan SSO Prime (Adaptist)",
@@ -237,6 +222,7 @@
       }
     }
   },
+
   "detail": {
     "sections": {
       "responsibilities": "Tanggung Jawab",

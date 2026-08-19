@@ -5,7 +5,9 @@ export type Project = {
   key: string;
   name?: string;
   focus?: string;
-  period?: string;
+
+  startDate: string;
+  endDate?: string;
 
   origin: ProjectOrigin;
 

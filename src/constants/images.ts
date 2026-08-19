@@ -16,6 +16,188 @@ export const IMAGES = {
   },
 
   PORTFOLIO: {
+    FOOTY_VERSE: {
+      GALLERY: {
+        TEAMS: {
+          P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/gallery-1.png",
+          P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/gallery-2.png",
+
+          CLUB_TEAMS: {
+            P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/club-teams/gallery-1.png",
+            P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/club-teams/gallery-2.png",
+            P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/club-teams/gallery-3.png",
+            P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/club-teams/gallery-4.png",
+            P5: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/club-teams/gallery-5.png",
+            P6: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/club-teams/gallery-6.png",
+          },
+
+          NATIONAL_TEAMS: {
+            P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/national-teams/gallery-1.png",
+            P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/national-teams/gallery-2.png",
+            P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/national-teams/gallery-3.png",
+            P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/national-teams/gallery-4.png",
+            P5: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/teams/national-teams/gallery-5.png",
+          },
+        },
+
+        DASHBOARD: {
+          HOME: {
+            P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/home/gallery-1.png",
+            P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/home/gallery-2.png",
+          },
+
+          PLAYERS: {
+            LIST: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/list-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/list-2.png",
+            },
+
+            DETAIL: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/detail-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/detail-2.png",
+              P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/detail-3.png",
+              P4: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/detail-4.png",
+
+              PLAYER_CLUB_TEAM_CAREER: {
+                P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/create-player-club-team-career.png",
+                P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/edit-player-club-team-career.png",
+              },
+
+              PLAYER_NATIONAL_TEAM_CAREER: {
+                P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/create-player-national-team-career.png",
+                P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/edit-player-national-team-career.png",
+              },
+            },
+
+            CREATE: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/create.png",
+            },
+
+            EDIT: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/players/edit.png",
+            },
+          },
+
+          CLUBS: {
+            LIST: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/list-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/list-2.png",
+            },
+
+            DETAIL: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/detail-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/detail-2.png",
+              P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/detail-3.png",
+
+              CLUB_TEAM: {
+                P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/create-club-team.png",
+                P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/edit-club-team.png",
+              },
+            },
+
+            CREATE: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/create.png",
+            },
+
+            EDIT: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/clubs/edit.png",
+            },
+          },
+
+          NATIONALITIES: {
+            LIST: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/list-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/list-2.png",
+            },
+
+            DETAIL: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/detail-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/detail-2.png",
+              P3: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/detail-3.png",
+
+              NATIONAL_TEAM: {
+                P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/create-national-team.png",
+                P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/edit-national-team.png",
+              },
+            },
+
+            CREATE: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/create.png",
+            },
+
+            EDIT: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/nationalities/edit.png",
+            },
+          },
+
+          POSITIONS: {
+            P1: "",
+          },
+
+          SEASONS: {
+            P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/seasons/gallery-1.png",
+          },
+
+          REGIONS: {
+            LIST: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/regions/list.png",
+            },
+
+            CREATE: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/regions/create.png",
+            },
+
+            EDIT: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/regions/edit.png",
+            },
+          },
+
+          CONFEDERATIONS: {
+            LIST: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/confederations/list.png",
+            },
+
+            CREATE: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/confederations/create.png",
+            },
+
+            EDIT: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/confederations/edit.png",
+            },
+          },
+
+          COMPETITIONS: {
+            LIST: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/list-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/list-2.png",
+            },
+
+            DETAIL: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/detail.png",
+            },
+
+            CREATE: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/create-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/create-2.png",
+            },
+
+            EDIT: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/edit-1.png",
+              P2: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/edit-2.png",
+            },
+
+            CATEGORIES: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/categories/gallery-1.png",
+            },
+
+            SCOPES: {
+              P1: "https://edufruyprfuazucwyegc.supabase.co/storage/v1/object/public/portfolio/footy-verse/dashboard/competitions/scopes/gallery-1.png",
+            },
+          },
+        },
+      },
+    },
+
     INVESTBIT: {
       GALLERY: {
         HOME: {

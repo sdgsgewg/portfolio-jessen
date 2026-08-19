@@ -11,10 +11,34 @@
   "noProjects": "Tidak ada proyek yang ditemukan",
 
   "projects": {
+    "footy-verse": {
+      "name": "FootyVerse",
+
+      "description": "FootyVerse adalah situs web basis data sepak bola yang menyajikan informasi lengkap mengenai pemain, klub, kebangsaan, kompetisi, serta data lain yang berkaitan dengan sepak bola. Selain itu, sistem ini dilengkapi dengan dasbor yang memungkinkan admin mengelola konten terkait pemain, klub, kebangsaan, kompetisi, dan sebagainya. Dalam pengembangan situs web ini, saya menggunakan Next.js sebagai framework frontend dan backend, Tailwind CSS sebagai alat untuk penataan gaya, serta Supabase sebagai sistem manajemen basis data open-source.",
+
+      "features": [
+        "Halaman Publik: Halaman tim yang menampilkan semua tim klub dan tim nasional yang tersedia di dalam sistem",
+        "Dasbor: Manajemen kontrn untuk pemain, klub, kebangsaan, kompetisi dan lain-lain"
+      ],
+
+      "gallery": {
+        "home": "Beranda",
+        "teams": "Tim",
+        "dashboard": "Dasbor",
+        "dashboard-players": "Dasbor Pemain",
+        "dashboard-clubs": "Dasbor Klub",
+        "dashboard-nationalities": "Dasbor Kebangsaan",
+        "dashboard-seasons": "Dasbor Musim",
+        "dashboard-regions": "Dasbor Zona Wilayah",
+        "dashboard-confederations": "Dasbor Konfederasi",
+        "dashboard-competitions": "Dasbor Kompetisi"
+      }
+    },
+
     "investbit": {
       "name": "Investbit",
 
-      "description": "Investbit adalah sebuah situs web yang berfungsi sebagai platform pembelajaran melalui halaman Learn yang menyediakan penjelasan dasar mengenai saham, cara menganalisis saham, serta beberapa istilah yang berkaitan dengan IDX (Indonesia Stock Exchange). Selain itu, terdapat halaman Glossary yang menyediakan penjelasan mengenai istilah-istilah khusus dalam dunia investasi saham. Platform ini juga menyediakan halaman mutual fund performance yang menampilkan reksa dana dengan performa terbaik, leaderboard, serta analisis secara lebih mendetail. Selain itu, sistem ini dilengkapi dengan dashboard yang dapat digunakan oleh admin untuk mengelola konten yang berkaitan dengan reksa dana, seperti kategori, item, dan records yang menyimpan yield harian dan YTD (Year-to-Date) pada setiap harinya. Dalam pengembangan situs web ini, saya menggunakan Next.js sebagai framework frontend dan backend, Tailwind CSS sebagai tools untuk styling, serta Supabase sebagai sistem manajemen basis data open-source.",
+      "description": "Investbit adalah sebuah situs web yang berfungsi sebagai platform pembelajaran melalui halaman Learn yang menyediakan penjelasan dasar mengenai saham, cara menganalisis saham, serta beberapa istilah yang berkaitan dengan IDX (Indonesia Stock Exchange). Selain itu, terdapat halaman Glossary yang menyediakan penjelasan mengenai istilah-istilah khusus dalam dunia investasi saham. Platform ini juga menyediakan halaman mutual fund performance yang menampilkan reksa dana dengan performa terbaik, leaderboard, serta analisis secara lebih mendetail. Selain itu, sistem ini dilengkapi dengan dashboard yang dapat digunakan oleh admin untuk mengelola konten yang berkaitan dengan reksa dana, seperti kategori, item, dan records yang menyimpan yield harian dan YTD (Year-to-Date) pada setiap harinya. Dalam pengembangan situs web ini, saya menggunakan Next.js sebagai framework frontend dan backend, Tailwind CSS sebagai alat untuk penataan gaya, serta Supabase sebagai sistem manajemen basis data open-source.",
 
       "features": [
         "Halaman Publik: Belajar, glosarium, and kinerja reksa dana (kinerja terbaik, papan peringkat, dan analisis mendalam)",

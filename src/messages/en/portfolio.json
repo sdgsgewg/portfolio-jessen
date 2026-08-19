@@ -11,6 +11,30 @@
   "noProjects": "No projects found",
 
   "projects": {
+    "footy-verse": {
+      "name": "FootyVerse",
+
+      "description": "FootyVerse is a football database website that provides comprehensive information about players, clubs, nationalities, competitions, and other football-related data. Furthermore, the system includes a dashboard that can be used by admin to manage content related to players, clubs, nationalities, competitions, etc. I used Next.js as the frontend and backend framework, Tailwind CSS as the styling tool, and Supabase as the open-source database management to develop this website.",
+
+      "features": [
+        "Public Page: Team page that show all available club or national teams",
+        "Dashboard: Content management for players, clubs, nationalities, competitions, etc"
+      ],
+
+      "gallery": {
+        "home": "Home",
+        "teams": "Teams",
+        "dashboard": "Dashboard",
+        "dashboard-players": "Dashboard Player",
+        "dashboard-clubs": "Dashboard Club",
+        "dashboard-nationalities": "Dashboard Nationality",
+        "dashboard-seasons": "Dashboard Season",
+        "dashboard-regions": "Dashboard Region",
+        "dashboard-confederations": "Dashboard Confederation",
+        "dashboard-competitions": "Dashboard Competition"
+      }
+    },
+
     "investbit": {
       "name": "Investbit",
 

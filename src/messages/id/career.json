@@ -8,12 +8,14 @@
         "name": "PT. Accelist Lentera Indonesia",
         "description": "Accelist adalah perusahaan IT consulting di Indonesia yang berspesialisasi dalam pengembangan perangkat lunak khusus, integrasi sistem, dan transformasi digital di berbagai industri."
       },
+
       "responsibilities": [
         "Mengembangkan fitur fullstack pada sistem web & mobile menggunakan C# ASP.NET, React.js/Next.js, dan React Native, yang mendukung berbagai sistem enterprise-grade.",
         "Memperbaiki bug kritis pada proyek internal dan eksternal yang meningkatkan keandalan sistem, mengurangi inkonsistensi pelaporan, dan mengurangi kesalahan edge-case.",
         "Mengembangkan komponen frontend yang scalable dan integrasi API, meningkatkan UX untuk beberapa sistem seperti sistem inbox, sistem manajemen cuti, sistem pemantauan proyek, dll.",
         "Berkolaborasi dalam tim SDLC (Scrum) (developer, BA, PM) untuk memberikan rilis iteratif, berkontribusi pada keberhasilan pengiriman sprint dan kesiapan UAT melalui analisis kebutuhan aktif, debugging, dan refactoring."
       ],
+
       "projects": {
         "project-a1": {
           "name": "Project A1",
@@ -29,6 +31,7 @@
             "Handling edge case seperti data kosong dan perubahan yang dibatalkan"
           ]
         },
+
         "project-a2": {
           "name": "Project A2",
           "focus": "Sistem manajemen approval (Voucher & Purchase Order)",
@@ -43,6 +46,7 @@
             "Perbaikan UI/UX seperti fixed button dan penyesuaian teks notifikasi"
           ]
         },
+
         "project-a3": {
           "name": "Project A3",
           "focus": "Sistem pelacakan project & revenue",
@@ -57,6 +61,7 @@
             "Penyesuaian logic business pada fitur revenue dan pipeline"
           ]
         },
+
         "project-a4": {
           "name": "Project A4",
           "focus": "Sistem notifikasi & inbox (Human Capital)",
@@ -71,6 +76,7 @@
             "Perbaikan bug terkait loading, freeze, dan navigation"
           ]
         },
+
         "project-b": {
           "name": "Project B",
           "focus": "Sistem manajemen siswa & mentor",
@@ -84,6 +90,7 @@
             "Penambahan pop-up konfirmasi saat perubahan data belum disimpan"
           ]
         },
+
         "project-c": {
           "name": "Project C",
           "focus": "Sistem riwayat pekerjaan karyawan",
@@ -100,6 +107,7 @@
             "Penyesuaian desain UI berdasarkan kebutuhan admin"
           ]
         },
+
         "project-e": {
           "name": "Project E",
           "focus": "Platform lowongan kerja",
@@ -113,6 +121,7 @@
             "Debugging issue production terkait enkripsi dan email"
           ]
         },
+
         "project-f": {
           "name": "Project F",
           "focus": "Sistem manajemen event & kehadiran",
@@ -124,6 +133,7 @@
             "Debugging issue interaksi user pada menu pop-up"
           ]
         },
+
         "project-g": {
           "name": "Project G",
           "focus": "Platform komunitas & acara",
@@ -137,6 +147,7 @@
             "Perbaikan UI/UX pada mobile (chat, header, link event)"
           ]
         },
+
         "project-h": {
           "name": "Project H",
           "focus": "Mengawasi atau track progress dari sebuah project yang dikerjakan",
@@ -153,6 +164,7 @@
             "Implementasi pengecekan role access (CRUD) berdasarkan privilege user"
           ]
         },
+        
         "project-i": {
           "name": "Project I",
           "focus": "Mengelola laporan Dealer Finance",
@@ -167,6 +179,7 @@
             "Implementasi logika otomatis mapping dealer berdasarkan username jika tidak ada mapping manual"
           ]
         },
+
         "project-a5": {
           "name": "Project A5",
           "focus": "Mengelola pengajuan, penggunaan, dan pencatatan cuti karyawan",
@@ -179,6 +192,7 @@
             "Penyesuaian logic bisnis kuota cuti"
           ]
         },
+
         "project-j": {
           "name": "Project J",
           "focus": "Website edukasi yang berfungsi sebagai wadah untuk mendidik dan mengembangkan talenta muda di seluruh Indonesia",
@@ -192,6 +206,7 @@
             "Penyusunan soal Python Competition (SMP & SMA)"
           ]
         },
+
         "project-k": {
           "name": "Project K",
           "focus": "Sistem manajemen gereja",
@@ -204,6 +219,7 @@
             "Memastikan konsistensi dan struktur data sesuai kebutuhan sistem"
           ]
         },
+        
         "project-a": {
           "name": "Project A",
           "focus": "Sistem administrasi perusahaan (web & mobile)",

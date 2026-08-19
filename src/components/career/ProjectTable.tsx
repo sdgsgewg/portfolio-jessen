@@ -78,9 +78,9 @@ const ProjectTable = ({ projects }: ProjectTableProps) => {
           </thead>
 
           <tbody>
-            {projects.map((proj, i) => (
+            {projects.map((proj) => (
               <tr
-                key={i}
+                key={proj.key}
                 className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900/50 group"
               >
                 <td className="p-3 font-semibold align-top wrap-break-word sticky left-0 z-10 bg-background group-hover:bg-slate-50 dark:group-hover:bg-slate-900 border-r border-slate-200 dark:border-slate-700">

@@ -8,12 +8,14 @@
         "name": "PT. Accelist Lentera Indonesia",
         "description": "Accelist is Indonesia’s IT consulting company that specializes in custom software development, system integration, and digital transformation across multiple industries."
       },
+
       "responsibilities": [
         "Delivered fullstack features across web & mobile systems using C# ASP.NET, React.js/Next.js, and React Native, which support multiple enterprise-grade systems.",
         "Resolved critical bugs across internal and external projects that improved system reliability, reduced reporting inconsistencies, and reduced edge-case errors.",
         "Developed scalable frontend components and API integrations, enhancing UX for several systems such as inbox systems, leave management systems, project monitoring systems, etc.",
         "Collaborated in an SDLC (Scrum) team (developers, BA, PM) to deliver iterative releases, contributing to successful sprint deliveries and UAT readiness through active requirement analysis, debugging, and refactoring."
       ],
+
       "projects": {
         "project-a1": {
           "name": "Project A1",
@@ -29,6 +31,7 @@
             "Handled edge cases such as empty data and canceled changes"
           ]
         },
+
         "project-a2": {
           "name": "Project A2",
           "focus": "Approval management (Voucher & Purchase Order)",
@@ -43,6 +46,7 @@
             "UI/UX improvements such as fixed buttons and notification text adjustments"
           ]
         },
+
         "project-a3": {
           "name": "Project A3",
           "focus": "Project & revenue tracking system",
@@ -57,11 +61,11 @@
             "Business logic adjustments in the revenue and pipeline features"
           ]
         },
+
         "project-a4": {
           "name": "Project A4",
           "focus": "Notification & inbox system (Human Capital)",
           "period": "June 10 - 24, 2025",
-          "role": "FE Developer",
           "description": "Notification module for Human Capital users, including reminders and broadcast messages",
           "contributions": [
             "Development of Reminder and Notification (Inbox) features",
@@ -72,6 +76,7 @@
             "Fixed bugs related to loading, freezing, and navigation"
           ]
         },
+
         "project-b": {
           "name": "Project B",
           "focus": "Student & mentor management system (mobile)",
@@ -85,6 +90,7 @@
             "Addition of confirmation pop-ups when data changes have not been saved"
           ]
         },
+
         "project-c": {
           "name": "Project C",
           "focus": "Employee work history system (web)",
@@ -101,6 +107,7 @@
             "UI design adjustments based on admin needs"
           ]
         },
+
         "project-e": {
           "name": "Project E",
           "focus": "Job vacancy platform",
@@ -114,6 +121,7 @@
             "Debugging production issues related to encryption and email"
           ]
         },
+
         "project-f": {
           "name": "Project F",
           "focus": "Event management & attendance system (mobile)",
@@ -125,6 +133,7 @@
             "Debugging user interaction issues in the pop-up menu"
           ]
         },
+
         "project-g": {
           "name": "Project G",
           "focus": "Community & event platform (web & mobile)",
@@ -138,6 +147,7 @@
             "UI/UX improvements on mobile (chat, header, event links)"
           ]
         },
+
         "project-h": {
           "name": "Project H",
           "focus": "Monitoring or tracking the progress of a project being worked on",
@@ -154,6 +164,7 @@
             "Role access checking (CRUD) implementation based on user privileges"
           ]
         },
+
         "project-i": {
           "name": "Project I",
           "focus": "Managing Dealer Finance Reports",
@@ -168,6 +179,7 @@
             "Implementation of automatic logic for dealer mapping based on username if there is no manual mapping"
           ]
         },
+
         "project-a5": {
           "name": "Project A5",
           "focus": "Managing employee leave applications, usage, and recording",
@@ -180,6 +192,7 @@
             "Adjustment of the leave quota business logic"
           ]
         },
+
         "project-j": {
           "name": "Project J",
           "focus": "An educational website that serves as a platform for educating and developing young talent throughout Indonesia",
@@ -193,6 +206,7 @@
             "Compilation of Python Competition questions (Junior High & High School)"
           ]
         },
+
         "project-k": {
           "name": "Project K",
           "focus": "Church management system",
@@ -205,11 +219,11 @@
             "Ensuring data consistency and structure according to system requirements"
           ]
         },
+
         "project-a": {
           "name": "Project A",
           "focus": "Enterprise administration system (web & mobile)",
           "period": "January 12 – February 27, 2026",
-          "role": "FE & BE Developer",
           "description": "Enterprise administration system (web & mobile) for managing various departments such as marketing,human capital, etc",
           "contributions": [
             "Single Sign-On (SSO) integration into the login feature using SSO Prime (Adaptist)",

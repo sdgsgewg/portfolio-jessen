@@ -28,7 +28,7 @@ export type Career = {
   position: string;
   joinDate: string;
   endDate: string;
-  techStack: string[];
+  techStack: TechName[];
   responsibilities?: string[];
   projects?: Project[];
 };

@@ -39,7 +39,7 @@ const TechStackSection = ({ data }: TechStackSectionProps) => {
   const grouped = groupTechStack(data);
 
   return (
-    <div className="rounded-xl bg-muted/20 p-4">
+    <div className="rounded-xl bg-muted/50 p-4">
       <div className="mb-3">
         <h1 className="text-sm font-semibold text-muted-foreground">
           {t("techStack")}

@@ -9,6 +9,7 @@ export const CAREER_ENTRIES: Career[] = [
     position: "Fullstack Developer Intern",
     joinDate: "3 Feb 2025",
     endDate: "28 Feb 2026",
+
     techStack: [
       FRAMEWORK.ASP_NET,
       FRAMEWORK.NEXT_JS,
@@ -17,6 +18,7 @@ export const CAREER_ENTRIES: Career[] = [
       DATABASE.POSTGRESQL,
       TOOLS.FIGMA,
     ],
+
     projects: [
       {
         key: "project-a1",
@@ -25,6 +27,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "frontend",
         techStack: [FRAMEWORK.REACT_NATIVE, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-a2",
         origin: "internal",
@@ -32,6 +35,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "frontend",
         techStack: [FRAMEWORK.REACT_NATIVE, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-a3",
         origin: "internal",
@@ -39,6 +43,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "backend",
         techStack: [FRAMEWORK.REACT_NATIVE, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-a4",
         origin: "internal",
@@ -46,6 +51,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "fullstack",
         techStack: [FRAMEWORK.REACT_NATIVE, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-b",
         origin: "internal",
@@ -53,6 +59,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "frontend",
         techStack: [FRAMEWORK.REACT_NATIVE],
       },
+
       {
         key: "project-c",
         origin: "internal",
@@ -60,6 +67,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "fullstack",
         techStack: [FRAMEWORK.NEXT_JS, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-e",
         origin: "internal",
@@ -67,6 +75,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "fullstack",
         techStack: [FRAMEWORK.NEXT_JS, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-f",
         origin: "internal",
@@ -74,6 +83,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "frontend",
         techStack: [FRAMEWORK.REACT_NATIVE],
       },
+
       {
         key: "project-g",
         origin: "internal",
@@ -85,6 +95,7 @@ export const CAREER_ENTRIES: Career[] = [
           FRAMEWORK.ASP_NET,
         ],
       },
+
       {
         key: "project-h",
         origin: "internal",
@@ -92,6 +103,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "fullstack",
         techStack: [FRAMEWORK.NEXT_JS, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-i",
         origin: "external",
@@ -99,6 +111,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "fullstack",
         techStack: [FRAMEWORK.NEXT_JS, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-a5",
         origin: "internal",
@@ -106,6 +119,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "fullstack",
         techStack: [FRAMEWORK.REACT_NATIVE, FRAMEWORK.ASP_NET],
       },
+
       {
         key: "project-j",
         origin: "internal",
@@ -113,6 +127,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "frontend",
         techStack: [FRAMEWORK.NEXT_JS],
       },
+
       {
         key: "project-k",
         origin: "internal",
@@ -120,6 +135,7 @@ export const CAREER_ENTRIES: Career[] = [
         role: "backend",
         techStack: [DATABASE.POSTGRESQL],
       },
+      
       {
         key: "project-a",
         origin: "internal",

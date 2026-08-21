@@ -2,12 +2,14 @@
   "title": "Keahlian",
   "subtitle": "Keahlian Saya",
   "description": "Berikut adalah gambaran umum tentang keahlian teknis dan kekuatan interpersonal saya, yang bersama-sama menjadikan saya pengembang yang serbaguna dan andal.",
+
   "technicalSkill": {
     "title": "Keahlian Teknis",
-    "description": "Mahir dalam berbagai teknologi dan alat pengembangan web, termasuk HTML, CSS, JavaScript, TypeScript, PHP, Java, C#, C, Python. Berpengalaman dengan kerangka kerja dan pustaka seperti React, Laravel, Bootstrap, dan Tailwind CSS, serta alat dan teknologi seperti relational databases, GitHub, dan Figma. Terampil dalam kontrol versi, desain responsif, integrasi API, operasi CRUD, manajemen basis data, dan pemecahan masalah."
+    "description": "Menguasai berbagai bahasa pemrograman, termasuk HTML, CSS, JavaScript, TypeScript, Java, PHP, C, C#, Python, dan SQL. Berpengalaman menggunakan framework dan library seperti React, Next.js, ASP.NET, Laravel, Bootstrap, dan Tailwind CSS, serta database dan tools pengembangan seperti MySQL, PostgreSQL, Supabase, GitHub, Postman, dan Figma. Memiliki kemampuan dalam version control, responsive design, integrasi API, operasi CRUD, manajemen database, debugging, dan problem-solving."
   },
+
   "softSkill": {
     "title": "Keahlian Interpersonal",
-    "description": "Seorang kolaborator yang kuat dengan keterampilan Komunikasi yang sangat baik, mampu mengelola proyek secara efektif melalui Manajemen Waktu dan Perhatian terhadap Detail yang cermat. Diakui karena kemampuan saya untuk bekerja dengan baik dalam tim dan beradaptasi dengan tantangan baru di lingkungan yang serba cepat."
+    "description": "Memiliki kemampuan kolaborasi dan komunikasi yang baik, serta mampu mengelola pekerjaan secara efektif melalui manajemen waktu dan perhatian terhadap detail. Mampu bekerja dalam tim, berkomunikasi menggunakan bahasa Inggris, serta beradaptasi dengan tantangan baru dalam lingkungan yang dinamis."
   }
 }
